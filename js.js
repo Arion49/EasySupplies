@@ -1,26 +1,10 @@
           var ScrolValue = 0;
 
-          var senha = document.getElementById('#senha').value;
-          var confSenha = document.getElementById('#confSenha').value;
+;
 
           $(document).ready(function(){
 
-            document.getElementById('btn-proximo-cad').onclick = function(){
-            
-              if (senha.value.length >= 5) {
-
-                if (senha == confSenha) {
-
-                }else{
-
-                }
-
-              }else{
-                alert('TO PUTOO');
-                document.getElementById('mengagem_error').style.display = 'block';
-                document.getElementById('mengagem_error').innerHTML = 'É permitido no minimo 5 caracteres';
-              }
-            };
+      
 
             $('input#input_text, textarea#textarea2').characterCounter();
 
@@ -51,5 +35,26 @@
             });
 
           });
+
+                var senha = document.getElementById('senha').value;
+                var confSenha = document.getElementById('confSenha').value
+
+              document.getElementById('btn-proximo-cad').onclick = function(){
+            
+              if (senha.length >= 5) {
+
+                if (senha == confSenha) {
+
+                }else{
+
+                }
+
+              }else{
+
+
+                document.getElementById('mengagem_error').style.display = 'block';
+                document.getElementById('mengagem_error').innerHTML = 'É permitido no minimo 5 caracteres';
+              }
+            };
 
          

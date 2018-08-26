@@ -44,7 +44,7 @@
 			30px; border-radius: 10px">
 
 				<div class="row">
-					
+				
 					<div class="col m12 l6 scss-cad-width-100" id="scss-cad-a" 
 					style="background-color: #270d44; border-top-left-radius: 10px; border-right: 2px solid #6f339b;">
 						
@@ -56,8 +56,8 @@
 
 							</div>
 
-							<form accept-charset="utf-8" autocomplete="on" class="col s12" method="post" name="form" id="formu-cad">							
-								
+							<div accept-charset="utf-8" autocomplete="on" class="col s12" method="post" name="form" id="formu-cad">							
+									<p style="display: none; color: red;" id="mengagem_error">Mensagem</p>
 								<div class="input-field col s12" style="margin-top: 28px;">
 									<i class="material-icons prefix grey-text">person</i>
 							      	<input id="first_name2" name="first_name2" type="text" minlength="" class="grey-text" required>
@@ -99,7 +99,7 @@
 
 							    </button>
 							    
-							</form>
+							</div>
 						</div>
 
 					</div>
