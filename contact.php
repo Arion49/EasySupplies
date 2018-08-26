@@ -39,7 +39,7 @@
  <div class="row">
         <div class="col m6 s12"> <!-- Parte 1 -->
 
-            <div class="col m6 s12" style="text-align: center;">
+            <div class="col s12" style="text-align: center;">
         <h5 style="color: white; font-weight: bolder; text-shadow: black 0.1em 0.1em 0.2em;">Nossas Informações</h5>
          </div>
 

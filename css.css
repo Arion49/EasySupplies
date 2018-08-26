@@ -22,9 +22,19 @@
 	margin-bottom: 20px;
 }
 
+.cc{
+	background-color: #6f339b !important;
+}
+
+.cad_btn_cad{
+	background-color: green !important;
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
 
 @media only screen and (max-width: 601px){
-	
 	#scss-cad{
 		margin-right: 0;
 		margin-left: 0;
@@ -40,11 +50,11 @@
 	}
 
 	#scss-cad-a{
-		border-radius: 0px;
+		border-top-left-radius: 0px;
 	}
 
 	#scss-cad-b{
-		border-radius: 0px;
+		border-top-right-radius: 0px;
 	}
 
 	.scss-cad-width-100{
