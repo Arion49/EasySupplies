@@ -22,6 +22,15 @@
 	margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
+.aboutquadros{
+	margin-right: 0;
+	margin-left: 0;
+	width: 100%;
+	border-radius: 10px;
+	background-color: black;
+	
+=======
 .cc{
 	background-color: #6f339b !important;
 }
@@ -31,6 +40,7 @@
 	width: 100%;
 	margin-top: 40px;
 	margin-bottom: 20px;
+>>>>>>> b6f4a0ba156eff6cba940f34b7ca7576f2a2bbd0
 }
 
 
