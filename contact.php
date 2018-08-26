@@ -39,15 +39,11 @@
  <div class="row">
         <div class="col m6 s12"> <!-- Parte 1 -->
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <div class="col m12 s12" style="text-align: center;">
-=======
+
+            
+
             <div class="col s12" style="text-align: center;">
->>>>>>> b6f4a0ba156eff6cba940f34b7ca7576f2a2bbd0
-=======
-            <div class="col m6 s12" style="text-align: center;">
->>>>>>> parent of 741cbfb... About and Footer
+
         <h5 style="color: white; font-weight: bolder; text-shadow: black 0.1em 0.1em 0.2em;">Nossas Informações</h5>
          </div>
 
@@ -114,7 +110,7 @@
 
            <div class="col m6 s12 "> <!-- Início PARTE 2 -->
 
-            <div class="col m6 s12" style=" text-align: center;">
+            <div class="col s12" style=" text-align: center;">
         <h5 style="color: white; font-weight: bolder; text-shadow: black 0.1em 0.1em 0.2em;">Entre em contato</h5>
             </div>
        
