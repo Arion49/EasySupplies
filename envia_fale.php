@@ -1,6 +1,6 @@
 <?php
 # alterar a variavel abaixo colocando o seu email
-EAE EDUARD
+
 $destinatario = "arion.cerceau@gmail.com";
 
 $nome = $_POST['nome'];
