@@ -15,6 +15,13 @@
 	color: grey;
 }
 
+#btn-proximo-cad{
+	background-color: #304ffe !important;
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
 
 @media only screen and (max-width: 601px){
 	
@@ -22,14 +29,38 @@
 		margin-right: 0;
 		margin-left: 0;
 		width: 100%;
+		border-radius: 0;
 	}
 
 	#scss-assina{
 		margin-right: 0;
 		margin-left: 0;
 		width: 100%;
+		border-radius: 0;
+	}
 
+	#scss-cad-a{
+		border-radius: 0px;
+	}
+
+	#scss-cad-b{
+		border-radius: 0px;
+	}
+
+	.scss-cad-width-100{
+		width: 100%;
 
 	}
 
+}
+
+@media only screen and (max-width: 992px){
+	#scss-cad-a{
+		border-right: 0px solid;
+		border-top-right-radius: 10px;
+		border-bottom: 2px solid #6f339b;
+	}
+	#scss-cad-b{
+		border-top-right-radius: 0px;
+	}
 }

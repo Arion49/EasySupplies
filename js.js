@@ -1,11 +1,10 @@
           var ScrolValue = 0;
 
-
-
           $(document).ready(function(){
 
-
             $('input#input_text, textarea#textarea2').characterCounter();
+
+            M.updateTextFields();
 
             $('.sidenav').sidenav();
 
