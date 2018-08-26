@@ -1,7 +1,5 @@
           var ScrolValue = 0;
 
-;
-
           $(document).ready(function(){
 
       
@@ -37,7 +35,7 @@
           });
 
                 var senha = document.getElementById('senha').value;
-                var confSenha = document.getElementById('confSenha').value
+                var confSenha = document.getElementById('confSenha').value;
 
               document.getElementById('btn-proximo-cad').onclick = function(){
             
@@ -50,7 +48,6 @@
                 }
 
               }else{
-
 
                 document.getElementById('mengagem_error').style.display = 'block';
                 document.getElementById('mengagem_error').innerHTML = 'É permitido no minimo 5 caracteres';

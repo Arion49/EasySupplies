@@ -57,7 +57,7 @@
 							</div>
 
 							<div accept-charset="utf-8" autocomplete="on" class="col s12" method="post" name="form" id="formu-cad">							
-									<p style="display: none; color: red;" id="mengagem_error">Mensagem</p>
+									
 								<div class="input-field col s12" style="margin-top: 28px;">
 									<i class="material-icons prefix grey-text">person</i>
 							      	<input id="first_name2" name="first_name2" type="text" minlength="" class="grey-text" required>
@@ -89,9 +89,6 @@
 							    	<input id="confSenha" name="confSenha" type="password" class="grey-text" required>
 							      	<label for="confSenha">Confirmar senha</label>
 							    </div>
-
-							    <p id="mensagem_error1" style="display:none;"></p>
-
 							    
 							    <button class="btn btn-float waves-effect" type="submit" name="submit" id="btn-proximo-cad">
 
@@ -166,6 +163,8 @@
 					</div>
 
 				</div>
+
+				<p style="display: none; color: red;" id="mengagem_error">Mensagem</p>
 						
 					
 			</div>
