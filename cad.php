@@ -37,19 +37,128 @@
 		<h5 style="color: white;">Cadastrar</h5>
 	</div>
 
-	<div class="container" id="scss-cad">
 
-		<div class="col s12 cyan darken-4 z-depth-4" style="margin-bottom: 30px; height: 800px; border-radius: 10px">
-			
-			<div class="">
+
+		<div class="container purple darken-3 z-depth-4"  id="scss-cad" style="margin-bottom:
+		30px; height: 800px; border-radius: 10px">
+
+			<div class="row">
 				
+				<div class="col m12 l6 scss-cad-width-100" id="scss-cad-a" 
+				style="background-color: #270d44; border-top-left-radius: 10px; border-right: 2px solid #6f339b;">
+					
+					<div class="col s12" style="padding: 5px; padding-bottom: 8px; padding-top: 8px;">
+						
+						<div class="col s12 center-align" style="font-size: 20px;">
+							
+							<h5 style="color: white;">Passo 1: Dados pessoais</h5>
 
+						</div>
+
+						<form accept-charset="utf-8" autocomplete="on" class="col s12" method="post" name="form" id="formu-cad">							
+							
+							<div class="input-field col s12" style="margin-top: 28px;">
+								<i class="material-icons prefix grey-text">person</i>
+						      	<input id="first_name2" name="first_name2" type="text" minlength="" class="grey-text" required>
+						      	<label for="first_name2">Nome completo</label>
+						    </div>
+
+						    <div class="input-field col s12">
+								<i class="material-icons prefix grey-text">email</i>
+						      	<input id="email" name="email" type="email" class="grey-text" required>
+						      	<label for="email">Email</label>
+						    </div>
+
+						    <div class="input-field col s12">
+						    	<i class="material-icons prefix grey-text">fingerprint</i>
+						      	<input id="login" name="login" type="text" class="grey-text" required>
+						      	<label for="login">Login</label>
+						    </div>
+
+						    <div class="input-field col s12">
+						    	<i class="material-icons prefix grey-text">lock</i>
+						    	<input id="senha" name="senha" type="password" class="grey-text" required>
+						      	<label for="senha">Senha</label>
+						    </div>
+
+						    <div class="input-field col s12">
+						    	<i class="material-icons prefix grey-text">lock</i>
+						    	<input id="confSenha" name="confSenha" type="password" class="grey-text" required>
+						      	<label for="confSenha">Confirmar senha</label>
+						    </div>
+
+						    
+						    <button class="btn btn-float waves-effect" type="submit" name="submit" id="btn-proximo-cad">
+
+						    	Proximo
+
+						    </button>
+						    
+						</form>
+					</div>
+
+				</div>
+
+				<div class="col m12 l6 scss-cad-width-100" id="scss-cad-b" 
+				style=" background-color: #270d44; border-top-right-radius: 10px;">
+					
+					<div class="col s12" style="padding: 5px; padding-bottom: 8px; padding-top: 8px;">
+						
+						<div class="col s12 center-align" style="font-size: 20px;">
+								
+							<h5 style="color: lightgrey;">Passo 2: Endereço</h5>
+
+							<form accept-charset="utf-8" autocomplete="on" class="col s12" method="post" name="form" id="formu-cad">							
+							
+							<div class="input-field col s12" style="margin-top: 28px;">
+								<i class="material-icons prefix grey-text">search</i>
+						      	<input id="cep" name="cep" type="text" maxlength="8" 
+						      	pattern="\\d{5}-\\d{3}" class="grey-text" required>
+						      	<label for="cep">CEP (xxxxx-xxx)</label>
+
+						    <div class="input-field col s12">
+								<i class="material-icons prefix grey-text">email</i>
+						      	<input id="email" name="email" type="email" class="grey-text" required>
+						      	<label for="email">Email</label>
+						    </div>
+
+						    <div class="input-field col s12">
+						    	<i class="material-icons prefix grey-text">fingerprint</i>
+						      	<input id="login" name="login" type="text" class="grey-text" required>
+						      	<label for="login">Login</label>
+						    </div>
+
+						    <div class="input-field col s12">
+						    	<i class="material-icons prefix grey-text">lock</i>
+						    	<input id="senha" name="senha" type="password" class="grey-text" required>
+						      	<label for="senha">Senha</label>
+						    </div>
+
+						    <div class="input-field col s12">
+						    	<i class="material-icons prefix grey-text">lock</i>
+						    	<input id="confSenha" name="confSenha" type="password" class="grey-text" required>
+						      	<label for="confSenha">Confirmar senha</label>
+						    </div>
+
+						    
+						    <button class="btn btn-float waves-effect" type="submit" name="submit" id="btn-proximo-cad">
+
+						    	Proximo
+
+						    </button>
+						    
+						</form>
+
+						</div>
+
+					</div>
+					
+				</div>
 
 			</div>
-
+					
+				
 		</div>
-		
-	</div>
 
 
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
