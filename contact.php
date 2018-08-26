@@ -20,7 +20,7 @@
 
       <meta name="description" value="Suplimentos fáceis">
 
-        <link href="https://fonts.googleapis.com/css?family=Kosugi" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins|Slabo+27px" rel="stylesheet">
 
       <body style="background-color: rgba(75,0,130,0.8); margin: 0;padding: 0;">
 
@@ -43,7 +43,7 @@
         <h5 style="color: white; font-weight: bolder; text-shadow: black 0.1em 0.1em 0.2em;">Nossas Informações</h5>
          </div>
 
-    <div class="col s12 z-depth-4" style="margin-bottom: 30px; height: 800px; border-radius: 10px; background-color: #f2d9e6;">
+    <div class="col s12 z-depth-4" style="margin-bottom: 30px; height: 800px; border-radius: 10px; background-color: #eaccdb;">
             
             <div class="row">
 
@@ -52,22 +52,29 @@
 
         <div class="col"> </div>
 
-        <div class="input-field col s8">
-          <h6> Endereço: </h6>
+        <div class="input-field col s11">
+          <h5 style="font-weight: bolder; font-family: 'Poppins', sans-serif; text-shadow: #ff6699 0.1em 0.1em 0.4em;"> Endereço </h5>
+          <p style="font-family: 'Slabo 27px', serif; font-size: 13pt; ">Av. Amazonas, 55 - Centro, Betim - MG, 32600-075</p>
+          <div id="map">
+            <iframe class="col s11" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.0292909994123!2d-44.195723485084834!3d-19.965270386583924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6eaa73c6d609f%3A0xd61a7f12deb82d4a!2sSESI+SENAI+Betim+CETEM+Maria+Madalena+Nogueira!5e0!3m2!1spt-BR!2sbr!4v1535304425814" width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
         </div>
 
        
          </div>
 
+         
+
       <div class="row">
 
          <div class="col"> </div>
 
-        <div class="input-field col s8">
-          <i class="material-icons prefix">phone</i>
-          <input id="icon_telephon" type="tel" class="validate">
-          <label for="icon_telephon">Seu Telefone</label>
-          <span class="helper-text" data-error="Telefone deve conter somente numeros" ></span>
+        <div class="input-field col s11">
+          <h5 style="font-weight: bolder;font-family: 'Poppins', sans-serif; text-shadow: #ff6699 0.1em 0.1em 0.4em;"> Telefones para Contato </h5>
+          <p style="font-family: 'Slabo 27px', serif; font-size: 13pt;">(31)98730-3500</p>
+          <p style="font-family: 'Slabo 27px', serif; font-size: 13pt;">(31)97109-4797</p>
+          <p style="font-family: 'Slabo 27px', serif; font-size: 13pt;">(31)99181-4597</p>
+          <p style="font-family: 'Slabo 27px', serif; font-size: 13pt;">(31)99601-7384</p>
         </div>
       </div >
 
@@ -76,24 +83,13 @@
 
         <div class = "col"> </div>
 
-       <div class="input-field col s8">
-          <i class="material-icons prefix">contact_mail</i>
-          <input id="icon_mai" type="email" class="validate">
-          <label for="icon_mai">Seu Email</label>
-          <span class="helper-text" data-error="Email no formato errado" data-success="Email no formato certo"></span>
+       <div class="input-field col s11">
+          <h5 style="font-weight: bolder;font-family: 'Poppins', sans-serif; text-shadow: #ff6699 0.1em 0.1em 0.4em;"> Email </h5>
+          <p style="font-family: 'Slabo 27px', serif; font-size: 13pt;">easysuppliestcc@gmail.com</p>
         </div>
       </div>
 
-      <div class="row">
-
-        <div class = "col"></div>
-
-          <div class="input-field col s8">
-            <i class="material-icons prefix">description</i>
-            <textarea id="textare" class="materialize-textarea" data-length="120"></textarea>
-            <label for="textare">Descreva a situação</label>
-          </div>
-        </div>
+      
 
 
 
