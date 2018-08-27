@@ -27,8 +27,7 @@
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-        <div style="
-        background: url(img/apple.jpg);
+        <div id="background-img" style="
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
@@ -38,6 +37,8 @@
         width: 100%;
         opacity: 0.4">
           
+          <img src="img/back1.jpg" width="100%">
+
         </div>
 
         <body style="

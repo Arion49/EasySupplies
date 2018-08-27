@@ -33,25 +33,24 @@
             });
 
           });
+          var senha = document.getElementById('senha').value;
+          var confSenha = document.getElementById('confSenha').value;
 
-                var senha = document.getElementById('senha').value;
-                var confSenha = document.getElementById('confSenha').value;
-
-              document.getElementById('btn-proximo-cad').onclick = function(){
+          document.getElementById('btn-proximo-cad').onclick = function(){
             
-              if (senha.length >= 5) {
+            if (senha.length >= 5) {
 
-                if (senha == confSenha) {
-
-                }else{
-
-                }
+              if (senha == confSenha) {
 
               }else{
 
-                document.getElementById('mengagem_error1').style.display = 'block';
-                document.getElementById('mengagem_error').innerHTML = 'É permitido no minimo 5 caracteres';
               }
-            };
+
+            }else{
+
+              document.getElementById('mengagem_error1').style.display = 'block';
+              document.getElementById('mengagem_error').innerHTML = 'É permitido no minimo 5 caracteres';
+            }
+          };
 
          
