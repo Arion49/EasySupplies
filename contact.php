@@ -13,12 +13,15 @@
       <!--Import materialize.css-->
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
 
+        <!-- Icone do titulo -->
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+        <meta name="description" value="Suplimentos fáceis, trazendo o melhor dos produtos organicos da forma mais facil para você!">
+
       <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-      <meta name="description" value="Suplimentos fáceis">
 
         <link href="https://fonts.googleapis.com/css?family=Poppins|Slabo+27px" rel="stylesheet">
 
@@ -178,7 +181,7 @@
 
 
                       <div class="row">
-                        <button class="btn center-align col s8 offset-s2 waves-effect waves-light" type="submit" name="submit" >
+                        <button class="btn center-align col s10 offset-s1 waves-effect waves-light cc" type="submit" name="submit" >
                           Enviar
                         </button>
                       </div>
