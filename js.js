@@ -33,24 +33,47 @@
             });
 
           });
-          var senha = document.getElementById('senha').value;
-          var confSenha = document.getElementById('confSenha').value;
-
+          
           document.getElementById('btn-proximo-cad').onclick = function(){
-            
-            if (senha.length >= 5) {
 
-              if (senha == confSenha) {
+            if(senha != "" && emails != "" && nameFirst != "" && confSenha != "" && login != "")
+            {
 
-              }else{
+              var login = document.getElementById('login').value;
+              var nameFirst = document.getElementById('first_name2').value;
+              var emails = document.getElementById('login').value;
+              var senha = document.getElementById('senha').value;
+              var confSenha = document.getElementById('confSenha').value;
+
+              if (senha.length >= 5) {
+
+
+                if (senha == confSenha) {
+
+
+
+                }
+                /*Se as senhas não forem iguais*/
+                else{
+
+                  M.toast({html: 'As senhas não coincidem', classes: 'rounded'});
+                }
 
               }
+              /*Se s senha for menor que 5*/
+              else{
 
-            }else{
+                M.toast({html: 'A senha deve ter no minimo 5 caracteres', classes: 'rounded'});
+                  
+              }
 
-              document.getElementById('mengagem_error1').style.display = 'block';
-              document.getElementById('mengagem_error').innerHTML = 'É permitido no minimo 5 caracteres';
+            } 
+            /*Se vazio*/
+            else{
+
+                M.toast({html: 'Todos os campos são obrigatorios', classes: 'rounded'});
+
             }
-          };
 
+          };/*Fim function*/
          
