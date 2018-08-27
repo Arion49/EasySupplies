@@ -51,8 +51,8 @@
             
             <div class="row"> <!-- DIV PRETA-->
 
-              <div class="col m12 s12 aboutquadros" style="text-align: center;">
-        <h5 style="color: white; font-weight: bolder; text-shadow: white 0.1em 0.1em 0.4em;">EQUIPE</h5>
+              <div class="col m12 s12" style="text-align: center;">
+                <h5 style="color: white; font-weight: bolder; text-shadow: white 0.1em 0.1em 0.4em;">EQUIPE</h5>
               </div>
             </div> <!-- FIM DIV PRETA -->
             
@@ -99,7 +99,7 @@
     <div class="col s12 z-depth-4" style="margin-bottom: 30px; height: 400px; border-radius: 10px; background-color: purple;">
             
             <div class="row"> <!-- DIV PRETA-->
-              <div class="col m12 s12 aboutquadros" style="text-align: center;">
+              <div class="col m12 s12" style="text-align: center;">
         <h5 style="color: white; font-weight: bolder; text-shadow: white 0.1em 0.1em 0.4em;">IDEIA</h5>
               </div>
             </div> <!-- FIM DIV PRETA -->

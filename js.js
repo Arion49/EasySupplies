@@ -2,11 +2,11 @@
 
           $(document).ready(function(){
 
-      
-
             $('input#input_text, textarea#textarea2').characterCounter();
 
             M.updateTextFields();
+
+            $('.tabs').tabs();
 
             $('.sidenav').sidenav();
 
@@ -49,7 +49,7 @@
 
               }else{
 
-                document.getElementById('mengagem_error').style.display = 'block';
+                document.getElementById('mengagem_error1').style.display = 'block';
                 document.getElementById('mengagem_error').innerHTML = 'É permitido no minimo 5 caracteres';
               }
             };

@@ -45,7 +45,7 @@
 
 				<div class="row">
 				
-					<div class="col m12 l6 scss-cad-width-100" id="scss-cad-a" 
+					<div class="col m12 l6 min-phone" id="scss-cad-a" 
 					style="background-color: #270d44; border-top-left-radius: 10px; border-right: 2px solid #6f339b;">
 						
 						<div class="col s12" style="padding: 5px; padding-bottom: 8px; padding-top: 8px;">
@@ -101,7 +101,7 @@
 
 					</div>
 
-					<div class="col m12 l6 scss-cad-width-100" id="scss-cad-b" 
+					<div class="col m12 l6 min-phone" id="scss-cad-b" 
 					style=" background-color: #270d44; border-top-right-radius: 10px;">
 						
 						<div class="col s12" style="padding: 5px; padding-bottom: 8px; padding-top: 8px;">
@@ -164,7 +164,11 @@
 
 				</div>
 
-				<p style="display: none; color: red;" id="mengagem_error">Mensagem</p>
+				<div style="display: none; color: red;" id="mengagem_error1">
+					<p id="mengagem_error">Mensagem</p>
+				</div>
+
+				
 						
 					
 			</div>
