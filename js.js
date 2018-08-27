@@ -33,17 +33,17 @@
             });
 
           });
-          
+
           document.getElementById('btn-proximo-cad').onclick = function(){
+
+            var login = document.getElementById('login').value;
+            var nameFirst = document.getElementById('first_name2').value;
+            var emails = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+            var confSenha = document.getElementById('confSenha').value;
 
             if(senha != "" && emails != "" && nameFirst != "" && confSenha != "" && login != "")
             {
-
-              var login = document.getElementById('login').value;
-              var nameFirst = document.getElementById('first_name2').value;
-              var emails = document.getElementById('login').value;
-              var senha = document.getElementById('senha').value;
-              var confSenha = document.getElementById('confSenha').value;
 
               if (senha.length >= 5) {
 
