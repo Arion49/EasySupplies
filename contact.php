@@ -130,7 +130,7 @@
                         <div class="col"> </div>
                           <div class="input-field col s10" style="margin-top: 25px;">
                             <i class="material-icons prefix">account_circle</i>
-                            <input id="icon_prefix" required="required" type="text" class="validate" name="nome" pattern="[a-z\s]+$">
+                            <input id="icon_prefix" required="required" type="text" class="validate" name="remetenteNome" pattern="[A-Za-z\s]+$">
                             <label for="icon_prefix">Nome</label>
                             <span class="helper-text" data-error="O nome está em formato incorreto" ></span>
                           </div>     
@@ -141,7 +141,7 @@
                          <div class="col"> </div>
                           <div class="input-field col s10">
                             <i class="material-icons prefix">phone</i>
-                            <input id="icon_telephone" required="required" type="text" placeholder="(99)99999-9999" class="validate" name="telefone"     maxlength="14" pattern="(\([0-9]{2}\))([9]{1})?([0-9]{4})-([0-9]{4})">
+                            <input id="icon_telephone" required="required" type="text" placeholder="(99)99999-9999" class="validate" name="remetenteTel" maxlength="14" pattern="(\([0-9]{2}\))([9]{1})?([0-9]{4})-([0-9]{4})">
                             <label for="icon_telephone">Seu Telefone</label>
                             <span class="helper-text" data-error="Telefone deve estar no formato correto" ></span>
                           </div>
@@ -153,7 +153,7 @@
                         <div class = "col"> </div>
                           <div class="input-field col s10">
                             <i class="material-icons prefix">contact_mail</i>
-                            <input id="icon_mail" required="required" type="email" class="validate" name="email">
+                            <input id="icon_mail" required="required" type="email" class="validate" name="remetenteEmail">
                             <label for="icon_mail">Seu Email</label>
                             <span class="helper-text" data-error="Email no formato incorreto" data-success="Email no formato certo"></span>
                           </div>
@@ -174,7 +174,7 @@
                         <div class = "col"></div>
                           <div class="input-field col s10">
                             <i class="material-icons prefix">description</i>
-                            <textarea id="textarea2" required="required" class="materialize-textarea" data-length="310" maxlength="310" name="detalhes"></textarea>
+                            <textarea id="textarea2" required="required" class="materialize-textarea" data-length="310" maxlength="310" name="mensagem"></textarea>
                             <label for="textarea2">Detalhes</label>
                           </div>
                       </div>

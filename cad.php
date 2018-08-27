@@ -132,7 +132,7 @@
 									<h5 style="color: white;">Passo 2: Endereço</h5>							
 									
 									<div class="input-field col m8 s6" style="margin-top: 28px;">
-									   	<input id="cep" name="cep" type="text" maxlength="9" pattern="\\d{5}-\\d{3}" 
+									   	<input id="cep" name="cep" type="text" maxlength="9" pattern="([0-9]{5})-([0-9]{3})" 
 									   	class="grey-text" required>
 									   	<label for="cep">CEP (xxxxx-xxx)</label>
 									</div>
@@ -156,8 +156,8 @@
 
 									<div class="input-field col s12">
 									  	<i class="material-icons prefix grey-text show-on-large">lock</i>
-									  	<input id="comple" name="comple" type="text" class="grey-text" required>
-									   	<label for="comple">Complemento (Casa)</label>
+									  	<input id="comple" name="comple" type="text" class="grey-text" >
+									   	<label for="comple">Complemento (Opcional)</label>
 									</div>
 
 									<div class="input-field col s12">

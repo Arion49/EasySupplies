@@ -1,45 +1,77 @@
 <?php
-# alterar a variavel abaixo colocando o seu email
+ 
+/* apenas dispara o envio do formulário caso exista $_POST['enviarFormulario']*/
+ 
 
-ini_set('display_errors', 1);
+ 
+ 
+/*** INÍCIO - DADOS A SEREM ALTERADOS DE ACORDO COM SUAS CONFIGURAÇÕES DE E-MAIL ***/
+ 
+$enviaFormularioParaNome = 'EasySupplies';
+$enviaFormularioParaEmail = 'easysuppliestcc@gmail.com';
+ 
+$caixaPostalServidorNome = 'Website / Formulário';
+$caixaPostalServidorEmail = 'easysuppliestcc@gmail.com';
+$caixaPostalServidorSenha = 'produtosorganicos';
+ 
+/*** FIM - DADOS A SEREM ALTERADOS DE ACORDO COM SUAS CONFIGURAÇÕES DE E-MAIL ***/ 
+ 
+ 
+/* abaixo as veriaveis principais, que devem conter em seu formulario*/
+ 
+$remetenteNome  = $_POST['remetenteNome'];
+$remetenteEmail = $_POST['remetenteEmail'];
+$remetenteTel = $_POST['remetenteTel'];
+$assunto  = $_POST['assunto'];
+$mensagem = $_POST['mensagem'];
+ 
+$mensagemConcatenada = 'Formulário para contato EasySupplies'.'<br>'; 
+$mensagemConcatenada .= '-------------------------------<br><br>'; 
+$mensagemConcatenada .= '<b>Nome:</b> '.$remetenteNome.'<br>'; 
+$mensagemConcatenada .= '<b>E-mail:</b> '.$remetenteEmail.'<br>'; 
+$mensagemConcatenada .= '<b>Assunto:</b> '.$assunto.'<br>';
+$mensagemConcatenada .= '<b>Telefone:</b> '.$remetenteTel.'<br>'; 
+$mensagemConcatenada .= '-------------------------------<br><br>'; 
+$mensagemConcatenada .= 'Mensagem: "'.$mensagem.'"<br>';
+ 
+ 
+/*********************************** A PARTIR DAQUI NAO ALTERAR ************************************/ 
+ 
+require_once 'PHPMailer/src/PHPMailer.php';
+require_once 'PHPMailer/src/SMTP.php';
+require_once 'PHPMailer/src/Exception.php';
 
-error_reporting(E_ALL);
-
-$destinatario = "arion.cerceau@gmail.com";
-
-$nome = $_POST['nome'];
-$email = $_POST['email'];
-$detalhes = $_POST['detalhes'];
-$telefone = $_POST['telefone'];
-$assunto = $_POST['assunto'];
-
- // monta o e-mail na variavel $body
-
-$body = "===================================" . "\n";
-$body = $body . "FALE CONOSCO - EASYSUPPLIES" . "\n";
-$body = $body . "===================================" . "\n\n";
-$body = $body . "Nome: " . $nome . "\n";
-$body = $body . "Email: " . $email . "\n";
-$body = $body . "Telefone: " . $telefone . "\n";
-$body = $body . "Detalhes: " . $detalhes . "\n\n";
-$body = $body . "===================================" . "\n";
-
-// envia o email
-
-$envio = mail($destinatario, $assunto , $body, "From: $email\r\n");
-// redireciona para a página de obrigado
-
-if(isset($envio)){
- echo "Mensagem enviada com sucesso";
-}
-else{
- echo "A mensagem não pode ser enviada";
-};
-
-header("location:index.php");
-
-
-
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+ 
+$mail = new PHPMailer();
+ 
+$mail->SMTPDebug = 2;  
+$mail->IsSMTP();
+$mail->SMTPAuth  = true;
+$mail->Charset   = 'utf8_decode()';
+$mail->Host  = 'smtp.gmail.com';
+$mail->Port  = '587';
+$mail->SMTPSecure = 'tls'; 
+$mail->Username  = $caixaPostalServidorEmail;
+$mail->Password  = $caixaPostalServidorSenha;
+$mail->From  = $caixaPostalServidorEmail;
+$mail->FromName  = utf8_decode($caixaPostalServidorNome);
+$mail->IsHTML(true);
+$mail->Subject  = utf8_decode($assunto);
+$mail->Body  = utf8_decode($mensagemConcatenada);
+ 
+ 
+$mail->AddAddress($enviaFormularioParaEmail,utf8_decode($enviaFormularioParaNome));
+ 
+if ($mail->send()) {
+        $_SESSION["success"] = "Mensagem enviada com sucesso";
+        header("Location: index.php");
+    } else {
+        $_SESSION["danger"] = "Erro ao enviar mensagem " . $mail->ErrorInfo;
+        header("Location: contact.php");}
+ 
+ 
 
 ?>
-
