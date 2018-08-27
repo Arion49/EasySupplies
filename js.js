@@ -59,12 +59,12 @@
               }else
               {
 
-<<<<<<< HEAD
+
              M.toast({html: 'È permitido no mínimo 5 caracteres', classes: 'rounded'});
-=======
+
                 document.getElementById('mengagem_error1').style.display = 'block';
                 document.getElementById('mengagem_error').innerHTML = 'É permitido no minimo 5 caracteres';
->>>>>>> 47f378e337be217ee854b9eaadaad3b0defe0517
+
               }
             }
             };
