@@ -31,8 +31,8 @@ $mensagemConcatenada .= '<b>Nome:</b> '.$remetenteNome.'<br>';
 $mensagemConcatenada .= '<b>E-mail:</b> '.$remetenteEmail.'<br>'; 
 $mensagemConcatenada .= '<b>Assunto:</b> '.$assunto.'<br>';
 $mensagemConcatenada .= '<b>Telefone:</b> '.$remetenteTel.'<br>'; 
-$mensagemConcatenada .= '-------------------------------<br><br>'; 
-$mensagemConcatenada .= 'Mensagem: "'.$mensagem.'"<br>';
+$mensagemConcatenada .= '<br>-------------------------------<br><br>'; 
+$mensagemConcatenada .= '<b>Mensagem:</b> "'.$mensagem.'"<br>';
  
  
 /*********************************** A PARTIR DAQUI NAO ALTERAR ************************************/ 
