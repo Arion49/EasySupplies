@@ -33,25 +33,35 @@
             });
 
           });
-
+                var login = document.getElementById('login').value;
+                var nameFirst = document.getElementById('first_name2').value;
+                var emails = document.getElementById('login').value;
                 var senha = document.getElementById('senha').value;
                 var confSenha = document.getElementById('confSenha').value;
 
               document.getElementById('btn-proximo-cad').onclick = function(){
-            
+            if(senha == "" && emails == "" && nameFirst == "" && confSenha == "" && login == "")
+            {
+              M.toast({html: 'Todos os campos são obrigatorios', classes: 'rounded'});
+            }
+
+            if(senha != "" && emails != "" && nameFirst != "" && confSenha != "" && login != ""){
+
               if (senha.length >= 5) {
 
                 if (senha == confSenha) {
 
-                }else{
+                }else
+                {
 
                 }
 
-              }else{
+              }else
+              {
 
-                document.getElementById('mengagem_error').style.display = 'block';
-                document.getElementById('mengagem_error').innerHTML = 'É permitido no minimo 5 caracteres';
+             M.toast({html: 'È permitido no mínimo 5 caracteres', classes: 'rounded'});
               }
+            }
             };
 
          
