@@ -27,7 +27,8 @@
 	margin-left: 0;
 	width: 100%;
 	border-radius: 10px;
-	background-color: black;}
+	background-color: black;
+}
 
 	
 .cc{
@@ -44,6 +45,7 @@
 
 
 @media only screen and (max-width: 601px){
+	
 	#scss-cad{
 		margin-right: 0;
 		margin-left: 0;
@@ -57,18 +59,12 @@
 		width: 100%;
 		border-radius: 0;
 	}
-
-	#scss-cad-a{
-		border-top-left-radius: 0px;
-	}
-
-	#scss-cad-b{
-		border-top-right-radius: 0px;
-	}
-
-	.scss-cad-width-100{
+	
+	.cont-2{
+		margin-right: 0;
+		margin-left: 0;
 		width: 100%;
-
+		border-radius: 0;
 	}
 
 }

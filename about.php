@@ -18,15 +18,33 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-       <meta name="description" value="Suplimentos fáceis">
+        <!-- Icone do titulo -->
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+        <meta name="description" value="Suplimentos fáceis, trazendo o melhor dos produtos organicos da forma mais facil para você!">
 
         <link href="https://fonts.googleapis.com/css?family=Poppins|Slabo+27px" rel="stylesheet">
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
+        <div style="
+        background: url(img/apple.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        z-index: -1;
+        position: absolute;
+        height: 1200px;
+        width: 100%;
+        opacity: 0.4">
+          
+        </div>
 
+        <body style="
+        background-color: rgba(111,51,155,0.8);
+        margin: 0;
+        padding: 0;">
 
-        <body style="background-color: rgba(75,0,130,0.8); margin: 0;padding: 0;">
 
         <?php
           include_once("nav.html");
@@ -47,12 +65,12 @@
 
             
 
-    <div class="col s12 z-depth-4" style="margin-bottom: 30px; height: 400px; border-radius: 10px; background-color: purple;">
+    <div class="col s12 z-depth-4" style="margin-bottom: 30px; height: 400px; border-radius: 5px; background-color: #ededed;">
             
             <div class="row"> <!-- DIV PRETA-->
 
-              <div class="col m12 s12 aboutquadros" style="text-align: center;">
-        <h5 style="color: white; font-weight: bolder; text-shadow: white 0.1em 0.1em 0.4em;">EQUIPE</h5>
+              <div class="col m12 s12" style="text-align: center;">
+                <h5 style="color: black; font-weight: bolder; text-shadow: white 0.1em 0.1em 0.4em;">EQUIPE</h5>
               </div>
             </div> <!-- FIM DIV PRETA -->
             
@@ -96,11 +114,11 @@
 
  <div class="row"> <!-- IDEIA -->        
 
-    <div class="col s12 z-depth-4" style="margin-bottom: 30px; height: 400px; border-radius: 10px; background-color: purple;">
+    <div class="col s12 z-depth-4" style="margin-bottom: 30px; height: 400px; border-radius: 5px; background-color: #ededed;">
             
             <div class="row"> <!-- DIV PRETA-->
-              <div class="col m12 s12 aboutquadros" style="text-align: center;">
-        <h5 style="color: white; font-weight: bolder; text-shadow: white 0.1em 0.1em 0.4em;">IDEIA</h5>
+              <div class="col m12 s12" style="text-align: center;">
+                <h5 style="color: black; font-weight: bolder; text-shadow: white 0.1em 0.1em 0.4em;">IDEIA</h5>
               </div>
             </div> <!-- FIM DIV PRETA -->
             
