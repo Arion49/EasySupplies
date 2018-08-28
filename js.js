@@ -10,6 +10,10 @@
 
             $('.sidenav').sidenav();
 
+              var random = Math.floor((Math.random() *12) +1);
+
+              document.getElementById('background-img').style.backgroundImage = "url('img/back"+random+".jpg')";
+
             $(window).scroll(function(){
 
               ScrolValue = $(this).scrollTop();

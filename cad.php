@@ -31,6 +31,19 @@
 	    <meta name="description" value="Suplimentos fáceis, trazendo o melhor dos produtos organicos da forma mais facil para você!">
 
 	</head>
+
+	        <div id="background-img" 
+		    style="
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-attachment: fixed;
+		    z-index: -1;
+		    position: absolute;
+		    height: 1200px;
+		    width: 100%;
+		    opacity: 0.4">
+		    </div>    
+
 	<body style="background-color: rgba(75,0,130,0.8); margin: 0;padding: 0; height: 600px;">
 
 		<?php

@@ -27,7 +27,8 @@
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-        <div id="background-img" style="
+        <div id="background-img" 
+        style="
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
@@ -36,8 +37,6 @@
         height: 1200px;
         width: 100%;
         opacity: 0.4">
-          
-          <img src="img/back1.jpg" width="100%">
 
         </div>
 
@@ -47,37 +46,35 @@
         padding: 0;">
 
 
-        <?php
-          include_once("nav.html");
-        ?>
+          <?php
+            include_once("nav.html");
+          ?>
 
    
   
    
 
 
+          <div class="container" style="margin-top: 50px;" id="scss-cad">
+    
 
-    <div class="container" style="margin-top: 5px;" id="scss-cad">
-
-      <br>
-
-          <div class="row"> <!-- EQUIPE -->
+            <div class="row"> <!-- EQUIPE -->
        
 
             
 
-    <div class="col s12 z-depth-4" style="margin-bottom: 30px; height: 400px; border-radius: 5px; background-color: #ededed;">
+              <div class="col s12 z-depth-4" style="margin-bottom: 30px; height: 400px; border-radius: 5px; background-color: #ededed;">
             
-            <div class="row"> <!-- DIV PRETA-->
+                <div class="row"> <!-- DIV PRETA-->
 
-              <div class="col m12 s12" style="text-align: center;">
-                <h5 style="color: black; font-weight: bolder; text-shadow: white 0.1em 0.1em 0.4em;">EQUIPE</h5>
-              </div>
-            </div> <!-- FIM DIV PRETA -->
+                  <div class="col s12" style="text-align: center;">
+                    <h5 style="color: black; font-weight: bolder; text-shadow: white 0.1em 0.1em 0.4em;">EQUIPE</h5>
+                  </div>
+                </div> <!-- FIM DIV PRETA -->
             
-            <div class="row"> <!-- ROW 1 -->
+                <div class="row"> <!-- ROW 1 -->
 
-                 <div class="col m4"><!-- COL DA FOTO -->
+                  <div class="col m4" style=""><!-- COL DA FOTO -->
 
                 
                   
@@ -92,73 +89,72 @@
 
 
 
-               </div><!-- FIM DO COL DA FOTO -->
+                  </div><!-- FIM DO COL DA FOTO -->
 
-               <div class="col m8"><!-- COL DA INFORMAÇÃO-->
-
-
+                  <div class="col m8"><!-- COL DA INFORMAÇÃO-->
 
 
 
 
 
 
+                  </div><!-- FIM DO COL DA INFORMAÇÃO -->
+                </div> <!-- FIM ROW 1-->
 
-               </div><!-- FIM DO COL DA INFORMAÇÃO -->
-          </div> <!-- FIM ROW 1-->
-
-         </div>
-          </div>  <!-- Fim EQUIPE -->
-            
-
-
-
- <div class="row"> <!-- IDEIA -->        
-
-    <div class="col s12 z-depth-4" style="margin-bottom: 30px; height: 400px; border-radius: 5px; background-color: #ededed;">
-            
-            <div class="row"> <!-- DIV PRETA-->
-              <div class="col m12 s12" style="text-align: center;">
-                <h5 style="color: black; font-weight: bolder; text-shadow: white 0.1em 0.1em 0.4em;">IDEIA</h5>
               </div>
-            </div> <!-- FIM DIV PRETA -->
+            </div>  <!-- Fim EQUIPE -->
             
-            <div class="row"> <!-- ROW 2 -->
-                 <div class="col m4"> <!-- COL DA FOTO -->
-          
-
-         
 
 
 
-     
+            <div class="row"> <!-- IDEIA -->        
 
-      
+              <div class="col s12 z-depth-4" style="margin-bottom: 30px; height: 400px; border-radius: 5px; background-color: #ededed;">
+                        
+                <div class="row"> <!-- DIV PRETA-->
+                  <div class="col m12 s12" style="text-align: center;">
+                    <h5 style="color: black; font-weight: bolder; text-shadow: white 0.1em 0.1em 0.4em;">IDEIA</h5>
+                  </div>
+                </div> <!-- FIM DIV PRETA -->
+                        
+                <div class="row"> <!-- ROW 2 -->
 
+                  <div class="col m4"> <!-- COL DA FOTO -->
+                      
 
-
-
-               </div> <!-- FIM DO COL DA FOTO -->
-
-               <div class="col m8"> <!-- COL DA INFORMAÇÃO-->
-
-
-
-
-
-
-
-
-
-               </div> <!-- FIM DO COL DA INFORMAÇÃO -->
-          </div> <!-- FIM ROW 2-->
-
-    </div>
+                     
 
 
-          </div>  <!-- Fim IDEIA -->
 
-            </div>
+                 
+
+                  
+
+
+
+
+                  </div> <!-- FIM DO COL DA FOTO -->
+
+                  <div class="col m8"> <!-- COL DA INFORMAÇÃO-->
+
+
+
+
+
+
+
+
+
+                  </div> <!-- FIM DO COL DA INFORMAÇÃO -->
+
+                </div> <!-- FIM ROW 2-->
+
+              </div>
+
+
+            </div>  <!-- Fim IDEIA -->
+
+          </div>
              
 
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
