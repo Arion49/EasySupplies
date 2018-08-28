@@ -65,8 +65,7 @@ $mail->Body  = utf8_decode($mensagemConcatenada);
  
 $mail->AddAddress($enviaFormularioParaEmail,utf8_decode($enviaFormularioParaNome));
  
-if ($mail->send()) {
-        $_SESSION["success"] = "Mensagem enviada com sucesso";
+if ($mail->send()) { 
         header("Location: index.php");
     } else {
         $_SESSION["danger"] = "Erro ao enviar mensagem " . $mail->ErrorInfo;
