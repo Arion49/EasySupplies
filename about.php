@@ -63,7 +63,7 @@
 
             
 
-              <div class="col s12 z-depth-4" style="margin-bottom: 30px; height: 500px; border-radius: 5px; background-color: #ededed;">
+              <div class="col s12 z-depth-4" style="margin-bottom: 30px; border-radius: 5px; background-color: #ededed;">
             
                 <div class="row"> <!-- DIV PRETA-->
 
@@ -71,13 +71,16 @@
                     <h5 style="color: black; font-weight: bolder; font-family: 'Poppins', sans-serif;">Equipe</h5>
                   </div>
                 </div> <!-- FIM DIV PRETA -->
+
             
+
                 <div class="row"> <!-- ROW 1 -->
 
-                  <div class="col m4" style=""><!-- COL DA FOTO -->
+                  <div class="col l6 m12 s12" style=""><!-- COL DA FOTO -->
 
-                
-                  
+                    <div class="row"></div>
+                    
+                  <img class="responsive-img" src="img/back9.jpg" style="border-radius:15px; width:100%; height: 100%; " >
                
 
 
@@ -91,10 +94,10 @@
 
                   </div><!-- FIM DO COL DA FOTO -->
 
-                  <div class="col m8"><!-- COL DA INFORMAÇÃO-->
+                  <div class="col l6 m12 s12"><!-- COL DA INFORMAÇÃO-->
                       
                     
-                    <ul class="collection" style="border-radius: 15px; background-color: #3b1659"> 
+                    <ul class="collection z-depth-2" style="border-radius: 15px; background-color: #3b1659;  "> 
                        <h6 style="font-weight: bold; text-align: center; color: white "> INTEGRANTES</h6>
 
                                       <li class="collection-item avatar row"> <div class="col s11"> <img src="img/perfil.jpg" class="circle" height="40px" width="40px" alt="">
@@ -116,7 +119,7 @@
 
                         
                                       <li class="collection-item avatar row"><div class="col s11"><img src="img/perfil.jpg" class="circle" height="40px" width="40px" alt="">
-                                            <span class="title">Gabriel Vitor Drumond</span></div>
+                                            <span class="title">Gabriel Vitor Drumond Viana</span></div>
                                             <p> Programação / Design</p>
                                             <div class="col s1"><i class="material-icons secondary-content" style="color: purple">grade</i></div> </li> 
                     </ul>
@@ -136,7 +139,7 @@
 
             <div class="row"> <!-- IDEIA -->        
 
-              <div class="col s12 z-depth-4" style="margin-bottom: 30px; height: 400px; border-radius: 5px; background-color: #ededed;">
+              <div class="col s12 z-depth-4" style="margin-bottom: 30px;  border-radius: 5px; background-color: #ededed;">
                         
                 <div class="row"> <!-- DIV PRETA-->
                   <div class="col m12 s12" style="text-align: center;">
@@ -146,13 +149,13 @@
                         
                 <div class="row"> <!-- ROW 2 -->
 
-                  <div class="col m4"> <!-- COL DA FOTO -->
+                  <div class="col l3 m12 s12 center-align" > <!-- COL DA FOTO -->
                       
 
                      
 
 
-
+                    <img class="responsive-img" src="img/lampada.png" style="width:auto; height:200px; " >
                  
 
                   
@@ -162,10 +165,10 @@
 
                   </div> <!-- FIM DO COL DA FOTO -->
 
-                  <div class="col m8"> <!-- COL DA INFORMAÇÃO-->
+                  <div class="col l9 m12 s12"> <!-- COL DA INFORMAÇÃO-->
 
 
-
+                    <p style="text-align: justify;">O interesse do tema foi pelo fato da área de produtos orgânicos ser pouco explorada e possuir pouca presença na sociedade brasileira (principalmente mineira), mas que se demonstra um movimento em expansão. Isso dá abertura para inovação dentro do segmento a partir da vinculação entre a entrega de novas experiências nesse tema, com a tecnologia que pode ser utilizada para promover a comodidade de receber em sua residência produtos mais saudáveis e confiáveis com poucos cliques.</p>
 
 
 
