@@ -25,6 +25,18 @@
 
         <link href="https://fonts.googleapis.com/css?family=Poppins|Slabo+27px" rel="stylesheet">
 
+        <div id="background-img" 
+        style="
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        z-index: -1;
+        position: absolute;
+        height: 1400px;
+        width: 100%;
+        opacity: 0.4">
+        </div>
+
       <body style="background-color: rgba(75,0,130,0.8); margin: 0;padding: 0;">
 
         <?php

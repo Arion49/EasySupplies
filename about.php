@@ -34,7 +34,7 @@
         background-attachment: fixed;
         z-index: -1;
         position: absolute;
-        height: 1200px;
+        height: 1400px;
         width: 100%;
         opacity: 0.4">
 
@@ -63,12 +63,12 @@
 
             
 
-              <div class="col s12 z-depth-4" style="margin-bottom: 30px; height: 400px; border-radius: 5px; background-color: #ededed;">
+              <div class="col s12 z-depth-4" style="margin-bottom: 30px; height: 500px; border-radius: 5px; background-color: #ededed;">
             
                 <div class="row"> <!-- DIV PRETA-->
 
                   <div class="col s12" style="text-align: center;">
-                    <h5 style="color: black; font-weight: bolder; text-shadow: white 0.1em 0.1em 0.4em;">EQUIPE</h5>
+                    <h5 style="color: black; font-weight: bolder; font-family: 'Poppins', sans-serif;">Equipe</h5>
                   </div>
                 </div> <!-- FIM DIV PRETA -->
             
@@ -93,7 +93,26 @@
 
                   <div class="col m8"><!-- COL DA INFORMAÇÃO-->
 
-
+                    
+                    <ul class="collection" style="border-radius: 15px; background-color: #3b1659"> 
+                       <h6 style="font-weight: bold; text-align: center; color: white "> INTEGRANTES</h6>
+                      <li class="collection-item avatar"><img src="img/perfil.jpg" class="circle" height="40px" width="40px" alt="">
+                        <span class="title">Árion Pereira Cerceau Netto</span>
+                                            <p> Programação / Revisão</p>
+                                            <i class="material-icons secondary-content" style="color: purple">grade</i></li>
+                      <li class="collection-item avatar"><img src="img/perfil.jpg" class="circle" height="40px" width="40px" alt="">
+                      <span class="title">Belmario Presley Alves de Paula</span>
+                                            <p> Documentação</p> 
+                                            <i class="material-icons secondary-content" style="color: purple;">grade</i></li>
+                      <li class="collection-item avatar"><img src="img/perfil.jpg" class="circle" height="40px" width="40px" alt="">
+                      <span class="title">Bruce Leon</span>
+                                            <p> Programação / Design</p>
+                                            <i class="material-icons secondary-content" style="color: purple">grade</i></li>
+                      <li class="collection-item avatar"><img src="img/perfil.jpg" class="circle" height="40px" width="40px" alt="">
+                      <span class="title">Gabriel Vitor Drumond</span>
+                                            <p> Programação / Design</p>
+                                            <i class="material-icons secondary-content" style="color: purple">grade</i></li>
+                    </ul>
 
 
 
@@ -113,7 +132,7 @@
                         
                 <div class="row"> <!-- DIV PRETA-->
                   <div class="col m12 s12" style="text-align: center;">
-                    <h5 style="color: black; font-weight: bolder; text-shadow: white 0.1em 0.1em 0.4em;">IDEIA</h5>
+                    <h5 style="color: black; font-weight: bolder; font-family: 'Poppins', sans-serif;">Ideia</h5>
                   </div>
                 </div> <!-- FIM DIV PRETA -->
                         
