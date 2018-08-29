@@ -92,32 +92,40 @@
                   </div><!-- FIM DO COL DA FOTO -->
 
                   <div class="col m8"><!-- COL DA INFORMAÇÃO-->
-
+                      
                     
                     <ul class="collection" style="border-radius: 15px; background-color: #3b1659"> 
                        <h6 style="font-weight: bold; text-align: center; color: white "> INTEGRANTES</h6>
-                      <li class="collection-item avatar"><img src="img/perfil.jpg" class="circle" height="40px" width="40px" alt="">
-                        <span class="title">Árion Pereira Cerceau Netto</span>
-                                            <p> Programação / Revisão</p>
-                                            <i class="material-icons secondary-content" style="color: purple">grade</i></li>
-                      <li class="collection-item avatar"><img src="img/perfil.jpg" class="circle" height="40px" width="40px" alt="">
-                      <span class="title">Belmario Presley Alves de Paula</span>
+
+                                      <li class="collection-item avatar row"> <div class="col s11"> <img src="img/perfil.jpg" class="circle" height="40px" width="40px" alt="">
+                                            <span class="title">Árion Pereira Cerceau Netto</span></div>
+                                            <p> Programação / Revisão</p> 
+                                           <div class="col s1"> <i class="material-icons secondary-content" style="color: purple">grade</i> </div> </li> 
+
+                                         
+                                      <li class="collection-item avatar row"><div class="col s11"> <img src="img/perfil.jpg" class="circle" height="40px" width="40px" alt="">
+                                            <span class="title">Belmario Presley Alves de Paula</span> </div>
                                             <p> Documentação</p> 
-                                            <i class="material-icons secondary-content" style="color: purple;">grade</i></li>
-                      <li class="collection-item avatar"><img src="img/perfil.jpg" class="circle" height="40px" width="40px" alt="">
-                      <span class="title">Bruce Leon</span>
+                                           <div class="col s1"><i class="material-icons secondary-content" style="color: purple;">grade</i> </div></li> 
+
+                        
+                                      <li class="collection-item avatar row"><div class="col s11"><img src="img/perfil.jpg" class="circle" height="40px" width="40px" alt="">
+                                            <span class="title">Bruce Leon</span> </div>
                                             <p> Programação / Design</p>
-                                            <i class="material-icons secondary-content" style="color: purple">grade</i></li>
-                      <li class="collection-item avatar"><img src="img/perfil.jpg" class="circle" height="40px" width="40px" alt="">
-                      <span class="title">Gabriel Vitor Drumond</span>
+                                            <div class="col s1"><i class="material-icons secondary-content" style="color: purple">grade</i> </div> </li> 
+
+                        
+                                      <li class="collection-item avatar row"><div class="col s11"><img src="img/perfil.jpg" class="circle" height="40px" width="40px" alt="">
+                                            <span class="title">Gabriel Vitor Drumond</span></div>
                                             <p> Programação / Design</p>
-                                            <i class="material-icons secondary-content" style="color: purple">grade</i></li>
+                                            <div class="col s1"><i class="material-icons secondary-content" style="color: purple">grade</i></div> </li> 
                     </ul>
 
 
 
 
                   </div><!-- FIM DO COL DA INFORMAÇÃO -->
+                 
                 </div> <!-- FIM ROW 1-->
 
               </div>
