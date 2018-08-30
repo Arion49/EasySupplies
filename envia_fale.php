@@ -10,8 +10,8 @@
 $enviaFormularioParaNome = 'EasySupplies';
 $enviaFormularioParaEmail = 'easysuppliestcc@gmail.com';
  
-$caixaPostalServidorNome = 'Website / Formulário';
-$caixaPostalServidorEmail = 'easysuppliestcc@gmail.com';
+$caixaPostalServidorNome = 'EasySupplies / Formulário';
+$caixaPostalServidorEmail = 'contact.easysupplies@gmail.com';
 $caixaPostalServidorSenha = 'produtosorganicos';
  
 /*** FIM - DADOS A SEREM ALTERADOS DE ACORDO COM SUAS CONFIGURAÇÕES DE E-MAIL ***/ 
