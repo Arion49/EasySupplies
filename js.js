@@ -10,7 +10,7 @@
 
             $('.sidenav').sidenav();
 
-              var random = Math.floor((Math.random() *18) +1);
+              var random = Math.floor((Math.random() *20) +1);
 
               document.getElementById('background-img').style.backgroundImage = "url('img/back"+random+".jpg')";
 
