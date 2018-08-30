@@ -13,6 +13,8 @@
 		<!-- Compatibilidade cm IE -->
 		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7" />
 
+		<link rel="stylesheet" href="animate/animate.css">
+
 
 		<link rel="stylesheet" type="text/css" href="css.css">
 
@@ -32,17 +34,18 @@
 
 	</head>
 
-	        <div id="background-img" 
-		    style="
-		    background-repeat: no-repeat;
-		    background-position: center;
-		    background-attachment: fixed;
-		    z-index: -1;
-		    position: absolute;
-		    height: 1200px;
-		    width: 100%;
-		    opacity: 0.4">
-		    </div>    
+	        <span id="background-img" 
+        style="
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        z-index: -1;
+        position: fixed; 
+        max-height: 1170px;
+        height: 1170px;
+        width: 100%;
+        opacity: 0.4" class="animated infinite pulse slower">
+        </span>   
 
 	<body style="background-color: rgba(75,0,130,0.8); margin: 0;padding: 0; height: 600px;">
 
