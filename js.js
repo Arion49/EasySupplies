@@ -15,6 +15,11 @@
               indicators: true
 
             });
+            setTimeout(autoplay, 4500);
+            function autoplay() {
+              $('.carousel.carousel-slider').carousel('next');
+              setTimeout(autoplay, 4500);
+            } 
 
             var random = Math.floor((Math.random() *20) +1);
 
