@@ -31,7 +31,7 @@
 
       <body style="background-color: rgba(75,0,130,0.8); margin: 0;padding: 0;overflow-x: hidden;overflow-y: visible;">
 
-        <div id="background-img" 
+        <span id="background-img" 
         style="
         background-repeat: no-repeat;
         background-position: center;
@@ -42,7 +42,7 @@
         height: 1170px;
         width: 100%;
         opacity: 0.4" class="animated infinite pulse slower">
-        </div>
+        </span>
 
         <?php
           include_once("nav.html");

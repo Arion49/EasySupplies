@@ -3609,9 +3609,8 @@
 }
 
 .animated.slower {
-  -webkit-animation-duration: 20s;
-  transform: scaleY(0);
-  animation-duration: 20s;
+  -webkit-animation-duration: 18s;
+  animation-duration: 18s;
 }
 
 @media (prefers-reduced-motion) {
