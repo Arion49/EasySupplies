@@ -139,7 +139,7 @@
 
 
 						<div class="col m12 l6 min-phone" id="scss-cad-b" 
-						style=" background-color: #270d44; border-top-right-radius: 10px;">
+						style=" background-color: #270d44; border-top-right-radius: 10px; pointer-events:none ; opacity: 0.2">
 							
 							<div class="col s12" style="padding: 5px; padding-bottom: 8px; padding-top: 8px;">
 								
