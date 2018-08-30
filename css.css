@@ -59,13 +59,6 @@
 		width: 100%;
 		border-radius: 0;
 	}
-	
-	.cont-2{
-		margin-right: 0;
-		margin-left: 0;
-		width: 100%;
-		border-radius: 0;
-	}
 
 }
 
@@ -77,5 +70,8 @@
 	}
 	#scss-cad-b{
 		border-top-right-radius: 0px;
+	}
+	.container-slider{
+		max-height: 300px;
 	}
 }
