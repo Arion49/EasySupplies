@@ -10,7 +10,7 @@
 
             $('.sidenav').sidenav();
 
-              var random = Math.floor((Math.random() *12) +1);
+              var random = Math.floor((Math.random() *18) +1);
 
               document.getElementById('background-img').style.backgroundImage = "url('img/back"+random+".jpg')";
 
@@ -54,7 +54,7 @@
 
                 if (senha == confSenha) {
 
-                  
+
 
                 }
                 /*Se as senhas não forem iguais*/
