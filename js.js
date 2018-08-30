@@ -10,9 +10,15 @@
 
             $('.sidenav').sidenav();
 
-              var random = Math.floor((Math.random() *20) +1);
+            $('.carousel.carousel-slider').carousel({
+              fullWidth: true,
+              indicators: true
 
-              document.getElementById('background-img').style.backgroundImage = "url('img/back"+random+".jpg')";
+            });
+
+            var random = Math.floor((Math.random() *20) +1);
+
+            document.getElementById('background-img').style.backgroundImage = "url('img/back"+random+".jpg')";
 
             $(window).scroll(function(){
 
