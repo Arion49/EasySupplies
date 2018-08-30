@@ -37,7 +37,7 @@
         background-position: center;
         background-attachment: fixed;
         z-index: -1;
-        position: absolute;
+        position: fixed; 
         max-height: 1170px;
         height: 1170px;
         width: 100%;

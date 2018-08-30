@@ -7,6 +7,8 @@
 
       <link rel="stylesheet" type="text/css" href="css.css">
 
+      <link rel="stylesheet" href="animate/animate.css">
+
       <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -25,17 +27,18 @@
 
         <link href="https://fonts.googleapis.com/css?family=Poppins|Slabo+27px" rel="stylesheet">
 
-        <div id="background-img" 
+        <span id="background-img" 
         style="
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
         z-index: -1;
-        position: absolute;
-        height: 1400px;
+        position: fixed; 
+        max-height: 1170px;
+        height: 1170px;
         width: 100%;
-        opacity: 0.4">
-        </div>
+        opacity: 0.4" class="animated infinite pulse slower">
+        </span>
 
       <body style="background-color: rgba(75,0,130,0.8); margin: 0;padding: 0;">
 
