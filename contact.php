@@ -7,6 +7,8 @@
 
       <link rel="stylesheet" type="text/css" href="css.css">
 
+      <link rel="stylesheet" href="animate/animate.css">
+
       <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -25,6 +27,10 @@
 
         <link href="https://fonts.googleapis.com/css?family=Poppins|Slabo+27px" rel="stylesheet">
 
+        
+
+      <body style="background-color: rgba(75,0,130,0.8); margin: 0;padding: 0;overflow-x: hidden;overflow-y: visible;">
+
         <div id="background-img" 
         style="
         background-repeat: no-repeat;
@@ -32,12 +38,11 @@
         background-attachment: fixed;
         z-index: -1;
         position: absolute;
-        height: 1200px;
+        max-height: 1170px;
+        height: 1170px;
         width: 100%;
-        opacity: 0.4">
+        opacity: 0.4" class="animated infinite pulse slower">
         </div>
-
-      <body style="background-color: rgba(75,0,130,0.8); margin: 0;padding: 0;">
 
         <?php
           include_once("nav.html");
@@ -96,10 +101,10 @@
                           Telefones para Contato
                         </h5>
 
-                        <p style="font-family: 'Slabo 27px', serif; font-size: 13pt;">(31)98730-3500</p>
-                        <p style="font-family: 'Slabo 27px', serif; font-size: 13pt;">(31)97109-4797</p>
-                        <p style="font-family: 'Slabo 27px', serif; font-size: 13pt;">(31)99181-4597</p>
-                        <p style="font-family: 'Slabo 27px', serif; font-size: 13pt;">(31)99601-7384</p>
+                        <p style="font-family: 'Slabo 27px', serif; font-size: 13pt;">(31) 98730-3500</p>
+                        <p style="font-family: 'Slabo 27px', serif; font-size: 13pt;">(31) 97109-4797</p>
+                        <p style="font-family: 'Slabo 27px', serif; font-size: 13pt;">(31) 99181-4597</p>
+                        <p style="font-family: 'Slabo 27px', serif; font-size: 13pt;">(31) 99601-7384</p>
 
                       </div>
 
