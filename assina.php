@@ -48,8 +48,161 @@
 		?>
 
 			<div class="container" style="padding-top: 8px; padding-bottom: 8px;">
+             
+				
 
-				<h5 class="" style="color: white;">Assinaturas</h5>
+				<div class="row">
+					<div class="col s12" style="color: white;"><h5>Assinaturas</h5></div>
+    <div class="col s12 m4 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/sac.jpg">
+          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
+        </div>
+        <div class="card-content">
+        	<h6><b>R$ 39,90</b></h6>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+     <div class="col s12 m4 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/sac.jpg">
+          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
+        </div>
+        <div class="card-content">
+        	<h6><b>R$ 39,90</b></h6>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+     <div class="col s12 m4 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/sac.jpg">
+          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
+        </div>
+        <div class="card-content">
+        	<h6><b>R$ 39,90</b></h6>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col s12 m4 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/sac.jpg">
+          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
+        </div>
+        <div class="card-content">
+        	<h6><b>R$ 39,90</b></h6>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+     <div class="col s12 m4 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/sac.jpg">
+          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
+        </div>
+        <div class="card-content">
+        	<h6><b>R$ 39,90</b></h6>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+     <div class="col s12 m4 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/sac.jpg">
+          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
+        </div>
+        <div class="card-content">
+        	<h6><b>R$ 39,90</b></h6>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col s12 m4 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/sac.jpg">
+          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
+        </div>
+        <div class="card-content">
+        	<h6><b>R$ 39,90</b></h6>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+     <div class="col s12 m4 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/sac.jpg">
+          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
+        </div>
+        <div class="card-content">
+        	<h6><b>R$ 39,90</b></h6>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+     <div class="col s12 m4 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/sac.jpg">
+          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
+        </div>
+        <div class="card-content">
+        	<h6><b>R$ 39,90</b></h6>
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+</div>
+
 
 			</div>
 			
