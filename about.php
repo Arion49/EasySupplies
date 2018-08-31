@@ -115,7 +115,7 @@
 
                         
                                       <li class="collection-item avatar row"><div class="col s11"><img src="img/perfil.jpg" class="circle" height="40px" width="40px" alt="">
-                                            <span class="title">Bruce Leon</span> </div>
+                                            <span class="title">Bruce Leon de Almeida</span> </div>
                                             <p> Programação / Design</p>
                                             <div class="col s1"><i class="material-icons secondary-content" style="color: purple">grade</i> </div> </li> 
 
