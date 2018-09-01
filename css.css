@@ -74,4 +74,7 @@
 	.container-slider{
 		max-height: 300px;
 	}
+	.pading-top-med{
+		margin-top: 15px;
+	}
 }

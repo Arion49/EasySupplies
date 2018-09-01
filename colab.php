@@ -3,7 +3,7 @@
 
       <meta charset="utf-8">
 
-      <title>Easy Supplies</title>
+      <title>Colaboradores - Easy Supplies</title>
 
       <link rel="stylesheet" type="text/css" href="css.css">
 
@@ -27,6 +27,10 @@
 
         <link href="https://fonts.googleapis.com/css?family=Poppins|Slabo+27px" rel="stylesheet">
 
+        <meta name="viewport" content="user-scalable=no, width=1024px, initial-scale=1.0" />
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins|Slabo+27px" rel="stylesheet">
+
         <span id="background-img" 
         style="
         background-repeat: no-repeat;
@@ -44,51 +48,200 @@
 
         <?php
           include_once("nav.html");
-        ?>
-        <div class="container">
-             <div class="col s12 white-text"  style="padding-top: 8px; padding-bottom: 8px;"><h5>Produtores e Serviços</h5></div>
-        </div>   
-          </div>
- 
-        <div class="container">
+        ?> 
+        <div class="container-fluid" style="margin-right: 140px;margin-left: 140px;">
 
 
-          <div class="row grey lighten-2" style="border-radius: 5px; padding: 0">
-            <div class="col s12 "><h4><center>Nome da Empresa</center></h4></div>
+          <div class="row grey lighten-2 z-depth-4" style="border-radius: 5px; padding: 0; height: 100%; margin-top: 30px">
+            
+            <div class="col s12 "><h4 style=" font-family: 'Poppins', sans-serif;"><center>Colaborador 1</center></h4></div>
           
-            <div class="">
+            <div class="col m12 l6 carousel carousel-slider z-depth-5" style="border-bottom-left-radius: 5px;
+            ">
+              <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 375px"></a>
+              <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 375px"></a>
+              <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 375px"></a>
+              <a class="carousel-item"><img src="img/farm4.jpg" style="width: 100%;height: 375px"></a>
+              <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 375px"></a>
+            </div>
+            
+            <div class="col m12 l6 pading-top-med"style=" border-bottom-right-radius: 5px;margin-right: 0; padding-right: 0">
 
-            <div class="col m12 l6 carousel carousel-slider z-depth-4">
-              <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 100%"></a>
-              <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 100%"></a>
-              <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 100%"></a>
-              <a class="carousel-item"><img src="img/farm4.jpg" style="width: 100%;height: 100%"></a>
-              <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 100%"></a>
+              <blockquote class="col s12 white z-depth-2" 
+              style="
+              margin-top: 0;
+              padding-bottom: 7px;
+              border-left: 5px solid red;
+              margin-right: 0;
+              ">
+                <h6  
+                style="
+                font-size: 24px;
+                color: black;
+                "
+                class="col s12">
+
+                  Um pouco sobre nós:
+                </h6>
+
+                <h6 style="text-align: justify;" class="col s12">
+                  Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculoscomo também ao salto para a editoração eletrônica
+                </h6>
+
+              </blockquote>
+            </div>
+
+            <!-- Local e contato -->
+            <div class="col s12 l6" style="padding-right: 0">
+              
+              <!-- Div do contato -->
+              <div class="col s6" style="padding: 0">
+                
+                <blockquote class="white z-depth-2 col s12" 
+                  style="
+                  margin-top: 0;
+                  padding-bottom: 7px;
+                  border-left: 5px solid purple;
+                   height: 160px
+                  ">
+                    <h6  
+                    style="
+                    font-size: 24px;
+                    color: black;
+                    "
+                    class="col s12">
+
+                      Contatos:
+                    </h6>
+
+                    <h6 style="text-align: left;">
+
+                      <p>(00)00000-0000</p>
+
+                      <p>(11)11111-1100</p>
+
+                      <p>email@email.com</p>
+
+                    </h6>
+
+                  </blockquote>                
+                
+              </div>
+
+              <!-- Div do local -->
+              <div class="col s6" style="padding-right: 0;">
+
+                <div class="white z-depth-2 col s12"
+                style="
+                  margin-top: 0;
+                  padding-bottom: 7px;
+                  border-left: 5px solid purple;
+                   height: 160px
+                ">
+
+                  <h6  
+                    style="
+                    font-size: 24px;
+                    color: black;
+                    "
+                    class="col s12">
+
+                      Endereço:
+                    </h6>
+
+                    <h6 style="text-align: left;">
+
+                      <p>Rua Nome Rua, nº 412 - Betim, MG</p>
+                      <p><a href="https://www.google.com/maps ">Ver no google maps <i class="material-icons tiny">call_made</i></a></p>
+
+                    </h6>
+                  
+                </div>
+                
+              </div>
+
             </div>
             
-            <div class="col m12 l6" style="padding: 16px; padding-top: 0; bottom: 0">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker
-            Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bande</div>
             
-            </div>
             
           </div>
 
-          <div class="row grey lighten-2" style="margin-top: 30px; border-radius: 5px">
-            <div class="col s12 "><h3><center>Nome da Empresa</center></h3></div>
+          <div class="row grey lighten-2 z-depth-4" style="border-radius: 5px; padding: 0; height: 100%">
             
+            <div class="col s12 "><h4 style=" font-family: 'Poppins', sans-serif;"><center>Colaborador 2</center></h4></div>
           
-            <div class="col m12 l6 "><img src="img/farm.jpg" class="responsive-img " style="border-radius: 10px;"></div>
-            
-            <div class="col s12 l6" style="padding: 16px;">
-              Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker
-            Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker
+            <div class="col m12 l6 carousel carousel-slider z-depth-5" style="border-bottom-left-radius: 5px;
+            ">
+              <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 375px"></a>
+              <a class="carousel-item"><img src="img/farm4.jpg" style="width: 100%;height: 375px"></a>
+              <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 375px"></a>
+              <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 375px"></a>
+              <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 375px"></a>
             </div>
             
+            <div class="col m12 l6 pading-top-med"style=" border-bottom-right-radius: 5px;margin-right: 0; padding-right: 0">
+
+              <blockquote class="col s12 white z-depth-2" 
+              style="
+              margin-top: 0;
+              padding-bottom: 7px;
+              border-left: 5px solid red;
+              margin-right: 0;
+              ">
+                <h6  
+                style="
+                font-size: 24px;
+                color: black;
+                "
+                class="col s12">
+
+                  Nossa história:
+                </h6>
+
+                <h6 style="text-align: justify;" class="col s12">
+                  Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
+                </h6>
+
+              </blockquote>
+            </div>
+
+            <!-- Local e contato -->
+            <div class="col s12 l6" style="padding-right: 0">
+                
+                <blockquote class="white z-depth-2 col s12" 
+                  style="
+                  margin-top: 0;
+                  padding-bottom: 7px;
+                  border-left: 5px solid purple;
+                   height: 160px
+                  ">
+                    <h6  
+                    style="
+                    font-size: 24px;
+                    color: black;
+                    "
+                    class="col s12">
+
+                      Contatos:
+                    </h6>
+
+                    <h6 style="text-align: left;">
+
+                      <p>(00)00000-0000</p>
+
+                      <p>(11)11111-1100</p>
+
+                      <p>email@email.com</p>
+
+                    </h6>
+
+                  </blockquote>
+
+            </div>
             
           </div>
+
         </div>
-
-
 
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 

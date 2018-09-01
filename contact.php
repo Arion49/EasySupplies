@@ -3,7 +3,7 @@
 
       <meta charset="utf-8">
 
-      <title>Easy Supplies</title>
+      <title>Contatos - Easy Supplies</title>
 
       <link rel="stylesheet" type="text/css" href="css.css">
 

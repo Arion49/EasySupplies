@@ -66,7 +66,8 @@
                 if (senha == confSenha) {
 
                   document.getElementById('scss-cad-b').style.pointerEvents = "auto";
-                  document.getElementById('scss-cad-b').style.opacity = "1.0";
+                  $('#scss-cad-b').removeClass('opacity');
+                  $('#scss-cad-b').addClass('fadeIn');
 
                 }
                 /*Se as senhas não forem iguais*/

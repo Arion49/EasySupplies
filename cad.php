@@ -138,15 +138,17 @@
 						</div>
 
 
-						<div class="col m12 l6 min-phone" id="scss-cad-b" 
-						style=" background-color: #270d44; border-top-right-radius: 10px; pointer-events:none ; opacity: 0.2">
+						<div class="col m12 l6 min-phone"
+						style=" background-color: #270d44; border-top-right-radius: 10px;">
 							
 							<div class="col s12" style="padding: 5px; padding-bottom: 8px; padding-top: 8px;">
 								
 								<div class="col s12 center-align" style="font-size: 20px;">
-										
-									<h5 style="color: white;">Passo 2: Endereço</h5>							
 									
+									<h5 style="color: white;">Passo 2: Endereço</h5>
+
+									<div class="animated " id="scss-cad-b" style=" pointer-events:none ; opacity: 0" >
+
 									<div class="input-field col m8 s6" style="margin-top: 28px;">
 									   	<input id="cep" name="cep" type="text" maxlength="9" pattern="([0-9]{5})-([0-9]{3})" 
 									   	class="grey-text" required>
@@ -186,6 +188,7 @@
 									   	Cadastrar
 								    </button>
 
+									</div>
 								</div>
 
 							</div>
