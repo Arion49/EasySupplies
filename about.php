@@ -27,6 +27,8 @@
 
         <link href="https://fonts.googleapis.com/css?family=Poppins|Slabo+27px" rel="stylesheet">
 
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
         <span id="background-img" 
@@ -39,7 +41,7 @@
         max-height: 1170px;
         height: 1170px;
         width: 100%;
-        opacity: 0.4" class="animated infinite pulse slower">
+        opacity: 0.3" class="animated infinite pulse slower">
         </span>
 
         <body style="
@@ -49,7 +51,7 @@
 
 
           <?php
-            include_once("nav.html");
+            include_once("nav.php");
           ?>
 
    
@@ -187,13 +189,11 @@
             </div>  <!-- Fim IDEIA -->
 
           </div>
-             
 
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-
-        <script type="text/javascript" src="js.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+      <script type="text/javascript" src="js.js"></script>
 
       <?php
 

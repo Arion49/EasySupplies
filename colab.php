@@ -41,15 +41,15 @@
         max-height: 1170px;
         height: 1170px;
         width: 100%;
-        opacity: 0.4" class="animated infinite pulse slower">
+        opacity: 0.3" class="animated infinite pulse slower">
         </span>
 
       <body style="background-color: rgba(75,0,130,0.8); margin: 0;padding: 0;">
 
         <?php
-          include_once("nav.html");
+          include_once("nav.php");
         ?> 
-        <div class="container-fluid" style="margin-right: 140px;margin-left: 140px;">
+        <div class="container-fluid width100" style="margin-right: 9%;margin-left: 9%;">
 
 
           <div class="row grey lighten-2 z-depth-4" style="border-radius: 5px; padding: 0; height: 100%; margin-top: 30px">
@@ -246,7 +246,6 @@
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-
         <script type="text/javascript" src="js.js"></script>
 
       <?php

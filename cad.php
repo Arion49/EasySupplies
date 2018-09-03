@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 	<head>
 
 	<!-- eduardo melo -->
@@ -34,24 +34,19 @@
 
 	</head>
 
-	        <span id="background-img" 
-        style="
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        z-index: -1;
-        position: fixed; 
-        max-height: 1170px;
-        height: 1170px;
-        width: 100%;
-        opacity: 0.4" class="animated infinite pulse slower">
-        </span>   
+	        <span id="background-img"  style=" background-repeat: no-repeat;
+	        background-position: center; background-attachment: fixed;
+	        z-index: -1; position: fixed;  max-height: 1170px; height: 1170px;
+	        width: 100%; opacity: 0.3" class="animated infinite pulse slower">
+	        </span>
 
 	<body style="background-color: rgba(75,0,130,0.8); margin: 0;padding: 0; height: 600px;">
 
 		<?php
 
-			include_once('nav.html');
+			include_once('nav.php');
+
+
 
 		?>
 
@@ -62,33 +57,20 @@
 
 
 
-			<div 
-			class="container z-depth-4" 
-			id="scss-cad" 
-			style="margin-bottom:30px;
-			border-radius: 10px;
-			border-bottom-right-radius: 0;
-			border-bottom-left-radius: 0;
-			background-color: #270d44;
-			">
+			<div  class="container z-depth-4"  id="scss-cad"  style="margin-
+			bottom:30px; border-radius: 10px; border-bottom-right-radius: 0;
+			border-bottom-left-radius: 0; background-color: #270d44; ">
 
 				<div class="row">
 
-					<form 
-					accept-charset="utf-8" 
-					autocomplete="on" 
-					class="col s12" 
-					method="post" 
-					name="form" 
-					id="formu-cad-cadastrar" 
-					style="padding: 0;">	
+					<form  accept-charset="utf-8"  autocomplete="on"
+					class="col s12"  method="post"  name="form"
+					action="cadastrando.php"  id="formu-cad-cadastrar"
+					style="padding: 0;">
 				
-						<div class="col m12 l6 min-phone" id="scss-cad-a" 
-						style="
-						background-color: #270d44;
-						border-top-left-radius: 10px;
-						border-right: 2px solid #6f339b;
-						">
+						<div class="col m12 l6 min-phone" id="scss-cad-a"
+						style=" background-color: #270d44; border-top-left-
+						radius: 10px; border-right: 2px solid #6f339b; ">
 							
 							<div class="col s12" style="padding: 5px; padding-bottom: 8px; padding-top: 8px;">
 								
@@ -100,8 +82,8 @@
 										
 								<div class="input-field col s12" style="margin-top: 28px;">
 									<i class="material-icons prefix grey-text">person</i>
-								   	<input id="first_name2" name="first_name2" type="text" minlength="" class="grey-text" required>
-								   	<label for="first_name2">Nome completo</label>	
+								   	<input id="nome" name="nome" type="text" minlength="" class="grey-text" required>
+								   	<label for="nome">Nome completo</label>	
 								</div>
 
 								<div class="input-field col s12">
@@ -130,65 +112,63 @@
 								   	<label for="confSenha">Confirmar senha</label>
 								</div>
 								    
-								<button class="btn btn-float waves-effect" id="btn-proximo-cad">
+								<div class="btn btn-float waves-effect" id="btn-proximo-cad">
 								   	Proximo
-							    </button>
+							    </div>
 							    
 							</div>
 						</div>
 
 
-						<div class="col m12 l6 min-phone"
+						<div class="col m12 l6"
 						style=" background-color: #270d44; border-top-right-radius: 10px;">
 							
 							<div class="col s12" style="padding: 5px; padding-bottom: 8px; padding-top: 8px;">
 								
-								<div class="col s12 center-align" style="font-size: 20px;">
-									
+								<div class="col s12 center-align animated" 
+								id="scss-cad-b" 
+								style="
+								font-size: 20px;
+								pointer-events: none;
+								opacity: 0.2
+								">
+
 									<h5 style="color: white;">Passo 2: Endereço</h5>
 
-									<div class="animated " id="scss-cad-b" style=" pointer-events:none ; opacity: 0" >
 
-									<div class="input-field col m8 s6" style="margin-top: 28px;">
-									   	<input id="cep" name="cep" type="text" maxlength="9" pattern="([0-9]{5})-([0-9]{3})" 
-									   	class="grey-text" required>
-									   	<label for="cep">CEP (xxxxx-xxx)</label>
-									</div>
+										<div class="input-field col s12" style="margin-top: 28px;">
+											<i class="material-icons prefix grey-text">map</i>
+											<input type="text" name="estados" id="estados" uppercase maxlength="2" class="grey-text" required>
+											<label for="estados">Estado (MG)</label>
+										</div>
 
-									<button class="col m4 s6 btn waves-effect waves-light cc" style="margin-top: 36px;">
-										<div style="font-size:15px;margin-left: 0; padding-bottom: 1px;">Conferir CEP</div>
-											
-									</button>
+										<div class="input-field col s12">
+											<i class="material-icons prefix grey-text">domain</i>
+										  	<input id="cidade" name="cidade" type="text" class="grey-text" required>
+										   	<label for="cidade">Cidade</label>
+										</div>
 
-									<div class="input-field col s12">
-										<i class="material-icons prefix grey-text">domain</i>
-									  	<input id="city" name="city" type="text" class="grey-text" required>
-									   	<label for="city">Cidade</label>
-									</div>
+										<div class="input-field col s12">
+										  	<i class="material-icons prefix grey-text">place</i>
+										   	<input id="bairro" name="bairro" type="text" class="grey-text" required>
+										   	<label for="bairro">Bairro</label>
+										</div>
 
-									<div class="input-field col s12">
-									  	<i class="material-icons prefix grey-text">place</i>
-									   	<input id="endereco" name="endereco" type="text" class="grey-text" required>
-									   	<label for="endereco">Endereço (Bairro , Rua)</label>
-									</div>
+										<div class="input-field col s12">
+										  	<i class="material-icons prefix grey-text show-on-large">trending_up</i>
+										  	<input id="rua" name="rua" type="text" class="grey-text" required>
+										   	<label for="rua">Rua</label>
+										</div>
 
-									<div class="input-field col s12">
-									  	<i class="material-icons prefix grey-text show-on-large">lock</i>
-									  	<input id="comple" name="comple" type="text" class="grey-text" >
-									   	<label for="comple">Complemento (Opcional)</label>
-									</div>
-
-									<div class="input-field col s12">
-									  	<i class="material-icons prefix  grey-text show-on-large">lock</i>
-									   	<input id="n-casa" name="n-casa" type="text" class="grey-text" required>
-									   	<label for="n-casa">Nº da casa</label>
-									</div>
-									    
-									<button class="btn btn-float waves-effect cad_btn_cad" type="submit" name="submit">
-									   	Cadastrar
-								    </button>
-
-									</div>
+										<div class="input-field col s12">
+										  	<i class="material-icons prefix  grey-text show-on-large">filter_none</i>
+										   	<input id="ncasa" name="ncasa" type="number" class="grey-text" required>
+										   	<label for="ncasa">Nº da casa</label>
+										</div>
+										    
+										<button class="btn btn-float waves-effect cad_btn_cad" type="submit" name="submit">
+										   	Cadastrar
+									    </button>
 								</div>
 
 							</div>
@@ -205,6 +185,7 @@
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+	    
 	    <script type="text/javascript" src="js.js"></script>
 
 	    <?php

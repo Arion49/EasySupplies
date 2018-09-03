@@ -43,7 +43,7 @@
         </span>
 
         <?php
-          include_once("nav.html");
+          include_once("nav.php");
         ?>
 
     <!-- Exemplificar -->

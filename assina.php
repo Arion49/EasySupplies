@@ -37,14 +37,14 @@
         max-height: 1170px;
         height: 1170px;
         width: 100%;
-        opacity: 0.4" class="animated infinite pulse slower">
+        opacity: 0.3" class="animated infinite pulse slower">
         </span>  
 
 
 	<body style="background-color: rgba(75,0,130,0.8); margin: 0;padding: 0;">
 
 		<?php
-			include_once('nav.html');
+			include_once('nav.php');
 		?>
 
 			<div class="container" style="padding-top: 8px; padding-bottom: 8px;">

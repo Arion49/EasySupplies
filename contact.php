@@ -41,14 +41,14 @@
         max-height: 1170px;
         height: 1170px;
         width: 100%;
-        opacity: 0.4" class="animated infinite pulse slower">
+        opacity: 0.3" class="animated infinite pulse slower">
         </span>
 
         <?php
-          include_once("nav.html");
+          include_once("nav.php");
         ?>
 
-        <div class="container" style="margin-top: 5px;">
+        <div class="container-fluid width100" style="margin-top: 5px;margin-right: 9%;margin-left: 9%;">
 
           <div class="row"> <!-- Row conteudo todo -->
 
@@ -64,7 +64,6 @@
               style="margin-bottom: 30px; 
               height: 800px;
               background-color: #e5e5e5;
-              border-top-left-radius:20px;
               ">
                     
                 <div class="row">
@@ -137,7 +136,7 @@
               </div>
                
 
-              <div class="col s12 z-depth-4 cont-2" style="margin-bottom: 30px; height: 800px; border-bottom-right-radius: 20px;  background-color: white;">
+              <div class="col s12 z-depth-4 cont-2" style="margin-bottom: 30px; height: 800px;  background-color: white;">
                     
                 <div class="row">
 

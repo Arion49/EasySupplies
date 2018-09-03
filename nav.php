@@ -23,6 +23,8 @@
     	padding-top: 35px;
   	}
 
+  	
+
 </style>
 
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -32,6 +34,12 @@
 		<img class="responsive-image" src="img/logo_supplies.png">
 
 	</div>
+
+	<?php 
+		require 'openBD.php';
+
+		session_start();
+	?>
 
   	<nav class="nav-extended back_extend back_navbar" style="z-index: 100">
 
@@ -68,23 +76,49 @@
 		          <a class="bottom_t" href="about.php">Sobre nós</a>
 		        </li>
 
-		        <ul class="hide-on-med-and-down right">
+				<?php
+
+				if (isset($_SESSION["login"]) || isset($_SESSION["senha"])) {
+				?>
+
+					<a 
+					class="bottom_t dropdown-trigger hide-on-med-and-down right" 
+					href="#!" 
+					data-target='dropdown-usuario' style="padding-left: 25px">
+
+						<?php echo $_SESSION["nome"]; ?>
+						<i class="material-icons right" style="margin-right: 5px; color: white">arrow_drop_down</i>	
+					</a>
+
+					<ul id="dropdown-usuario" style="width: 80px" class="dropdown-content">
 			    	
-			    	<li>
-			    		<a class="bottom_t" data-target="lol">Entrar</a>
-			    	</li>
+				    	<li><a href="#!">Minhas assinaturas</a></li>
+				    	<li><a href="#!">Editar perfil</a></li>
+				    	<li class="divider" tabindex="-1"></li>
+				    	<li><a href="logout.php">Sair</a></li>
 
-			    	<li>
-			    		<a class="bottom_t" href="cad.php">Cadastrar</a>
-			    	</li>
+				    </ul>
 
-			    </ul>
+				<?php
+				}else{
+				?>
+					<ul class="hide-on-med-and-down right">
+			    	
+				    	<li>
+				    		<a class="bottom_t" href="entrar.php">Entrar</a>
+				    	</li>
 
-			    <!-- Sidenav Entrar -->
-			    <ul class="sidenav" id="lol">
+				    	<li>
+				    		<a class="bottom_t" href="cad.php">Cadastrar</a>
+				    	</li>
 
-					  	
-				</ul>
+				    </ul>
+
+
+				<?php
+				}
+
+				?>
 
 			</ul>		    
 
@@ -127,61 +161,48 @@
 
 		<li class="divider grey darken-1"></li>
 
-		<li>
-			<a class="waves-effect sidenav-trigger" data-target="calnav">Entrar <i class="material-icons">input</i></a>
-		</li>
+		<?php
 
-		<li>
-			<a class="waves-effect sidenav-trigger" href="cad.php">Cadastrar <i class="material-icons">add_circle</i></a>
-		</li>
+				if (isset($_SESSION["login"]) || isset($_SESSION["senha"])) {
+				?>
+
+					<div class=" deep-purple white-text">
+						<span style="font-size: 20px; margin-left: 20px">
+							Ola <?php echo $_SESSION["nome"];?>, o que deseja?
+						</span>
+			    	
+				    	<li><a class="bottom_t white-text" href="#!">Minhas assinaturas</a></li>
+				    	<li><a class="bottom_t white-text" href="#!">Editar perfil</a></li>
+				    	<li><a class=" white-text" href="logout.php" style="margin-top: 10px">Sair</a></li>
+				    </div>	
+
+				<?php
+				}else{
+				?>
+					<ul class="hide-on-med-and-down right">
+			    	
+				    	<li>
+							<a class="waves-effect sidenav-trigger" href="entrar.php">
+								Entrar 
+								<i class="material-icons">input</i>
+							</a>
+						</li>
+
+						<li>
+							<a class="waves-effect sidenav-trigger" href="cad.php">
+								Cadastrar 
+								<i class="material-icons">add_circle</i>
+							</a>
+						</li>
+
+				    </ul>
+
+
+				<?php
+				}
+
+				?>
+
+		
 
 	  </ul>
-
-  <!-- -->
-
-
-  	<!-- Sidenav Login (MOBILE)-->
-	<ul class="sidenav" id="calnav" style="background-color: #673ab7;">
-
-		<li class="sidenav-close">
-	  		<a href="" class="deep-purple waves-effect light-waves" style="color: white;">
-	  			<i class="material-icons" style="color: white;">arrow_back</i>
-	  			Fechar
-	  		</a>
-	  	</li>
-
-	  	<li class="deep-purple lighten-1" style="color: white;">
-	  		<div style="font-size: 30px;" class="center-align">
-	  			Entrar
-		  	</div>
-		  	<div>
-		  		<label for="email_inline" style="color:white; font-size: 14px;">Email</label>
-			  	<input id="email_inline" type="email" class="validate center-align">
-	            
-		  	</div>
-
-		  	<div style="padding-bottom: 55px;">
-		  		<label for="password" style="color: white; font-size: 14px;">Senha</label>
-            	<input id="password" type="password" class="validate center-align">
-		  	</div>
-
-		  	<div class="deep-purple">
-
-		  		<div style="width: 90%; margin-left: 3.5%; padding-top: 6px;">
-		  		
-			  		<div class="btn" style="width: 100%">
-			  			Entrar
-			  		</div>
-
-			  	</div>
-
-			  	<div style="width: 90%; margin-left: 3.5%;" class="center-align">
-			  		<a href="" id="criarConta"  style="color: white;">Não tem conta? Clique aqui para criar uma!</a>		  		
-			  	</div>
-
-		  	</div>            
-          	
-	  	</li>
-	  	
-
-	</ul>

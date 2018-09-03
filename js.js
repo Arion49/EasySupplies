@@ -10,16 +10,24 @@
 
             $('.sidenav').sidenav();
 
+            $('select').formSelect();
+
+            $('.dropdown-trigger').dropdown({
+              alignment: 'right',
+              constrainWidth: false
+            });
+
             $('.carousel.carousel-slider').carousel({
               fullWidth: true,
               indicators: true
 
             });
+
             setTimeout(autoplay, 4500);
             function autoplay() {
               $('.carousel.carousel-slider').carousel('next');
               setTimeout(autoplay, 4500);
-            } 
+            };
 
             var random = Math.floor((Math.random() *20) +1);
 
@@ -52,12 +60,12 @@
           document.getElementById('btn-proximo-cad').onclick = function(){
 
             var login = document.getElementById('login').value;
-            var nameFirst = document.getElementById('first_name2').value;
-            var emails = document.getElementById('login').value;
+            var nameFirst = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
             var senha = document.getElementById('senha').value;
             var confSenha = document.getElementById('confSenha').value;
 
-            if(senha != "" && emails != "" && nameFirst != "" && confSenha != "" && login != "")
+            if(senha != "" && email != "" && nameFirst != "" && confSenha != "" && login != "")
             {
 
               if (senha.length >= 5) {
