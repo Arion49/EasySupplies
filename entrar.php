@@ -82,7 +82,7 @@
 
 					<div class="input-field animated fadeIn" style="margin-top: 20px">
 						<input id="login_login" name="login_login" type="text" required>
-						<label for="login_login">Login</label>	
+						<label for="login_login">Login ou email</label>	
 					</div>
 
 					<div class="input-field animated fadeIn" style="margin-top: 30px">
