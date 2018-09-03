@@ -50,7 +50,7 @@
 
         <div class="container-fluid width100" style="margin-top: 5px;margin-right: 9%;margin-left: 9%;">
 
-          <div class="row"> <!-- Row conteudo todo -->
+          <div class="row animated fadeIn fast"> <!-- Row conteudo todo -->
 
             <div class="col l7 m12" style="margin: 0; padding: 0; float: left; z-index: 50;"> <!-- Parte 1 -->
 

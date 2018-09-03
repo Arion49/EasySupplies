@@ -67,7 +67,7 @@
 
             
 
-              <div class="col s12 z-depth-4" style="margin-bottom: 30px; border-radius: 5px; background-color: #ededed;">
+              <div class="col s12 z-depth-4 animated fadeIn fast" style="margin-bottom: 30px; border-radius: 5px; background-color: #ededed;">
             
                 <div class="row"> <!-- DIV PRETA-->
 

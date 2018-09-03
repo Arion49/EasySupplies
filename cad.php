@@ -68,7 +68,7 @@
 					action="cadastrando.php"  id="formu-cad-cadastrar"
 					style="padding: 0;">
 				
-						<div class="col m12 l6 min-phone" id="scss-cad-a"
+						<div class="col m12 l6 min-phone animated fadeIn fast" id="scss-cad-a"
 						style=" background-color: #270d44; border-top-left-
 						radius: 10px; border-right: 2px solid #6f339b; ">
 							

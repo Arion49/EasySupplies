@@ -49,7 +49,7 @@
         <?php
           include_once("nav.php");
         ?> 
-        <div class="container-fluid width100" style="margin-right: 9%;margin-left: 9%;">
+        <div class="container-fluid width100 animated fadeIn faster" style="margin-right: 9%;margin-left: 9%;">
 
 
           <div class="row grey lighten-2 z-depth-4" style="border-radius: 5px; padding: 0; height: 100%; margin-top: 30px">
