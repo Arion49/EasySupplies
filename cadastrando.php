@@ -14,7 +14,7 @@ $bairro = $_POST['bairro'];
 $rua = $_POST['rua'];
 $ncasa = $_POST['ncasa'];
 
-$sql = mysql_query("INSERT INTO usuarios(nomes, email, login, senha, estado, cidade, bairro, rua, ncasa) 
+$sql = mysqli_query($conexao,"INSERT INTO usuarios(nomes, email, login, senha, estado, cidade, bairro, rua, ncasa) 
 	VALUES ('$nome', '$email', '$login', '$senha', '$estado', '$cidade', '$bairro', '$rua', '$ncasa')");
 	
 	if (isset($_POST['submit'])) {
