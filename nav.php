@@ -1,3 +1,4 @@
+<link href="https://fonts.googleapis.com/css?family=Poppins|Slabo+27px" rel="stylesheet">
 
 <style>
   .back_extend {
@@ -81,21 +82,16 @@
 				if (isset($_SESSION["login"]) || isset($_SESSION["senha"])) {
 				?>
 
-					<a 
-					class="bottom_t dropdown-trigger hide-on-med-and-down right" 
-					href="#!" 
-					data-target='dropdown-usuario' style="padding-left: 25px">
+					
+						
 
-						<?php echo $_SESSION["nome"]; ?>
-						<i class="material-icons right" style="margin-right: 5px; color: white">arrow_drop_down</i>	
-					</a>
+					<ul class="right" style="background-color: #381159; padding-left: 15px">
 
-					<ul id="dropdown-usuario" style="width: 80px" class="dropdown-content">
+						<li style="font-family: 'Poppins', sans-serif; font-size: 10pt; "><?php echo $_SESSION["nome"]; ?></li>
 			    	
-				    	<li><a href="#!">Minhas assinaturas</a></li>
-				    	<li><a href="#!">Editar perfil</a></li>
-				    	<li class="divider" tabindex="-1"></li>
-				    	<li><a href="logout.php">Sair</a></li>
+				    	<li><a href="#!" class="bottom_t">Minhas assinaturas</a></li>
+				    	<li><a href="#!" class="bottom_t">Editar perfil</a></li>
+				    	<li><a href="logout.php" class="bottom_t">Sair</a></li>
 
 				    </ul>
 
@@ -165,6 +161,8 @@
 
 				if (isset($_SESSION["login"]) || isset($_SESSION["senha"])) {
 				?>
+
+				
 
 					<div class=" deep-purple white-text">
 						<span style="font-size: 20px; margin-left: 20px">
