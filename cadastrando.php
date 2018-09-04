@@ -4,6 +4,25 @@
 
 require 'openBD.php';
 
+$checar = mysqli_query($conexao, "SELECT * FROM usuarios WHERE login = '$_POST['login']' or email = '$_POST['email']'");
+
+$exis = mysql_num_rows($checar);
+
+if ($exis != 1) {
+	
+	include 'cad.php';
+
+	echo "
+	<script type='text/javascript'>
+
+		M.toast({html: 'Email ou login já cadastrados', classes: 'rounded'});
+
+	</script>";
+
+}else{
+
+
+
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $login = $_POST['login'];
@@ -22,4 +41,5 @@ $sql = mysqli_query($conexao,"INSERT INTO usuarios(nomes, email, login, senha, e
 		include 'cad_message.php';
 
 	}
+}	
 ?>

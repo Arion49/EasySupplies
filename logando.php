@@ -11,8 +11,8 @@
 
 		$sql = mysqli_query($conexao,"
 			SELECT * FROM usuarios 
-			WHERE email = '$login_checar' 
-			or login = '$login_checar' 
+			WHERE (email = '$login_checar' 
+			or login = '$login_checar')
 			and senha = '$senha_checar'") or die(mysqli_error());
 
 		$row = mysqli_num_rows($sql);
@@ -31,21 +31,15 @@
 			}
 
 		}else{
+			
+			 	include 'entrar.php';
 
-			$_SESSION['login'] = null;
-			$_SESSION['senha'] = null;
+			 	echo "
+			 	<script type='text/javascript'>
 
+			 		M.toast({html: 'Usuario/email ou senha não existem', classes: 'rounded'});
 
-		?>
-
-		<script type="text/javascript">
-
-			window.location.assign('entrar.php');
-
-		</script>
-
-		<?php
-
+			 	</script>";
 		}
 		
 	}else{
