@@ -172,7 +172,7 @@
                   <div class="col l9 m12 s12"> <!-- COL DA INFORMAÇÃO-->
 
 
-                    <p style="text-align: justify; font-size: 18px; text-indent: 35px;">O interesse do tema foi pelo fato da área de produtos orgânicos ser pouco explorada e possuir pouca presença na sociedade brasileira (principalmente mineira), mas que se demonstra um movimento em expansão. Isso dá abertura para inovação dentro do segmento a partir da vinculação entre a entrega de novas experiências nesse tema, com a tecnologia que pode ser utilizada para promover a comodidade de receber em sua residência produtos mais saudáveis e confiáveis com poucos cliques.</p>
+                    <p style="text-align: justify; font-size: 18px; text-indent: 35px;">O interesse no tema foi pelo fato da área de produtos orgânicos ser pouco explorada e possuir pouca presença na sociedade brasileira (principalmente mineira), mas que se demonstra um movimento em expansão. Isso dá abertura para inovação dentro do segmento a partir da vinculação entre a entrega de novas experiências nesse tema, com a tecnologia que pode ser utilizada para promover a comodidade de receber em sua residência produtos mais saudáveis e confiáveis com poucos cliques.</p>
 
 
 
