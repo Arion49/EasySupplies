@@ -4,11 +4,23 @@
 
 require 'openBD.php';
 
-$checar = mysqli_query($conexao, "SELECT * FROM usuarios WHERE login = '$_POST['login']' or email = '$_POST['email']'");
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$login = $_POST['login'];
+$senha = $_POST['senha'];
+$estado = $_POST['estados'];
+$cidade = $_POST['cidade'];
+$bairro = $_POST['bairro'];
+$rua = $_POST['rua'];
+$ncasa = $_POST['ncasa'];
 
-$exis = mysql_num_rows($checar);
+$checar = mysqli_query($conexao, "SELECT * FROM usuarios WHERE (login = $login) or (email = $email)");
 
-if ($exis != 1) {
+	echo "checar".$checar;
+
+$row = mysqli_num_rows($checar);
+
+if ( $row > 0) {
 	
 	include 'cad.php';
 
@@ -19,19 +31,11 @@ if ($exis != 1) {
 
 	</script>";
 
-}else{
+	exit();
 
+}
 
-
-$nome = $_POST['nome'];
-$email = $_POST['email'];
-$login = $_POST['login'];
-$senha = $_POST['senha'];
-$estado = $_POST['estados'];
-$cidade = $_POST['cidade'];
-$bairro = $_POST['bairro'];
-$rua = $_POST['rua'];
-$ncasa = $_POST['ncasa'];
+else{
 
 $sql = mysqli_query($conexao,"INSERT INTO usuarios(nomes, email, login, senha, estado, cidade, bairro, rua, ncasa) 
 	VALUES ('$nome', '$email', '$login', '$senha', '$estado', '$cidade', '$bairro', '$rua', '$ncasa')");
