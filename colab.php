@@ -3,7 +3,7 @@
 
       <meta charset="utf-8">
 
-      <title>Colaboradores - Easy Supplies</title>
+      <title> Easy Supplies - Colaboradores</title>
 
       <link rel="stylesheet" type="text/css" href="css.css">
 

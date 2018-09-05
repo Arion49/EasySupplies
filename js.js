@@ -74,12 +74,15 @@
                 if (senha == confSenha) {
                   if(document.getElementById('scss-cad-b')){
                     document.getElementById('scss-cad-b').style.pointerEvents = "auto";
+                    document.getElementById('senha').style.pointerEvents = "none";
+                    document.getElementById('confSenha').style.pointerEvents = "none";
                   $('#scss-cad-b').removeClass('opacity');
                   $('#scss-cad-b').addClass('fadeIn');
                 } else{
 
                   document.getElementById('btn-att').disabled = false;}
-                  
+                  document.getElementById('senha').style.pointerEvents = "none";
+                  document.getElementById('confSenha').style.pointerEvents = "none";
                   
 
 

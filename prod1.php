@@ -50,32 +50,65 @@
 
 		<div class="container" style="padding-top: 8px; padding-bottom: 8px; background-color: white; margin-top: 15px; margin-bottom: 15px; border-radius: 5px;">
          <div class="row">
-         	<div class=" col s12 m6 l1 "></div>
+         	
+         	<div class=" col s12 m1 l1 "></div>
  
-			<div class="col s12 m6 l4 ">
-				<div class="carousel carousel-slider z-depth-5 responsive" style="border-radius: 92px; margin-top: 25px;">
-                 <a class="carousel-item"><img src="img/farm1.jpg" style=" width: 100%;height: 285px;"></a>
-                   <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px;"></a>
-                   <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px;"></a>
-                   <a class="carousel-item"><img src="img/farm4.jpg" style="width: 100%;height: 285px;"></a>
-                   <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px;"></a>
+			<div class="col s12 m10 l4 ">
+				<div class="carousel carousel-slider  responsive" style="border-radius: 92px; margin-top: 25px;">
+                 <a class="carousel-item"><img src="img/cx1.jpg" style=" width: 100%;height: 285px;"></a>
+                   <a class="carousel-item"><img src="img/cx1.jpg" style="width: 100%;height: 285px;"></a>
+                   <a class="carousel-item"><img src="img/cx1.jpg" style="width: 100%;height: 285px;"></a>
+                   <a class="carousel-item"><img src="img/cx1.jpg" style="width: 100%;height: 285px;"></a>
+                   <a class="carousel-item"><img src="img/cx1.jpg" style="width: 100%;height: 285px;"></a>
                 </div>
 			</div>
-		<div class=" col s12 m6 l1 "></div>
-			<div class=" col s12 m6 l5 ">
-			<h4><b>Kit Misto Basico</b></h4>
+		<div class=" col s12 m2 l1 "></div>
+			<div class=" col s12 m8 l5 ">
+			<h4><b>Kit Frutas e legumes Basico</b></h4>
 			<h3> R$65,00</h3>
             <p>&nbsp;&nbsp;O kit 'frutas e legumes basico' foi pensado para pessoas que moram sozinhas facilitando
           a organização e evitando desperdicios. Nesse kit contem 10 tipos de legumes 10 tipos de frutas e 2 tipos de hortaliça.</p>
 
-            <button class="waves-effect purple darken-4 btn" style="border-color: black 1px;">Comprar</button>
-		    </div>
-		    <div class=" col s12 m6 l1 "></div>
-		    
- 
-          </div>
+           <hr>
+         <form action="#">
+           <legend>Forma de Pagamento:	
+           <span>
+           <label>
+           <input name="group1" type="radio" checked />
+           <span>Boleto</span>
+           </label>&nbsp;
+           
+           <label>
+           <input name="group1" type="radio" />
+           <span>Cartao</span>
+           </label>
+            </span>
+           </legend>
+        </form>
+        <input type="number" min="1" max="3" placeholder="Quantidade de Kit's">
+        <select class="browser-default">
+                 <option value="" disabled selected>Modo de Entrega</option>
+                 <option value="1">Mensal</option>
+                 <option value="2">Quinzinal</option>
+                 </select>
+                 <br>
+                 <hr>
+          
+          
+         
+          
 
-        </div>
+            <button class="waves-effect purple darken-4 btn" style="border-color: black 1px;">Comprar</button>
+
+         
+		    </div>
+            <div class=" col s12 m2 l1 "></div>
+		  </div> 
+		  </div> 
+<!--  //////////////////////////////////////////////////////////////////// !-->        
+          
+
+        
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
