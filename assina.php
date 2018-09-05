@@ -37,7 +37,7 @@
         max-height: 1170px;
         height: 1170px;
         width: 100%;
-        opacity: 0.3" class="animated infinite pulse slower">
+        opacity: 0.4" class="animated infinite pulse slower">
         </span>  
 
 
@@ -55,49 +55,67 @@
 					<div class="col s12" style="color: white;"><h5>Assinaturas</h5></div>
     <div class="col s12 m4 l4">
       <div class="card">
-        <div class="card-image">
-          <img src="img/sac.jpg">
+        <div class="card-image carousel carousel-slider z-depth-5 responsive">
+          <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm4.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
+        </div>
+        <div>  
           <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
         </div>
         <div class="card-content">
         	<h6><b>R$ 39,90</b></h6>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <p>O kit 'frutas e legumes basico' foi pensado para pessoas que moram sozinhas facilitando
+          a organização e evitando desperdicios</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="prod1.php">Mais Informações -></a>
         </div>
       </div>
     </div>
      <div class="col s12 m4 l4">
       <div class="card">
-        <div class="card-image">
-          <img src="img/sac.jpg">
+        <div class="card-image carousel carousel-slider z-depth-5 responsive">
+          <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm4.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
+        </div>
+        <div>  
           <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
         </div>
         <div class="card-content">
-        	<h6><b>R$ 39,90</b></h6>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <h6><b>R$ 39,90</b></h6>
+          <p>O kit 'frutas e legumes basico' foi pensado para pessoas que moram sozinhas facilitando
+          a organização e evitando desperdicios</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">Mais Informações -></a>
         </div>
       </div>
     </div>
      <div class="col s12 m4 l4">
       <div class="card">
-        <div class="card-image">
-          <img src="img/sac.jpg">
+        <div class="card-image carousel carousel-slider z-depth-5 responsive">
+          <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm4.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
+        </div>
+        <div>  
           <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
         </div>
         <div class="card-content">
-        	<h6><b>R$ 39,90</b></h6>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <h6><b>R$ 39,90</b></h6>
+          <p>O kit 'frutas e legumes basico' foi pensado para pessoas que moram sozinhas facilitando
+          a organização e evitando desperdicios</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">Mais Informações -></a>
         </div>
       </div>
     </div>
@@ -105,49 +123,67 @@
 <div class="row">
     <div class="col s12 m4 l4">
       <div class="card">
-        <div class="card-image">
-          <img src="img/sac.jpg">
+        <div class="card-image carousel carousel-slider z-depth-5 responsive">
+          <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm4.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
+        </div>
+        <div>  
           <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
         </div>
         <div class="card-content">
-        	<h6><b>R$ 39,90</b></h6>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <h6><b>R$ 39,90</b></h6>
+          <p>O kit 'frutas e legumes basico' foi pensado para pessoas que moram sozinhas facilitando
+          a organização e evitando desperdicios</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">Mais Informações -></a>
         </div>
       </div>
     </div>
      <div class="col s12 m4 l4">
       <div class="card">
-        <div class="card-image">
-          <img src="img/sac.jpg">
+        <div class="card-image carousel carousel-slider z-depth-5 responsive">
+          <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm4.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
+        </div>
+        <div>  
           <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
         </div>
         <div class="card-content">
-        	<h6><b>R$ 39,90</b></h6>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <h6><b>R$ 39,90</b></h6>
+          <p>O kit 'frutas e legumes basico' foi pensado para pessoas que moram sozinhas facilitando
+          a organização e evitando desperdicios</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">Mais Informações -></a>
         </div>
       </div>
     </div>
      <div class="col s12 m4 l4">
       <div class="card">
-        <div class="card-image">
-          <img src="img/sac.jpg">
+        <div class="card-image carousel carousel-slider z-depth-5 responsive">
+          <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm4.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
+        </div>
+        <div>  
           <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
         </div>
         <div class="card-content">
-        	<h6><b>R$ 39,90</b></h6>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <h6><b>R$ 39,90</b></h6>
+          <p>O kit 'frutas e legumes basico' foi pensado para pessoas que moram sozinhas facilitando
+          a organização e evitando desperdicios</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">Mais Informações -></a>
         </div>
       </div>
     </div>
@@ -155,49 +191,67 @@
 <div class="row">
     <div class="col s12 m4 l4">
       <div class="card">
-        <div class="card-image">
-          <img src="img/sac.jpg">
+        <div class="card-image carousel carousel-slider z-depth-5 responsive">
+          <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm4.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
+        </div>
+        <div>  
           <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
         </div>
         <div class="card-content">
-        	<h6><b>R$ 39,90</b></h6>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <h6><b>R$ 39,90</b></h6>
+          <p>O kit 'frutas e legumes basico' foi pensado para pessoas que moram sozinhas facilitando
+          a organização e evitando desperdicios</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">Mais Informações -></a>
         </div>
       </div>
     </div>
      <div class="col s12 m4 l4">
       <div class="card">
-        <div class="card-image">
-          <img src="img/sac.jpg">
+        <div class="card-image carousel carousel-slider z-depth-5 responsive">
+          <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm4.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
+        </div>
+        <div>  
           <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
         </div>
         <div class="card-content">
-        	<h6><b>R$ 39,90</b></h6>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <h6><b>R$ 39,90</b></h6>
+          <p>O kit 'frutas e legumes basico' foi pensado para pessoas que moram sozinhas facilitando
+          a organização e evitando desperdicios</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">Mais Informações -></a>
         </div>
       </div>
     </div>
      <div class="col s12 m4 l4">
       <div class="card">
-        <div class="card-image">
-          <img src="img/sac.jpg">
+        <div class="card-image carousel carousel-slider z-depth-5 responsive">
+          <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm4.jpg" style="width: 100%;height: 285px"></a>
+              <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
+        </div>
+        <div>  
           <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
         </div>
         <div class="card-content">
-        	<h6><b>R$ 39,90</b></h6>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <h6><b>R$ 39,90</b></h6>
+          <p>O kit 'frutas e legumes basico' foi pensado para pessoas que moram sozinhas facilitando
+          a organização e evitando desperdicios</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">Mais Informações -></a>
         </div>
       </div>
     </div>
@@ -206,12 +260,7 @@
 
 			</div>
 			
-			<div id="scss-assina" class="container deep-orange accent-4 z-depth-4"
-			style="margin-bottom: 10px;padding-top: 15px; padding-bottom: 15px; padding-left: 8px;
-			padding-right: 8px; border-radius: 10px; color: white;">
-				
-			</div>
-
+			
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>

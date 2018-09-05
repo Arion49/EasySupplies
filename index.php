@@ -27,70 +27,29 @@
 
         <link href="https://fonts.googleapis.com/css?family=Poppins|Slabo+27px" rel="stylesheet">
 
-      <body style="background-color: rgba(75,0,130,0.8); margin: 0;padding: 0;">
+      <body style="background-color: white; margin: 0;padding: 0;">
 
-        <span id="background-img" 
-        style="
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        z-index: -1;
-        position: fixed; 
-        max-height: 1170px;
-        height: 1170px;
-        width: 100%;
-        opacity: 0.4" class="animated infinite pulse slower">
-        </span>
+        
 
         <?php
           include_once("nav.php");
         ?>
 
     <!-- Exemplificar -->
-    	<div class="container">
-    		  <p>bbbbbbbb</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
-    		  <p>aaaaaaaa</p>
+    	<div class="container-fluid" style="background-color: white;margin-bottom: 0;">
+
+            <div class="row" style="margin-top:1px">
+                <div class="col s12" 
+                style="
+                background-image: url('img/back_index-p1.png'); 
+                height: 610px; 
+                background-size: 100% 610px;
+
+                ">
+                    
+                </div>
+            </div>
+    		  
     	</div>
 
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
