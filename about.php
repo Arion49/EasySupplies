@@ -23,7 +23,7 @@
         <!-- Icone do titulo -->
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-        <meta name="description" value="Suplimentos fáceis, trazendo o melhor dos produtos organicos da forma mais facil para você!">
+        <meta name="description" value="Suprimentos fáceis, trazendo o melhor dos produtos orgânicos da forma mais fácil para você!">
 
         <link href="https://fonts.googleapis.com/css?family=Poppins|Slabo+27px" rel="stylesheet">
 

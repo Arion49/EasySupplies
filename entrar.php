@@ -4,10 +4,12 @@
 	
 	<meta charset="utf-8">
 
-	<title>Cadastro</title>
+	<title>Easy Supplies - Logar</title>
 
 	<!-- Compatibilidade cm IE -->
 	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7" />
+
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
 	<link rel="stylesheet" href="animate/animate.css">
 
@@ -25,7 +27,7 @@
 	<!-- Responsividade -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	<meta name="description" value="Suplimentos fáceis, trazendo o melhor dos produtos organicos da forma mais facil para você!">
+	<meta name="description" value="Suprimentos fáceis, trazendo o melhor dos produtos orgânicos da forma mais fácil para você!">
 
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 

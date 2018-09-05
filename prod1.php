@@ -15,7 +15,7 @@
 	    <!-- Icone do titulo -->
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-        <meta name="description" value="Suplimentos fáceis, trazendo o melhor dos produtos organicos da forma mais facil para você!">
+        <meta name="description" value="Suprimentos fáceis, trazendo o melhor dos produtos orgânicos da forma mais fácil para você!">
 
 	    <!--Import materialize.css-->
 	    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>

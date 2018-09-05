@@ -5,7 +5,7 @@
 	<!-- eduardo melo -->
 		<meta charset="utf-8">
 
-		<title>Cadastro</title>
+		<title>Easy Supplies - Cadastro</title>
 
 		<!-- Icone do titulo -->
 		<link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -30,7 +30,7 @@
 	    <!-- Responsividade -->
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	    <meta name="description" value="Suplimentos fáceis, trazendo o melhor dos produtos organicos da forma mais facil para você!">
+	    <meta name="description" value="Suprimentos fáceis, trazendo o melhor dos produtos orgânicos da forma mais fácil para você!">
 
 	</head>
 
