@@ -80,18 +80,22 @@
 				<?php
 
 				if (isset($_SESSION["login"]) || isset($_SESSION["senha"])) {
+
 				?>
 
 					
 						
 
-					<ul class="right" style="background-color: #381159; padding-left: 15px">
+					<ul class="right" style="background-color: #381159; padding-left: 15px;">
 
-						<li style="font-family: 'Poppins', sans-serif; font-size: 10pt; "><?php echo $_SESSION["nome"]; ?></li>
+						<li style="font-family: 'Poppins', sans-serif; font-size: 11pt; "><?php
+						 $input = $_SESSION['nome'];
+						 list($input) = explode(' ',$input,2);
+						 echo "Olá, ".$input; ?></li>
 			    	
-				    	<li><a href="#!" class="bottom_t">Minhas assinaturas</a></li>
-				    	<li><a href="#!" class="bottom_t">Editar perfil</a></li>
-				    	<li><a href="logout.php" class="bottom_t">Sair</a></li>
+				    	<li><a href="#!">Minhas assinaturas</a></li>
+				    	<li><a href="editar_perfil.php">Editar perfil</a></li>
+				    	<li><a href="logout.php" >Sair</a></li>
 
 				    </ul>
 
@@ -166,11 +170,11 @@
 
 					<div class=" deep-purple white-text">
 						<span style="font-size: 20px; margin-left: 20px">
-							Ola <?php echo $_SESSION["nome"];?>, o que deseja?
+							 <?php echo "Olá, ".$input;?>
 						</span>
 			    	
 				    	<li><a class="bottom_t white-text" href="#!">Minhas assinaturas</a></li>
-				    	<li><a class="bottom_t white-text" href="#!">Editar perfil</a></li>
+				    	<li><a class="bottom_t white-text" href="editar_perfil.php">Editar perfil</a></li>
 				    	<li><a class=" white-text" href="logout.php" style="margin-top: 10px">Sair</a></li>
 				    </div>	
 

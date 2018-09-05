@@ -72,10 +72,16 @@
 
 
                 if (senha == confSenha) {
-
-                  document.getElementById('scss-cad-b').style.pointerEvents = "auto";
+                  if(document.getElementById('scss-cad-b')){
+                    document.getElementById('scss-cad-b').style.pointerEvents = "auto";
                   $('#scss-cad-b').removeClass('opacity');
                   $('#scss-cad-b').addClass('fadeIn');
+                } else{
+
+                  document.getElementById('btn-att').disabled = false;}
+                  
+                  
+
 
                 }
                 /*Se as senhas não forem iguais*/
@@ -89,16 +95,20 @@
               else{
 
                 M.toast({html: 'A senha deve ter no minimo 5 caracteres', classes: 'rounded'});
-                  
+
               }
 
             } 
             /*Se vazio*/
             else{
 
-                M.toast({html: 'Todos os campos são obrigatorios', classes: 'rounded'});
+              M.toast({html: 'Todos os campos são obrigatorios', classes: 'rounded'});
 
             }
 
           };/*Fim function*/
-         
+
+
+
+
+        

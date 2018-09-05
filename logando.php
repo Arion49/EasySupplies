@@ -23,7 +23,14 @@
 
 			$_SESSION['login'] = $dados['login'];
 			$_SESSION['nome'] = $dados['nomes'];
-			$_SESSION['senha'] =$dados['senha'];
+			$_SESSION['senha'] = $dados['senha'];
+
+			$_SESSION['email'] = $dados['email'];
+			$_SESSION['estado'] = $dados['estado'];
+			$_SESSION['cidade'] = $dados['cidade'];
+			$_SESSION['bairro'] = $dados['bairro'];
+			$_SESSION['rua'] = $dados['rua'];
+			$_SESSION['ncasa'] = $dados['ncasa'];
 
 			if (isset($_POST['submit'])) {
 		

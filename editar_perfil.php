@@ -5,7 +5,7 @@
 	<!-- eduardo melo -->
 		<meta charset="utf-8">
 
-		<title>Cadastro</title>
+		<title>Editar Perfil</title>
 
 		<!-- Icone do titulo -->
 		<link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -45,14 +45,15 @@
 		<?php
 
 			include_once('nav.php');
-
-
+			
 
 		?>
 
 
+
+
 		<div class="container" style="padding-top: 8px; padding-bottom: 8px;">
-			<h5 style="color: white;">Cadastrar</h5>
+			<h5 style="color: white;">Editar Perfil</h5>
 		</div>
 
 
@@ -65,10 +66,10 @@
 
 					<form  accept-charset="utf-8"  autocomplete="on"
 					class="col s12"  method="post"  name="form"
-					action="cadastrando.php"  id="formu-cad-cadastrar"
+					action="alterar.php"  id="formu-cad-alterar"
 					style="padding: 0;">
 				
-						<div class="col m12 l6 min-phone animated fadeIn fast" id="scss-cad-a"
+						<div class="col m12 l6 min-phone animated fadeIn fast" 
 						style=" background-color: #270d44; border-top-left-
 						radius: 10px; border-right: 2px solid #6f339b; ">
 							
@@ -76,31 +77,31 @@
 								
 								<div class="col s12 center-align" style="font-size: 20px;">
 									
-									<h5 style="color: white;">Passo 1: Dados pessoais</h5>
+									<h5 style="color: white;">Dados pessoais</h5>
 
 								</div>					
 										
 								<div class="input-field col s12" style="margin-top: 28px;">
 									<i class="material-icons prefix grey-text">person</i>
-								   	<input id="nome" name="nome" type="text" minlength="" class="grey-text" required>
-								   	<label for="nome">Nome completo</label>	
+								   	<input id="nome" name="nome" type="text" minlength="" class="grey-text" value="<?php echo $_SESSION['nome']; ?>" required>
+								    <label for="nome"> Nome </label>
 								</div>
 
 								<div class="input-field col s12">
 									<i class="material-icons prefix grey-text">email</i>
-								    <input id="email" name="email" type="email" class="grey-text" required>
+								    <input id="email" name="email" type="email" class="grey-text" value="<?php echo $_SESSION['email']; ?>" required >
 								    <label for="email">Email</label>
 								</div>
 
 								<div class="input-field col s12">
 								   	<i class="material-icons prefix grey-text">fingerprint</i>
-								   	<input id="login" name="login" type="text" class="grey-text" required>
+								   	<input id="login" name="login" type="text" class="grey-text" value="<?php echo $_SESSION['login']; ?>" required>
 								   	<label for="login">Login</label>
 								</div>
 
 								<div class="input-field col s12">
 								   	<i class="material-icons prefix grey-text">lock</i>
-								   	<input id="senha" name="senha" type="password" class="grey-text" required>
+								   	<input id="senha" name="senha" type="password" class="grey-text" value="<?php echo $_SESSION['senha']; ?>" required> 
 								  	<label for="senha">Senha</label>
 								</div>
 
@@ -108,12 +109,12 @@
 
 								<div class="input-field col s12">
 								   	<i class="material-icons prefix grey-text">lock</i>
-								   	<input id="confSenha" name="confSenha" type="password" class="grey-text" required>
+								   	<input id="confSenha" name="confSenha" type="password" class="grey-text" >
 								   	<label for="confSenha">Confirmar senha</label>
 								</div>
 								    
-								<div class="btn btn-float waves-effect" id="btn-proximo-cad">
-								   	Proximo
+								<div class="btn btn-float waves-effect" id="btn-proximo-cad" style="background-color: #304ffe;width: 100%;margin-top: 40px;margin-bottom: 20px;">
+								   	Verificar
 							    </div>
 							    
 							</div>
@@ -126,48 +127,46 @@
 							<div class="col s12" style="padding: 5px; padding-bottom: 8px; padding-top: 8px;">
 								
 								<div class="col s12 center-align animated" 
-								id="scss-cad-b" 
 								style="
 								font-size: 20px;
-								pointer-events: none;
-								opacity: 0.2
+								
 								">
 
-									<h5 style="color: white;">Passo 2: Endereço</h5>
+									<h5 style="color: white;">Endereço</h5>
 
 
 										<div class="input-field col s12" style="margin-top: 28px;">
 											<i class="material-icons prefix grey-text">map</i>
-											<input type="text" name="estados" id="estados" uppercase maxlength="2" style="text-transform: uppercase;" class="grey-text" required>
+											<input type="text" name="estados" id="estados" style="text-transform: uppercase;" maxlength="2" class="grey-text" value="<?php echo $_SESSION['estado'];?>" required>
 											<label for="estados">Estado (MG)</label>
 										</div>
 
 										<div class="input-field col s12">
 											<i class="material-icons prefix grey-text">domain</i>
-										  	<input id="cidade" name="cidade" type="text" class="grey-text" required>
+										  	<input id="cidade" name="cidade" type="text" class="grey-text" value="<?php echo $_SESSION['cidade']; ?>" required>
 										   	<label for="cidade">Cidade</label>
 										</div>
 
 										<div class="input-field col s12">
 										  	<i class="material-icons prefix grey-text">place</i>
-										   	<input id="bairro" name="bairro" type="text" class="grey-text" required>
+										   	<input id="bairro" name="bairro" type="text" class="grey-text" value="<?php echo $_SESSION['bairro']; ?>" required>
 										   	<label for="bairro">Bairro</label>
 										</div>
 
 										<div class="input-field col s12">
 										  	<i class="material-icons prefix grey-text show-on-large">trending_up</i>
-										  	<input id="rua" name="rua" type="text" class="grey-text" required>
+										  	<input id="rua" name="rua" type="text" class="grey-text" value="<?php echo $_SESSION['rua']; ?>" required>
 										   	<label for="rua">Rua</label>
 										</div>
 
 										<div class="input-field col s12">
 										  	<i class="material-icons prefix  grey-text show-on-large">filter_none</i>
-										   	<input id="ncasa" name="ncasa" type="number" class="grey-text" required>
+										   	<input id="ncasa" name="ncasa" type="number" class="grey-text" value="<?php echo $_SESSION['ncasa']; ?>" required>
 										   	<label for="ncasa">Nº da casa</label>
 										</div>
 										    
-										<button class="btn btn-float waves-effect cad_btn_cad" type="submit" name="submit">
-										   	Cadastrar
+										<button class="btn btn-float waves-effect cad_btn_cad" type="submit" name="submit" disabled="disabled" id="btn-att" >
+										   	Atualizar Dados
 									    </button>
 								</div>
 

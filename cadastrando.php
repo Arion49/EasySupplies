@@ -16,7 +16,7 @@ $ncasa = $_POST['ncasa'];
 
 $checar = mysqli_query($conexao, "SELECT * FROM usuarios WHERE (login = $login) or (email = $email)");
 
-	echo "checar".$checar;
+
 
 $row = mysqli_num_rows($checar);
 
