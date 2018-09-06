@@ -5,7 +5,7 @@
 	<!-- eduardo melo -->
 		<meta charset="utf-8">
 
-		<title>Editar Perfil</title>
+		<title>Easy Supplies - Editar Perfil</title>
 
 		<!-- Icone do titulo -->
 		<link rel="shortcut icon" type="image/png" href="img/favicon.png">

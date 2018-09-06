@@ -70,7 +70,7 @@
           a organização e evitando desperdicios. Nesse kit contem 10 tipos de legumes 10 tipos de frutas e 2 tipos de hortaliça.</p>
 
            <hr>
-         <form action="#">
+         <form action="comprar.php">
            <legend>Forma de Pagamento:	
            <span>
            <label>
@@ -84,7 +84,7 @@
            </label>
             </span>
            </legend>
-        </form>
+        
         <input type="number" min="1" max="3" placeholder="Quantidade de Kit's">
         <select class="browser-default">
                  <option value="" disabled selected>Modo de Entrega</option>
@@ -98,8 +98,8 @@
          
           
 
-            <button class="waves-effect purple darken-4 btn" style="border-color: black 1px;">Comprar</button>
-
+            <button class="waves-effect purple darken-4 btn" style="border-color: black 1px;" id="comprar">Comprar</button>
+        </form>    
          
 		    </div>
             <div class=" col s12 m2 l1 "></div>
