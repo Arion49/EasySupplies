@@ -70,7 +70,7 @@
           a organização e evitando desperdicios. Nesse kit contem 10 tipos de legumes 10 tipos de frutas e 2 tipos de hortaliça.</p>
 
            <hr>
-         <form action="comprar.php">
+         <form action="verificacao_compra.php" method="post" id="comprar-form">
            <legend>Forma de Pagamento:	
            <span>
            <label>
