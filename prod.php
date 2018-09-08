@@ -1,4 +1,17 @@
+<?php
+require_once('openBD.php');
 
+  $imagem_assinatura = mysqli_query($conexao, "SELECT * FROM ass_detalhes WHERE id_ass='".$_GET['produto_pesquisa']."'  LIMIT 5");
+  
+  if(is_numeric($_GET['produto_pesquisa']))
+  {
+  $consultar_assinatura = mysqli_query($conexao, "SELECT * FROM assinaturas WHERE id='".$_GET['produto_pesquisa']."' LIMIT 1");
+  $recebe_assinatura = mysqli_fetch_assoc($consultar_assinatura);
+  }else
+  {
+    echo "<script>alert('Erro: 404 pagina não encontrada!')</script>";
+  }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -56,21 +69,22 @@ opacity: 0.4" class="animated infinite pulse slower">
 
     <div class="col s12 m10 l4 ">
       <div class="carousel carousel-slider  responsive" style="border-radius: 92px; margin-top: 25px;">
-       <a class="carousel-item"><img src="img/cx1.jpg" style=" width: 100%;height: 285px;"></a>
-       <a class="carousel-item"><img src="img/cx1.jpg" style="width: 100%;height: 285px;"></a>
-       <a class="carousel-item"><img src="img/cx1.jpg" style="width: 100%;height: 285px;"></a>
-       <a class="carousel-item"><img src="img/cx1.jpg" style="width: 100%;height: 285px;"></a>
-       <a class="carousel-item"><img src="img/cx1.jpg" style="width: 100%;height: 285px;"></a>
+        <?php
+          while($imagem = $imagem_assinatura->fetch_assoc())
+          {
+        ?>
+       <a class="carousel-item"><img src="<?php echo $imagem['url']; ?>" style=" width: 100%;height: 285px;"></a>
+     <?php  } ?> 
      </div>
    </div>
    <div class=" col s12 m2 l1 "></div>
    <div class=" col s12 m8 l5 ">
 
-    <input id="titulo" name="titulo" style="color: black; font-weight: bolder; font-size: 18pt; border: 0; text-align: center; pointer-events: none " type="text"  value="<?php echo $_POST['titulo']; ?>">
+    <input id="titulo" name="titulo" style="color: black; font-weight: bolder; font-size: 18pt; border: 0; text-align: center; pointer-events: none " type="text"  value="<?php echo $recebe_assinatura['nome_produto']; ?>">
 
-     <input type="text" name="valor" style="pointer-events: none; font-size: 15pt; border: 0" value="<?php echo $_POST['valor']; ?>">
+     <input type="text" name="valor" style="pointer-events: none; font-size: 15pt; border: 0" value="<?php echo "R$".$recebe_assinatura['preco']; ?>">
      <br>
-     <input type="text" name="detalhes" style="pointer-events: none; font-size: 13pt; border: 0; text-align: justify; text-indent: 3px; overflow:hidden;" value="<?php echo $_POST['detalhes']; ?>"> 
+     <input type="text" name="detalhes" style="pointer-events: none; font-size: 13pt; border: 0; text-align: justify; text-indent: 3px; overflow:hidden;" value="<?php echo $recebe_assinatura['descricao_produto']; ?>"> 
 
      <hr>
      <form action="verificacao_compra.php" method="post" id="comprar-form">

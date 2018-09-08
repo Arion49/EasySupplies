@@ -1,3 +1,10 @@
+<?php
+require_once('openBD.php');
+
+  
+  $consulta_produtos = mysqli_query($conexao, "SELECT * FROM assinaturas ORDER BY id DESC LIMIT 2");
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,46 +60,31 @@ opacity: 0.4" class="animated infinite pulse slower">
 
     <div class="row">
      <div class="col s12" style="color: white;"><h5>Assinaturas</h5></div>
-
-     <div class="col s12 m6 l4">
-      <form method="post" action="prod.php">
-        <div class="card">
-          <div class="card-image z-depth-5  responsive col s12">
-            <input type ="image" src="img/cx1.png" disabled="disabled" name="imagem" style="width: 100%; height: 250px;" align="center">
-          </div>
-          <div>  
-            <input type="text" class="card-title" style="color: black; font-family:timesnewroman; border: 0; font-size: 18pt; text-align: center; pointer-events: none;" value="Kit Frutas e Legumes Básico" name="titulo" >
-          </div>
-          <div class="card-content">
-           <input name="valor" value="R$65,00" style="font-weight: bolder; color: black; font-size: 13pt; border: 0; pointer-events: none;">
-           <input name="recomendacao" value="Recomendado para 1 pessoa" style="color: black; font-size: 12pt; border: 0; overflow-y: scroll; pointer-events: none; " >
-           <input name="detalhes" style="display: none; pointer-events: none;" value="O kit 'Frutas e Legumes Básico' foi pensado para pessoas que moram sozinhas, facilitando a organização e evitando desperdicios. Esse kit contém 10 tipos de legumes, 10 tipos de frutas e 2 tipos de hortaliças.">
-         </div>
-         <div class="card-action">
-          <input type="submit" name="submit" value="Mais Informações ->">
-        </div>
-      </div>
-    </form>
-    </div>
-
+  <?php
+    while($ass = $consulta_produtos->fetch_assoc())
+    {
+  ?>
     <div class="col s12 m6 l4">
+
       <div class="card">
         <div class="card-image z-depth-5  responsive">
-          <img src="img/cx1.jpg">
+          <img src="<?php echo $ass['url']; ?>">
         </div>
         <div>  
-          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit Frutas e Legumes Padrão</b></span>
+          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b><?php echo $ass['nome_produto']; ?></b></span>
         </div>
         <div class="card-content">
-          <h6><b>R$ 65,00</b></h6>
-          <p>Nesse kit contem 10 tipos de legumes 10 tipos de frutas e 2 tipos de hortaliça.</p>
+          <h6><b><?php echo "R$".$ass['preco'] ?></b></h6>
+          <p><?php echo $ass['descricao_produto']; ?></p>
         </div>
         <div class="card-action">
-          <a href="#">Mais Informações -></a>
+          <a href="prod.php?produto_pesquisa=<?php echo $ass['id']; ?>">Mais Informações -></a>
         </div>
       </div>
+
     </div>
-    <div class="col s12 m6 l4">
+  <?php } ?>
+   <!-- <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image z-depth-5  responsive">
           <img src="img/cx1.jpg">
@@ -176,8 +168,8 @@ opacity: 0.4" class="animated infinite pulse slower">
         </div>
       </div>
     </div>
-  </div>
-  <div class="row">
+  </div> -->
+ <!-- <div class="row">
     <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image carousel carousel-slider z-depth-5 responsive">
@@ -244,12 +236,12 @@ opacity: 0.4" class="animated infinite pulse slower">
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
 </div>
 
-
+</div>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
