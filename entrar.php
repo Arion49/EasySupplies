@@ -73,7 +73,7 @@
 				
 				<div class="col s12 center-align">
 
-					<i class="material-icons animated fadeIn slow" style="font-size: 150px">account_circle</i>	      
+					<i class="material-icons animated fadeIn slow" style="font-size: 150px; color: #4a148c">account_circle</i>	      
 
 				</div>
 

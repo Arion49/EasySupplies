@@ -57,6 +57,10 @@
 
           });
 
+          document.getElementsByClassName('butn_saiba').onclick = function(){
+            
+          }
+
           document.getElementById('btn-proximo-cad').onclick = function(){
 
             var login = document.getElementById('login').value;
