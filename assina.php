@@ -2,7 +2,7 @@
 require_once('openBD.php');
 
   
-  $consulta_produtos = mysqli_query($conexao, "SELECT * FROM assinaturas ORDER BY id DESC LIMIT 2");
+  $consulta_produtos = mysqli_query($conexao, "SELECT * FROM assinaturas LIMIT");
 
 ?>
 <!DOCTYPE html>
