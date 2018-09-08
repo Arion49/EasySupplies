@@ -86,11 +86,12 @@
 					
 						
 
-					<ul class="right" style=" padding-left: 20px;">
+					<ul class="right" style=" padding-left: 20px; 
+						background-color: #381159; ">
 
 						<li 
 						style="font-family: 'Poppins', sans-serif; font-size: 11pt;
-						background-color: #381159; 
+						padding-left: 10px;
 						padding-right: 10px;
 						">
 							<?php
@@ -105,7 +106,7 @@
 				    	<li><a href="#!">Minhas assinaturas</a></li>
 				    	<li><a href="editar_perfil.php">Editar perfil</a></li>
 				    	<li><a href="logout.php" >Sair</a></li>
-				    	
+
 				    </ul>
 
 				<?php

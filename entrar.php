@@ -61,6 +61,7 @@
 				<a class="col s6 btn btn-large" 
 				href="cad.php" 
 				style="font-size: 13px;
+				background-color: #4a148c !important;
 				border-radius: 0 !important;
 				">
 					<i class="material-icons right">arrow_forward</i>
@@ -96,6 +97,7 @@
 					id="btn-login-logar" 
 					type="submit" name="submit" 
 					style="width: 100%;
+					background-color: #4a148c;
 					margin-bottom: 40px; 
 					margin-top: 20px;
 					">
