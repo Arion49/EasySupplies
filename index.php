@@ -24,6 +24,8 @@
 
  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+ <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
  <link href="https://fonts.googleapis.com/css?family=Poppins|Slabo+27px" rel="stylesheet">
 
  <body style="background-color: white; margin: 0;padding: 0;">
@@ -53,12 +55,12 @@
 
       <div class="col s12 responsivea-img" style="
       background-image: url('img/back_index-p1.png'); 
-      height: 610px;
+      height: 510px;
       padding-top: 30px;
-      background-size: 100% 610px;
+      background-size: 100% 510px;
       ">
 
-        <div class="col m6 s12 center-align animated fadeIn slow delay-1s" 
+        <div class="col m6 s12 center-align animated fadeInLeft slow" 
         style="
         font-family: 'Poppins', sans-serif; font-size: 25px;
         color: white;
@@ -72,7 +74,7 @@
 
         </div>
 
-        <div class="col m6 s12 center-align animated fadeIn delay-3s hide-on-small-only"
+        <div class="col m6 s12 center-align animated fadeInRight delay-1s hide-on-small-only"
         style="
         font-family: 'Poppins', sans-serif; font-size: 25px;
         color: white;
@@ -80,14 +82,14 @@
         >
 
           <div class="col s12 center-align"> 
-            <img src="img/download.png" style="height: 150px; margin-top: 20px;margin-bottom: 40px; opacity: 0.7">
+            <img src="img/download.png" style="height: 150px; margin-top: 20px;margin-bottom: 40px; opacity: 0.8">
           </div>
 
-          Livre sua vida perigos como agrotóxicos.
+          Tire sua vida de perigos como os agrotóxicos.
 
         </div>
 
-        <div class="col s12 center-align" style="margin-top: 5%">
+        <div class="col s12 center-align animated fadeIn slow delay-2s" style="margin-top: 4%">
 
           <button class="btn btn-large btn-flat white-text butn_saiba" style="
           font-size: 18px;
@@ -101,13 +103,12 @@
 
       </div>
 
-      <div class="col s12 center-align purple-text">
-        <h3> Saiba como funciona </h3>
+      <div class="col s12 center-align" style="margin-top: 150px; color: #4a148c">
+        <h3 style=" font-family: 'Poppins', sans-serif;">  Como funciona? </h3>
       </div>
 
       <div class="col s12" style="
-      padding-top: 70px;
-      margin-top: 100px;
+      padding-top: 30px;
       background-image: url('img/1.png');
       background-repeat: no-repeat;
       background-position: top;
@@ -117,12 +118,26 @@
 
         <div class="container">
 
-          <div class="col s3" style="font-size: 23px">
-            Conseguimos o melhor dos menores produtores
+          <div class="col l5  m6" 
+          style="font-size: 25px;
+          font-family: 'Indie Flower', cursive;
+          ">
+
+            <p class="animar_home" style="padding: 0; margin: 0;">
+              1. Fazemos uma <a class="purple-text" style="font-weight: bold">parceria</a> com pequenos produtores e conseguimos o melhor que eles tem a oferecer.
+            </p>  
+
           </div>
 
-          <div class="col s4 offset-s5">
-            aaa
+          <div class="col l5 offset-l2 m6" 
+          style="font-size: 23px;
+          font-family: 'Indie Flower', cursive;
+          ">
+
+            <p class="animar_home" style="padding: 0; margin: 0">
+              2. Trazemos para você, <a class="purple-text" style="font-weight: bold">na sua casa</a>, os produtos em forma de assinaturas mensais ou quinzenais.
+            </p> 
+
           </div>
 
         </div> 
