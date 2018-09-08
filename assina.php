@@ -1,76 +1,81 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-		<title>Easy Supplies - Assinaturas</title>
+  <title>Easy Supplies - Assinaturas</title>
 
-		<link rel="stylesheet" type="text/css" href="css.css">
+  <link rel="stylesheet" type="text/css" href="css.css">
 
-		<link rel="stylesheet" href="animate/animate.css">
+  <link rel="stylesheet" href="animate/animate.css">
 
-		<!--Import Google Icon Font-->
-	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-	    <!-- Icone do titulo -->
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <!-- Icone do titulo -->
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-        <meta name="description" value="Suprimentos fáceis, trazendo o melhor dos produtos orgânicos da forma mais fácil para você!">
+  <meta name="description" value="Suprimentos fáceis, trazendo o melhor dos produtos orgânicos da forma mais fácil para você!">
 
-	    <!--Import materialize.css-->
-	    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
 
-	    <!-- Compiled and minified CSS -->
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
 
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	</head>
+</head>
 
-	<span id="background-img" 
-        style="
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        z-index: -1;
-        position: fixed; 
-        max-height: 1170px;
-        height: 1170px;
-        width: 100%;
-        opacity: 0.4" class="animated infinite pulse slower">
-        </span>  
+<span id="background-img" 
+style="
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+z-index: -1;
+position: fixed; 
+max-height: 1170px;
+height: 1170px;
+width: 100%;
+opacity: 0.4" class="animated infinite pulse slower">
+</span>  
 
 
-	<body style="background-color: rgba(75,0,130,0.8); margin: 0;padding: 0;">
+<body style="background-color: rgba(75,0,130,0.8); margin: 0;padding: 0;">
 
-		<?php
-			include_once('nav.php');
-		?>
+  <?php
+  include_once('nav.php');
+  ?>
 
-			<div class="container" style="padding-top: 8px; padding-bottom: 8px;">
-             
-				
+  <div class="container" style="padding-top: 8px; padding-bottom: 8px;">
 
-				<div class="row">
-					<div class="col s12" style="color: white;"><h5>Assinaturas</h5></div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image z-depth-5  responsive">
-          <img src="img/cx1.jpg">
-        </div>
-        <div>  
-          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit Frutas e Legumes Basico</b></span>
-        </div>
-        <div class="card-content">
-        	<h6><b>R$ 65,00</b></h6>
-          <p>Nesse kit contem 10 tipos de legumes 10 tipos de frutas e 2 tipos de hortaliça.</p>
-        </div>
-        <div class="card-action">
-          <a href="prod1.php">Mais Informações -></a>
+
+
+    <div class="row">
+     <div class="col s12" style="color: white;"><h5>Assinaturas</h5></div>
+
+     <div class="col s12 m6 l4">
+      <form method="post" action="prod.php">
+        <div class="card">
+          <div class="card-image z-depth-5  responsive col s12">
+            <input type ="image" src="img/cx1.png" disabled="disabled" name="imagem" style="width: 100%; height: 250px;" align="center">
+          </div>
+          <div>  
+            <input type="text" class="card-title" style="color: black; font-family:timesnewroman; border: 0; font-size: 18pt; text-align: center; pointer-events: none;" value="Kit Frutas e Legumes Básico" name="titulo" >
+          </div>
+          <div class="card-content">
+           <input name="valor" value="R$65,00" style="font-weight: bolder; color: black; font-size: 13pt; border: 0; pointer-events: none;">
+           <input name="recomendacao" value="Recomendado para 1 pessoa" style="color: black; font-size: 12pt; border: 0; overflow-y: scroll; pointer-events: none; " >
+           <input name="detalhes" style="display: none; pointer-events: none;" value="O kit 'Frutas e Legumes Básico' foi pensado para pessoas que moram sozinhas, facilitando a organização e evitando desperdicios. Esse kit contém 10 tipos de legumes, 10 tipos de frutas e 2 tipos de hortaliças.">
+         </div>
+         <div class="card-action">
+          <input type="submit" name="submit" value="Mais Informações ->">
         </div>
       </div>
+    </form>
     </div>
-     <div class="col s12 m6 l4">
+
+    <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image z-depth-5  responsive">
           <img src="img/cx1.jpg">
@@ -87,7 +92,7 @@
         </div>
       </div>
     </div>
-     <div class="col s12 m6 l4">
+    <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image z-depth-5  responsive">
           <img src="img/cx1.jpg">
@@ -104,16 +109,16 @@
         </div>
       </div>
     </div>
-</div>
-<div class="row">
+  </div>
+  <div class="row">
     <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image carousel carousel-slider z-depth-5 responsive">
           <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm6.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm6.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
         </div>
         <div>  
           <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit Frutas e Legumes Basico</b></span>
@@ -127,14 +132,14 @@
         </div>
       </div>
     </div>
-     <div class="col s12 m6 l4">
+    <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image carousel carousel-slider z-depth-5 responsive">
           <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm6.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm6.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
         </div>
         <div>  
           <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit Frutas e Legumes Padrão</b></span>
@@ -149,14 +154,14 @@
         </div>
       </div>
     </div>
-     <div class="col s12 m6 l4">
+    <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image carousel carousel-slider z-depth-5 responsive">
           <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm6.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm6.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
         </div>
         <div>  
           <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit Frutas e Legumes PLUS</b></span>
@@ -171,16 +176,16 @@
         </div>
       </div>
     </div>
-</div>
-<div class="row">
+  </div>
+  <div class="row">
     <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image carousel carousel-slider z-depth-5 responsive">
           <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm6.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm6.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
         </div>
         <div>  
           <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
@@ -195,14 +200,14 @@
         </div>
       </div>
     </div>
-     <div class="col s12 m6 l4">
+    <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image carousel carousel-slider z-depth-5 responsive">
           <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm6.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm6.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
         </div>
         <div>  
           <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
@@ -217,14 +222,14 @@
         </div>
       </div>
     </div>
-     <div class="col s12 m6 l4">
+    <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image carousel carousel-slider z-depth-5 responsive">
           <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm6.jpg" style="width: 100%;height: 285px"></a>
-              <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm6.jpg" style="width: 100%;height: 285px"></a>
+          <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
         </div>
         <div>  
           <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
@@ -239,22 +244,22 @@
         </div>
       </div>
     </div>
+  </div>
+
+
 </div>
 
 
-			</div>
-			
-			
-		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 
-        <script type="text/javascript" src="js.js"></script>
+<script type="text/javascript" src="js.js"></script>
 
-      <?php
+<?php
 
-        include_once ("footer.html");
+include_once ("footer.html");
 
-      ?>
-	</body>
+?>
+</body>
 </html>
