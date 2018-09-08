@@ -86,17 +86,26 @@
 					
 						
 
-					<ul class="right" style="background-color: #381159; padding-left: 15px;">
+					<ul class="right" style=" padding-left: 20px;">
 
-						<li style="font-family: 'Poppins', sans-serif; font-size: 11pt; "><?php
-						 $input = $_SESSION['nome'];
-						 list($input) = explode(' ',$input,2);
-						 echo "Olá, ".$input; ?></li>
-			    	
+						<li 
+						style="font-family: 'Poppins', sans-serif; font-size: 11pt;
+						background-color: #381159; 
+						padding-right: 10px;
+						">
+							<?php
+
+						 		$input = $_SESSION['nome'];
+						 		list($input) = explode(' ',$input,2);
+						 		echo "Olá, ".$input; 
+
+						 	?>						 			
+						</li>
+
 				    	<li><a href="#!">Minhas assinaturas</a></li>
 				    	<li><a href="editar_perfil.php">Editar perfil</a></li>
 				    	<li><a href="logout.php" >Sair</a></li>
-
+				    	
 				    </ul>
 
 				<?php
@@ -152,14 +161,12 @@
 		</li>
 
 		<li>
-			<a class="waves-effect" href="contact.php">Contato <i class="material-icons">mode_edit</i></a>
+			<a class="waves-effect" href="contact.php">Contato <i class="material-icons">email</i></a>
 		</li>
 
 		<li>
 			<a class="waves-effect" href="about.php">Sobre nós <i class="material-icons">info</i></a>
 		</li>
-
-		<li class="divider grey darken-1"></li>
 
 		<?php
 
@@ -169,19 +176,38 @@
 				
 
 					<div class=" deep-purple white-text">
-						<span style="font-size: 20px; margin-left: 20px">
+						<div style="font-size: 20px; margin-left: 20px;padding-top: 10px; padding-bottom: 10px">
 							 <?php echo "Olá, ".$input;?>
-						</span>
+						</div>
 			    	
-				    	<li><a class="bottom_t white-text" href="#!">Minhas assinaturas</a></li>
-				    	<li><a class="bottom_t white-text" href="editar_perfil.php">Editar perfil</a></li>
-				    	<li><a class=" white-text" href="logout.php" style="margin-top: 10px">Sair</a></li>
+				    	<li class="waves-effect" style="width: 100%">
+				    		<a class="bottom_t white-text" href="#!">
+				    			Minhas assinaturas
+				    			<i class="material-icons white-text">format_list_bulleted</i>
+				    		</a>
+				    	</li>
+
+				    	<li class="waves-effect" style="width: 100%">
+				    		<a class="bottom_t white-text" href="editar_perfil.php">
+				    			Editar perfil
+				    			<i class="material-icons white-text">edit</i>
+				    		</a>
+				    	</li>
+
+				    	<li class="waves-effect" style="width: 100%">
+				    		<a class="white-text" href="logout.php" style="margin-top: 10px">
+				    			Sair
+				    			<i class="material-icons white-text" style="font-weight: bold"> clear</i>
+				    		</a>
+				    	</li>
 				    </div>	
 
 				<?php
 				}else{
 				?>
-					<ul class="hide-on-med-and-down right">
+					<ul>
+
+						<li class="divider"></li>
 			    	
 				    	<li>
 							<a class="waves-effect sidenav-trigger" href="entrar.php">

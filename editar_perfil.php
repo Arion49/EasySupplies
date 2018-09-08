@@ -58,9 +58,13 @@
 
 
 
-			<div  class="container z-depth-4"  id="scss-cad"  style="margin-
-			bottom:30px; border-radius: 10px; border-bottom-right-radius: 0;
-			border-bottom-left-radius: 0; background-color: #270d44; ">
+			<div  class="container-fluid z-depth-4"  id="scss-cad"  
+			style="
+			margin-bottom:30px;
+			margin-left: 9%;
+			margin-right: 9%;
+			background-color: #270d44; 
+			">
 
 				<div class="row">
 
@@ -70,8 +74,7 @@
 					style="padding: 0;">
 				
 						<div class="col m12 l6 min-phone animated fadeIn fast" 
-						style=" background-color: #270d44; border-top-left-
-						radius: 10px; border-right: 2px solid #6f339b; ">
+						style=" background-color: #270d44; border-right: 2px solid grey; ">
 							
 							<div class="col s12" style="padding: 5px; padding-bottom: 8px; padding-top: 8px;">
 								
@@ -114,7 +117,7 @@
 								</div>
 								    
 								<div class="btn btn-float waves-effect" id="btn-proximo-cad" style="background-color: #304ffe;width: 100%;margin-top: 40px;margin-bottom: 20px;">
-								   	Verificar
+								   	Verificar dados
 							    </div>
 							    
 							</div>
@@ -166,7 +169,7 @@
 										</div>
 										    
 										<button class="btn btn-float waves-effect cad_btn_cad" type="submit" name="submit" disabled="disabled" id="btn-att" >
-										   	Atualizar Dados
+										   	Atualizar informações
 									    </button>
 								</div>
 

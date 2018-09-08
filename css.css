@@ -43,6 +43,7 @@
 }
 
 @media only screen and (max-width: 992px){
+
 	#scss-cad-a{
 		border-right: 0px solid !important;
 		border-top-right-radius: 10px !important;
@@ -56,6 +57,10 @@
 	}
 	.pading-top-med{
 		margin-top: 15px !important;
+	}
+
+	.min-phone{
+		border-right: 0px solid !important;
 	}
 }
 

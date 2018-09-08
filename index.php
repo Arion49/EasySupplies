@@ -3,7 +3,7 @@
 
   		<meta charset="utf-8">
 
-  		<title>Easy Supplies - Home</title>
+      <title>Easy Supplies</title>
 
       <link rel="stylesheet" type="text/css" href="css.css">
 
@@ -28,9 +28,7 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins|Slabo+27px" rel="stylesheet">
 
       <body style="background-color: white; margin: 0;padding: 0;">
-
         
-
         <?php
           include_once("nav.php");
         ?>
@@ -38,19 +36,32 @@
     <!-- Exemplificar -->
     	<div class="container-fluid" style="background-color: white;margin-bottom: 0;">
 
-            <div class="row" style="margin-top:1px">
-                <div class="col s12" 
-                style="
-                background-image: url('img/back_index-p1.png'); 
-                height: 610px; 
-                background-size: 100% 610px;
+        <div class="row" style="margin-top:2px">
 
-                ">
-                    
-                </div>
+          <div class="col s12 responsivea-img" style="
+          background-image: url('img/back_index-p1.png'); 
+          height: 510px; 
+          background-size: 100% 510px;
+          ">
+
+            <div class="col s12 center-align animated fadeIn slow delay-1s" 
+            style="
+            background-image: url('img/1.png');
+            height: 400px;
+            background-size: 100% 400px;
+            font-family: 'Poppins', sans-serif; font-size: 35px;
+            color: white;
+            ">
+            <p>
+              LOREN IPSUM
+            </p>
+
             </div>
-    		  
-    	</div>
+
+          </div>
+
+        </div>
+      </div>
 
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
