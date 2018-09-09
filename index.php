@@ -88,7 +88,7 @@
 
         <div class="col s12 center-align animated fadeIn slow delay-2s" style="margin-top: 4%">
 
-          <button class="btn btn-large btn-flat white-text butn_saiba" id="buton_saiba" style="
+          <button class="btn btn-large btn-flat white-text butn_saiba" style="
           font-size: 18px;
           ">
             <a href="#como" style="color: white !important;">Saiba como</a>
@@ -112,7 +112,7 @@
       background-repeat: no-repeat;
       background-position: top;
       background-size: 100%;
-      height: 100%;
+      height: 610px;
       padding-bottom: 330px;
       ">
 
