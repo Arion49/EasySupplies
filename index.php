@@ -183,6 +183,8 @@
 
 <script type="text/javascript" src="js.js"></script>
 
+<script type="text/javascript" src="novo.js"></script>
+
 <?php
 
 include_once ("footer.html");
