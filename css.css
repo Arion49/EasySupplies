@@ -67,6 +67,12 @@
 	.min-phone{
 		border-right: 0px solid !important;
 	}
+
+	.alo{
+		background-image: none !important;
+		height: 300px !important;
+	}
+
 }
 
 @media only screen and (max-width: 601px){
@@ -93,6 +99,18 @@
 		border-bottom-right-radius: 0 !important;
 		margin-right: 0 !important;
 		width: 100% !important;
+	}
+
+	.animar_home.b{
+		margin-top: 20px !important;
+	}
+
+}
+
+@media only screen and (max-width: 355px){
+
+	.alo{
+		height: 530px !important;
 	}
 
 }

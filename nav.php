@@ -182,7 +182,7 @@
 						</div>
 			    	
 				    	<li class="waves-effect" style="width: 100%">
-				    		<a class="bottom_t white-text" href="#!">
+				    		<a class="bottom_t white-text" href="minhas_assina.php">
 				    			Minhas assinaturas
 				    			<i class="material-icons white-text">format_list_bulleted</i>
 				    		</a>
