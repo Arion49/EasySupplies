@@ -103,7 +103,7 @@
 						 	?>						 			
 						</li>
 
-				    	<li><a href="#!">Minhas assinaturas</a></li>
+				    	<li><a href="minhas_assina.php">Minhas assinaturas</a></li>
 				    	<li><a href="editar_perfil.php">Editar perfil</a></li>
 				    	<li><a href="logout.php" >Sair</a></li>
 
