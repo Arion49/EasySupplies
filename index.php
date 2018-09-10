@@ -1,53 +1,61 @@
  <!DOCTYPE html>
  <html lang="pt-br">
 
- <meta charset="utf-8">
+ <head>
 
- <title>Easy Supplies</title>
+     <meta charset="utf-8">
 
- <link rel="stylesheet" type="text/css" href="css.css">
+     <title>Easy Supplies</title>
 
- <link rel="stylesheet" href="animate/animate.css">
+     <link rel="stylesheet" type="text/css" href="css.css">
 
- <!--Import Google Icon Font-->
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="animate/animate.css">
 
- <!--Import materialize.css-->
- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
- <!-- Icone do titulo -->
- <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
 
- <meta name="description" value="Suprimentos fáceis, trazendo o melhor dos produtos orgânicos da forma mais fácil para você!">
- <!-- Compiled and minified CSS -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+     <!-- Icone do titulo -->
+     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
- <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <meta name="description" value="Suprimentos fáceis, trazendo o melhor dos produtos orgânicos da forma mais fácil para você!">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
 
- <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
- <link href="https://fonts.googleapis.com/css?family=Poppins|Slabo+27px" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 
- <body style="background-color: white; margin: 0;padding: 0;">
+     <link href="https://fonts.googleapis.com/css?family=Poppins|Slabo+27px" rel="stylesheet">
+   
+ </head>
 
-  <!-- Exemplificar -->
-  <div class="container-fluid">
+ <span 
+style="
+background-image: url(img/back-index.png);
+background-repeat: repeat;
+background-attachment: fixed;
+z-index: -1;
+position: fixed; 
+max-height: 1170px;
+height: 1170px;
+width: 100%;
+opacity: 0.2">
+</span> 
 
-    <span
-        style="
-        background-image: url(img/back-index.png);
-        background-position: center;
-        background-attachment: fixed;
-        z-index: -1;
-        position: fixed;
-        opacity: 0.1" class="animated infinite pulse slower">
-    </span>
+ <body style="background-color: rgb(255,255,255); margin: 0;padding: 0;">
+
+  <div class="container-fluid" style="margin-bottom: 0;">
+
+    
 
     <?php
       include_once 'nav.php'; 
     ?>
 
-    <div class="row" style="margin-top:2px">
+    <div class="row" style="margin-top:2px;margin-bottom: 0">
 
       <div class="col s12 responsivea-img" style="
       background-image: url('img/back_index-p1.png'); 
@@ -91,7 +99,7 @@
           <button class="btn btn-large btn-flat white-text butn_saiba" style="
           font-size: 18px;
           ">
-            <a href="#como" style="color: white !important;">Saiba como</a>
+            <a href="#como" id="buton_saiba" style="color: white !important;">Saiba como</a>
             <i class="material-icons right">expand_more</i>
           </button>
 
@@ -99,7 +107,7 @@
 
       </div>
 
-      <div   id="como" class="col s12 center-align" style="padding-top: 150px;">
+      <div id="como" class="col s12 center-align" style="padding-top: 150px;">
 
         <h3 style=" font-family: 'Poppins', sans-serif;">  
           <a style=" color: #4a148c !important;">Como funciona? </a>
@@ -154,7 +162,7 @@
 
         <div class="container" style="padding-bottom: 20px">
           
-          <div class="col m6 s12" style="margin-top: 10px">
+          <div class="col l7 m12" style="margin-top: 10px">
           
             <p style="
             font-size: 30px; 
@@ -166,6 +174,86 @@
                 :
               </a>
               <a class="purple-text">todo mês você recebe conteudos diferentes</a>.
+            </p>
+
+          </div>
+
+          <div class="col l5 m12 center-align">
+            
+            <div class="col s12">
+              
+              <img src="img/frutas-branco.png" style="width: 50%">
+
+            </div>
+
+            <div class="col s12">
+              
+              <a href="assina.php" class="btn-large butn-confira-index"
+              style="
+              color: black !important; 
+              font-size: 20px;
+              width: 70%; 
+              margin-top: 10px; 
+              margin-bottom: 30px;
+              background-color: transparent;
+              border: 1px solid black;
+              ">
+                  
+                  Confira
+
+             </a>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class=" col s12 blue lighten-2">
+        
+        <div class="col s12 center-align">
+          <h3 style="font-family: 'Poppins', sans-serif; margin-top: 40px">Não entendeu? Tem alguma reclamação?</h3>
+        </div>
+
+        <div class="container" style="padding-bottom: 20px">
+
+          <div class="col l5 m12 center-align">
+            
+            <div class="col s12">
+              
+              <img src="img/cantact-img.png" style="width: 50%">
+
+            </div>
+
+            <div class="col s12">
+              
+             <a href="contact.php" class="btn-large butn-contact-index"
+              style="
+              color: black !important;
+              width: 70%; 
+              margin-top: 10px; 
+              margin-bottom: 30px;
+              background-color: transparent;
+              border: 1px solid black;
+              ">
+                  
+                  Entre em contato
+
+             </a>
+
+            </div>
+          </div>
+          
+          <div class="col l7 m12" style="margin-top: 10px">
+          
+            <p style="
+            font-size: 35px; 
+            font-family: 'Indie Flower', cursive;
+            text-indent: 1cm">
+
+              Entre em contato conosco para tirar suas duvidas, é rapido e 
+              <a class="purple-text">super facil</a>.
             </p>
 
           </div>

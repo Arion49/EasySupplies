@@ -51,6 +51,13 @@
 	background-color: #4a148c !important;
 	color: white !important;
 }
+.butn-confira-index:hover{
+	background-color: #e0bb1a !important;
+}
+
+.butn-contact-index:hover{
+	background-color: #42a5f5 !important;
+}
 
 @media only screen and (max-width: 992px){
 
@@ -110,6 +117,8 @@
 		border-bottom-left-radius: 0 !important;
 		border-bottom-right-radius: 0 !important;
 		margin-right: 0 !important;
+		padding-right: 0 !important;
+		padding-left: 0 !important;
 		width: 100% !important;
 	}
 

@@ -27,9 +27,6 @@ require_once('openBD.php');
   <!-- Import hover.css -->
   <link rel="stylesheet" type="text/css" href="hover/css/hover.css">
 
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
-
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
 
@@ -57,11 +54,16 @@ opacity: 0.4" class="animated infinite pulse slower">
   include_once('nav.php');
   ?>
 
-  <div class="container-fluid" style="padding-top: 8px; padding-bottom: 8px;margin-left: 9%; margin-right: 9%">
+  <div class="container-fluid" 
+  style="
+  padding-top: 8px; 
+  padding-bottom: 18px;
+  margin-left: 9%; 
+  margin-right: 9%">
 
-    <div style="color: white; margin-left: 10px"><h5>Assinaturas</h5></div>
+    <div style="color: white; margin-left: 10px; padding-bottom: 5px;"><h5>Assinaturas</h5></div>
 
-    <div class="row" style="padding-top: 5px">
+    <div class="row grey lighten-3" style="padding-top: 15px; padding-bottom: 18px;">
     <?php
       while($ass = $consulta_produtos->fetch_assoc())
       {
@@ -70,35 +72,40 @@ opacity: 0.4" class="animated infinite pulse slower">
 
         <div class="card">
 
-          <div class="card-image z-depth-2  responsive">
+          <div class="card-image z-depth-3 responsive" style="margin-bottom: 10px">
             <img src="<?php echo $ass['url']; ?>">
+
+            <div class="card-title col s12" style="color: white; font-family: 'Poppins', sans-serif;">
+              <b class="center-align" style="text-shadow: 0em 0em 0.2em black"><?php echo $ass['nome_produto']; ?></b>
+            </div>
+
           </div>
 
-          <div>  
-            <span class="card-title" style="color: black; font-family: timesnewroman;" >
-              <b><?php echo $ass['nome_produto']; ?></b>
-            </span>
-          </div>
+          <blockquote style=" height: 100%">            
 
-          <div class="card-content" style="border-left: 3px solid purple;">
-            <div class="col s6">
-              <b style="font-size: 18px; color: green;"> RS <?php echo $ass['preco'] ?></b>
-            </div>
-            <div class="col s6"></div>
-            <div class="col s12">
-               <p><?php echo $ass['descricao_produto']; ?></p>
-            </div>
+              <div class="col s6">
+                <b style="font-size: 18px; color: purple;">RS <?php echo $ass['preco'] ?></b>
+              </div>
+
+              <div class="col s6 right-align">
+                <p style="color: black !important;"><i class="material-icons blue-text">search</i> Simples</p>
+              </div>
+
+              <div class="col s12" style="padding-bottom: 10px">
+                 <p style="color: grey !important; height: 90px"><?php echo $ass['descricao_produto']; ?></p>
+              </div>
             
-          </div>
+          </blockquote>
 
           <a href="prod.php?produto_pesquisa=<?php echo $ass['id']; ?>">
+
             <div style="color: purple; font-size: 18px; width: 100%" class="card-action hvr-bounce-to-top">
 
               Mais Informações ->
 
             </div>
-          </a>
 
+          </a>
         </div>
 
       </div>

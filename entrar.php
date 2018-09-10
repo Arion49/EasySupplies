@@ -41,11 +41,11 @@
 
 <body>
 
-	<div class="container" style="padding: 10px">
+	<div class="container width100" style="padding: 10px">
 		
-		<div class="container white z-depth-4" style="margin-top:20px;">
+		<div class="container width100 white z-depth-4" style="margin-top:20px;">
 			
-			<div class="row animated fadeIn slow">
+			<div class="row animated fadeIn slow" style="margin: 0">
 
 				<a class="col s6 btn btn-large" 
 				href="index.php" 
