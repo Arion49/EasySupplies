@@ -88,7 +88,11 @@ opacity: 0.4" class="animated infinite pulse slower">
               </div>
 
               <div class="col s6 right-align">
-                <p style="color: black !important;"><i class="material-icons blue-text">search</i> Simples</p>
+                <p style="color: black !important;font-size: 15px !important;">
+
+                  <i style="font-size: 20px !important;" class="material-icons blue-text">search</i> Simples
+                  
+                </p>
               </div>
 
               <div class="col s12" style="padding-bottom: 10px">

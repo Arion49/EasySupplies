@@ -96,12 +96,19 @@ opacity: 0.2">
 
         <div class="col s12 center-align animated fadeIn slow delay-2s" style="margin-top: 4%">
 
-          <button class="btn btn-large btn-flat white-text butn_saiba" style="
+          <a 
+          class="btn btn-large btn-flat white-text butn_saiba" 
+          style="
           font-size: 18px;
-          ">
-            <a href="#como" id="buton_saiba" style="color: white !important;">Saiba como</a>
+          color: white !important;"
+          href="#como" 
+          id="buton_saiba">
+
+            Saiba como
+
             <i class="material-icons right">expand_more</i>
-          </button>
+           
+          </a>
 
         </div>
 

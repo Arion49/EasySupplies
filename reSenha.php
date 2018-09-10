@@ -48,7 +48,7 @@
 			<div class="row animated fadeIn slow" style="margin: 0">
 
 				<a class="col s6 btn btn-large" 
-				href="index.php" 
+				href="entrar.php" 
 				style="
 				background-color: white !important;
 				color: black !important;
@@ -70,33 +70,30 @@
 			</div>
 
 			<div class="container">
-				
-				<div class="col s12 center-align">
-
-					<i class="material-icons animated fadeIn slow" style="font-size: 150px; color: #4a148c">account_circle</i>	      
-
-				</div>
 
 				<div class="col s12 center-align">
-				    <h4 class="animated fadeIn" style="font-family: 'Titillium Web', sans-serif;">Entrar</h4>
+				    <h4 class="animated fadeIn" style="font-family: 'Titillium Web', sans-serif; margin-top: 40px">Esqueci minha senha</h4>
 				</div>
 
-				<form style="margin-top: 25px" action="logando.php" accept-charset="utf-8" method="post"  autocomplete="on">
+				<form style="margin-top: 55px" action="confirmando.php" accept-charset="utf-8" method="post"  autocomplete="off">
 
 					<div class="input-field animated fadeIn" style="margin-top: 20px">
-						<input id="login_login" name="login_login" type="text" required>
-						<label for="login_login">Login ou email</label>	
+						<input id="esqueci_login" name="esqueci_login" type="text" required>
+						<label for="esqueci_login">Login ou email</label>	
 					</div>
 
 					<div class="input-field animated fadeIn" style="margin-top: 30px">
-						<input id="senha_login" name="senha_login" type="password" required>
-						<label for="senha_login">Senha</label>	
+						<input id="esqueci_senha" name="esqueci_senha" type="password" required>
+						<label for="esqueci_senha">Nova senha</label>	
 					</div>
 
-					<a href="reSenha.php">Esqueci minha senha</a>
+					<div class="input-field animated fadeIn" style="margin-top: 30px">
+						<input id="esqueci_conf" name="esqueci_conf" type="password" required>
+						<label for="esqueci_conf">Confirmar nova senha</label>	
+					</div>
 
 					<button class="btn btn-float animated fadeIn"
-					id="btn-login-logar" 
+					id="btn-login-esqueci" 
 					type="submit" name="submit" 
 					style="width: 100%;
 					background-color: #4a148c;
@@ -104,7 +101,7 @@
 					margin-top: 20px;
 					">
 
-						Entrar
+						Trocar senha
 
 					</button>
 
