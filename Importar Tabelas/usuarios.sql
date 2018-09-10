@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 09-Set-2018 às 00:17
+-- Generation Time: 11-Set-2018 às 01:43
 -- Versão do servidor: 10.1.32-MariaDB
 -- PHP Version: 5.6.36
 
@@ -44,7 +44,9 @@ INSERT INTO `assinaturas` (`id`, `nome_produto`, `descricao_produto`, `url`, `pr
 (1, 'Caixa 01', 'Caixa desenvolvida', 'img/farm1.jpg', '12,30'),
 (2, 'Caixa 02', 'Caixa desenvolvida', 'img/farm1.jpg', '12,30'),
 (3, 'Caixa 03', 'Caixa desenvolvida', 'img/farm1.jpg', '12,30'),
-(4, 'Caixa 04', 'Caixa desenvolvida', 'img/farm1.jpg', '12,30');
+(4, 'Caixa 04', 'Caixa desenvolvida', 'img/farm1.jpg', '12,30'),
+(5, 'Caixa do Arion', 'peidorrero', 'https://static.tuasaude.com/media/article/hc/rx/frutas-laxantes_7123_l.jpg', '120,00'),
+(6, 'Exemplo edu', 'sadasdsadsadsa', './img/back12.jpg', '5.000');
 
 -- --------------------------------------------------------
 
@@ -67,7 +69,37 @@ INSERT INTO `ass_detalhes` (`id`, `id_ass`, `url`) VALUES
 (2, 1, 'https://sfagro.uol.com.br/wp-content/uploads/2017/01/2301-frutas-uva-melao-melancia-abacaxi-banana-pera-maca-pessego.jpg'),
 (3, 1, 'https://sfagro.uol.com.br/wp-content/uploads/2017/01/2301-frutas-uva-melao-melancia-abacaxi-banana-pera-maca-pessego.jpg'),
 (4, 1, 'https://sfagro.uol.com.br/wp-content/uploads/2017/01/2301-frutas-uva-melao-melancia-abacaxi-banana-pera-maca-pessego.jpg'),
-(5, 1, 'https://sfagro.uol.com.br/wp-content/uploads/2017/01/2301-frutas-uva-melao-melancia-abacaxi-banana-pera-maca-pessego.jpg');
+(5, 1, 'https://sfagro.uol.com.br/wp-content/uploads/2017/01/2301-frutas-uva-melao-melancia-abacaxi-banana-pera-maca-pessego.jpg'),
+(6, 2, 'https://static.tuasaude.com/media/article/hc/rx/frutas-laxantes_7123_l.jpg'),
+(7, 3, 'https://static.tuasaude.com/media/article/hc/rx/frutas-laxantes_7123_l.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `minha_ass`
+--
+
+CREATE TABLE `minha_ass` (
+  `id` int(11) NOT NULL,
+  `id_assinaturas` int(11) DEFAULT NULL,
+  `id_usuario` int(11) DEFAULT NULL,
+  `quantidade` int(11) DEFAULT NULL,
+  `tipo` varchar(50) DEFAULT 'medio',
+  `modo_entrega` varchar(200) DEFAULT 'nulo',
+  `forma_pagamento` varchar(200) DEFAULT 'Boleto',
+  `titulo_produto` varchar(200) DEFAULT NULL,
+  `preco_produto` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `minha_ass`
+--
+
+INSERT INTO `minha_ass` (`id`, `id_assinaturas`, `id_usuario`, `quantidade`, `tipo`, `modo_entrega`, `forma_pagamento`, `titulo_produto`, `preco_produto`) VALUES
+(45, 2, 3, 3, 'medio', 'mensais', 'Boleto', 'Caixa 02', '12,30'),
+(46, 3, 3, 2, 'medio', 'quinzenal', 'Cartao', 'Caixa 03', '12,30'),
+(47, 2, 3, 1, 'medio', 'mensais', 'Boleto', 'Caixa 02', '12,30'),
+(48, 2, 1, 3, 'medio', 'mensais', 'Boleto', 'Caixa 02', '12,30');
 
 -- --------------------------------------------------------
 
@@ -115,6 +147,13 @@ ALTER TABLE `ass_detalhes`
   ADD KEY `id_ass` (`id_ass`);
 
 --
+-- Indexes for table `minha_ass`
+--
+ALTER TABLE `minha_ass`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_assinaturas` (`id_assinaturas`);
+
+--
 -- Indexes for table `usuarios`
 --
 ALTER TABLE `usuarios`
@@ -128,13 +167,19 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT for table `assinaturas`
 --
 ALTER TABLE `assinaturas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `ass_detalhes`
 --
 ALTER TABLE `ass_detalhes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `minha_ass`
+--
+ALTER TABLE `minha_ass`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT for table `usuarios`
@@ -151,6 +196,12 @@ ALTER TABLE `usuarios`
 --
 ALTER TABLE `ass_detalhes`
   ADD CONSTRAINT `ass_detalhes_ibfk_1` FOREIGN KEY (`id_ass`) REFERENCES `assinaturas` (`id`);
+
+--
+-- Limitadores para a tabela `minha_ass`
+--
+ALTER TABLE `minha_ass`
+  ADD CONSTRAINT `minha_ass_ibfk_1` FOREIGN KEY (`id_assinaturas`) REFERENCES `assinaturas` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

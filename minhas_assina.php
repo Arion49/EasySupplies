@@ -1,3 +1,9 @@
+ <?php
+require_once('openBD.php');
+
+     
+
+ ?>
  <!DOCTYPE html>
  <html lang="pt-br">
 
@@ -46,6 +52,12 @@
 
 <?php
 include_once("nav.php");
+
+  $usuarios_con = $_SESSION['id'];
+  $sqlConsultaUsuario = mysqli_query($conexao, "SELECT * FROM minha_ass WHERE id_usuario='$usuarios_con'");
+
+
+
 ?>
 
 <div class="width1000" style="color: white; padding-top: 5px; margin-left: 9%;"> <h5>Minhas assinaturas</h5> </div>
@@ -63,7 +75,7 @@ include_once("nav.php");
           <!-- Cabeçalho -->
           <thead>
             <tr>
-              <th>Nome</th>
+              <th>COD</th>
               <th>Quantidade</th>
               <th>Tipo</th>
               <th>Preço (unid)</th>
@@ -71,20 +83,27 @@ include_once("nav.php");
           </thead>
 
           <tbody>
+            <?php
+         
+            if(isset($_POST['apagar']))
+            {
+
+            $sqlApaga = mysqli_query($conexao,"DELETE FROM minha_ass WHERE id='".$_POST['apagar']."'");
+            echo "<script>window.location.href = 'minhas_assina.php';</script>";
+          } 
+            while($consultando = $sqlConsultaUsuario->fetch_assoc())
+            {
+              ?>
             <tr>
-              <td>001</td>
-              <td>Notebook i7 8GB Branco</td>
-              <td>Informática</td>
-              <td>RS 123123</td>
-              <td><i class="material-icons red-text">close</i></td>
+              <td><?php echo $consultando['titulo_produto']; ?></td>
+              <td><?php echo $consultando['quantidade'] ;?></td>
+              <td><?php echo $consultando['tipo']; ?></td>
+              <td><?php echo $consultando['preco_produto']; ?></td>
+              <td><form method="post"><button name="apagar"type="submit" value="<?php echo $consultando['id']; ?>" style="background-color: transparent; border: none; cursor: pointer;"><i class="material-icons red-text">close</i></button></form></td>
             </tr>
-            <tr>
-              <td>002</td>
-              <td>Caneta Esferográfica Azul</td>
-              <td>Papelaria</td>
-              <td>RS12323</td>
-              <td><i class="material-icons red-text">close</i></td>
-            </tr>
+         <?php } 
+
+         ?>
           </tbody>
 
         </table>

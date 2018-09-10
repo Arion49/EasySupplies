@@ -1,17 +1,4 @@
-<?php
-require_once('openBD.php');
 
-  $imagem_assinatura = mysqli_query($conexao, "SELECT * FROM ass_detalhes WHERE id_ass='".$_GET['produto_pesquisa']."'  LIMIT 5");
-  
-  if(is_numeric($_GET['produto_pesquisa']))
-  {
-  $consultar_assinatura = mysqli_query($conexao, "SELECT * FROM assinaturas WHERE id='".$_GET['produto_pesquisa']."' LIMIT 1");
-  $recebe_assinatura = mysqli_fetch_assoc($consultar_assinatura);
-  }else
-  {
-    echo "<script>alert('Erro: 404 pagina não encontrada!')</script>";
-  }
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,8 +46,22 @@ opacity: 0.4" class="animated infinite pulse slower">
 
   <?php
   include_once('nav.php');
-  ?>
 
+
+  $imagem_assinatura = mysqli_query($conexao, "SELECT * FROM ass_detalhes WHERE id_ass='".$_GET['produto_pesquisa']."'  LIMIT 5");
+  
+  if(is_numeric($_GET['produto_pesquisa']))
+  {
+    $consultar_assinatura = mysqli_query($conexao, "SELECT * FROM assinaturas WHERE id='".$_GET['produto_pesquisa']."' LIMIT 1");
+    $recebe_assinatura = mysqli_fetch_assoc($consultar_assinatura);
+  }else
+  {
+  
+  }
+
+
+
+?>
 
   <div class="container" style="padding-top: 8px; padding-bottom: 8px; background-color: white; margin-top: 15px; margin-bottom: 15px; border-radius: 5px;">
    <div class="row">
@@ -87,35 +88,30 @@ opacity: 0.4" class="animated infinite pulse slower">
      <input type="text" name="detalhes" style="pointer-events: none; font-size: 13pt; border: 0; text-align: justify; text-indent: 3px; overflow:hidden;" value="<?php echo $recebe_assinatura['descricao_produto']; ?>"> 
 
      <hr>
-     <form action="verificacao_compra.php" method="post" id="comprar-form">
+
+     <form   action="verificacao_compra.php?id_produto=<?php echo $_GET['produto_pesquisa']; ?>&titulo_produto=<?php echo $recebe_assinatura['nome_produto']; ?>&preco_produto=<?php echo $recebe_assinatura['preco']; ?>" method="post" id="comprar-form">
        <legend>Forma de Pagamento:	
          <span>
            <label>
-             <input name="group1" type="radio" checked />
+             <input name="group1"  value="Boleto" type="radio" checked />
              <span>Boleto</span>
            </label>&nbsp;
-           
            <label>
-             <input name="group1" type="radio" />
+             <input name="group1" value="Cartao" type="radio" />
              <span>Cartao</span>
            </label>
          </span>
        </legend>
 
-       <input type="number" min="1" max="3" placeholder="Quantidade de Kit's">
-       <select class="browser-default">
-         <option value="" disabled selected>Modo de Entrega</option>
-         <option value="1">Mensal</option>
-         <option value="2">Quinzenal</option>
+       <input type="number" min="1" max="3" required name="kits" placeholder="Quantidade de Kit's">
+       <select required class="browser-default" name="entregas_tipo">
+         <option disabled    selected>Modo de Entrega</option>
+         <option value="mensais">Mensais</option>
+         <option   value="quinzenal">Quinzenal</option>
        </select>
        <br>
        <hr>
-
-
-
-
-
-       <button class="waves-effect purple darken-4 btn" style="border-color: black 1px;" id="comprar">Comprar</button>
+       <button class="waves-effect purple darken-4 btn"  name="enviar_btn" style="border-color: black 1px;" id="comprar">Comprar</button>
      </form>    
 
    </div>
