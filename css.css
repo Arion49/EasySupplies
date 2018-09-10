@@ -47,6 +47,11 @@
 	background-color: #4a148c !important;
 }
 
+.hover-detalhes:hover{
+	background-color: #4a148c !important;
+	color: white !important;
+}
+
 @media only screen and (max-width: 992px){
 
 	#scss-cad-a{
@@ -71,6 +76,13 @@
 	.alo{
 		background-image: none !important;
 		height: 300px !important;
+	}
+
+	.width1000{
+		margin-left: 0 !important;
+		border-radius: 0 !important;
+		margin-right: 0 !important;
+		width: 100% !important;
 	}
 
 }

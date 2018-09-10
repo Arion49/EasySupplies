@@ -24,6 +24,9 @@ require_once('openBD.php');
 
   <meta name="description" value="Suprimentos fáceis, trazendo o melhor dos produtos orgânicos da forma mais fácil para você!">
 
+  <!-- Import hover.css -->
+  <link rel="stylesheet" type="text/css" href="hover/css/hover.css">
+
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
 
@@ -54,194 +57,59 @@ opacity: 0.4" class="animated infinite pulse slower">
   include_once('nav.php');
   ?>
 
-  <div class="container" style="padding-top: 8px; padding-bottom: 8px;">
+  <div class="container-fluid" style="padding-top: 8px; padding-bottom: 8px;margin-left: 9%; margin-right: 9%">
 
+    <div style="color: white; margin-left: 10px"><h5>Assinaturas</h5></div>
 
+    <div class="row" style="padding-top: 5px">
+    <?php
+      while($ass = $consulta_produtos->fetch_assoc())
+      {
+    ?>
+      <div class="col s12 m6 l4">
 
-    <div class="row">
-     <div class="col s12" style="color: white;"><h5>Assinaturas</h5></div>
-  <?php
-    while($ass = $consulta_produtos->fetch_assoc())
-    {
-  ?>
-    <div class="col s12 m6 l4">
+        <div class="card">
 
-      <div class="card">
-        <div class="card-image z-depth-5  responsive">
-          <img src="<?php echo $ass['url']; ?>">
+          <div class="card-image z-depth-2  responsive">
+            <img src="<?php echo $ass['url']; ?>">
+          </div>
+
+          <div>  
+            <span class="card-title" style="color: black; font-family: timesnewroman;" >
+              <b><?php echo $ass['nome_produto']; ?></b>
+            </span>
+          </div>
+
+          <div class="card-content" style="border-left: 3px solid purple;">
+            <div class="col s6">
+              <b style="font-size: 18px; color: green;"> RS <?php echo $ass['preco'] ?></b>
+            </div>
+            <div class="col s6"></div>
+            <div class="col s12">
+               <p><?php echo $ass['descricao_produto']; ?></p>
+            </div>
+            
+          </div>
+
+          <a href="prod.php?produto_pesquisa=<?php echo $ass['id']; ?>">
+            <div style="color: purple; font-size: 18px; width: 100%" class="card-action hvr-bounce-to-top">
+
+              Mais Informações ->
+
+            </div>
+          </a>
+
         </div>
-        <div>  
-          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b><?php echo $ass['nome_produto']; ?></b></span>
-        </div>
-        <div class="card-content">
-          <h6><b><?php echo "R$".$ass['preco'] ?></b></h6>
-          <p><?php echo $ass['descricao_produto']; ?></p>
-        </div>
-        <div class="card-action">
-          <a href="prod.php?produto_pesquisa=<?php echo $ass['id']; ?>">Mais Informações -></a>
-        </div>
+
       </div>
 
+    <?php } ?>
+
+
     </div>
-  <?php } ?>
-   <!-- <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image z-depth-5  responsive">
-          <img src="img/cx1.jpg">
-        </div>
-        <div>  
-          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit Frutas e Legumes PLUS</b></span>
-        </div>
-        <div class="card-content">
-          <h6><b>R$ 65,00</b></h6>
-          <p>Nesse kit contem 10 tipos de legumes 10 tipos de frutas e 2 tipos de hortaliça.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">Mais Informações -></a>
-        </div>
-      </div>
-    </div>
+
   </div>
-  <div class="row">
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image carousel carousel-slider z-depth-5 responsive">
-          <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm6.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
-        </div>
-        <div>  
-          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit Frutas e Legumes Basico</b></span>
-        </div>
-        <div class="card-content">
-          <h6><b>R$ 39,90</b></h6>
-          <p>Nesse kit contem 10 tipos de legumes 10 tipos de frutas e 2 tipos de hortaliça.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">Mais Informações -></a>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image carousel carousel-slider z-depth-5 responsive">
-          <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm6.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
-        </div>
-        <div>  
-          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit Frutas e Legumes Padrão</b></span>
-        </div>
-        <div class="card-content">
-          <h6><b>R$ 39,90</b></h6>
-          <p>O kit 'frutas e legumes basico' foi pensado para pessoas que moram sozinhas facilitando
-          a organização e evitando desperdicios</p>
-        </div>
-        <div class="card-action">
-          <a href="#">Mais Informações -></a>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image carousel carousel-slider z-depth-5 responsive">
-          <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm6.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
-        </div>
-        <div>  
-          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit Frutas e Legumes PLUS</b></span>
-        </div>
-        <div class="card-content">
-          <h6><b>R$ 39,90</b></h6>
-          <p>O kit 'frutas e legumes basico' foi pensado para pessoas que moram sozinhas facilitando
-          a organização e evitando desperdicios</p>
-        </div>
-        <div class="card-action">
-          <a href="#">Mais Informações -></a>
-        </div>
-      </div>
-    </div>
-  </div> -->
- <!-- <div class="row">
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image carousel carousel-slider z-depth-5 responsive">
-          <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm6.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
-        </div>
-        <div>  
-          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
-        </div>
-        <div class="card-content">
-          <h6><b>R$ 39,90</b></h6>
-          <p>O kit 'frutas e legumes basico' foi pensado para pessoas que moram sozinhas facilitando
-          a organização e evitando desperdicios</p>
-        </div>
-        <div class="card-action">
-          <a href="#">Mais Informações -></a>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image carousel carousel-slider z-depth-5 responsive">
-          <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm6.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
-        </div>
-        <div>  
-          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
-        </div>
-        <div class="card-content">
-          <h6><b>R$ 39,90</b></h6>
-          <p>O kit 'frutas e legumes basico' foi pensado para pessoas que moram sozinhas facilitando
-          a organização e evitando desperdicios</p>
-        </div>
-        <div class="card-action">
-          <a href="#">Mais Informações -></a>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l4">
-      <div class="card">
-        <div class="card-image carousel carousel-slider z-depth-5 responsive">
-          <a class="carousel-item"><img src="img/farm1.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm2.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm3.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm6.jpg" style="width: 100%;height: 285px"></a>
-          <a class="carousel-item"><img src="img/farm5.jpg" style="width: 100%;height: 285px"></a>
-        </div>
-        <div>  
-          <span class="card-title" style="color: black; font-family: timesnewroman; " ><b>Kit standard</b></span>
-        </div>
-        <div class="card-content">
-          <h6><b>R$ 39,90</b></h6>
-          <p>O kit 'frutas e legumes basico' foi pensado para pessoas que moram sozinhas facilitando
-          a organização e evitando desperdicios</p>
-        </div>
-        <div class="card-action">
-          <a href="#">Mais Informações -></a>
-        </div>
-      </div>
-    </div>
-  </div> -->
 
-
-</div>
-
-</div>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>

@@ -48,43 +48,54 @@
 include_once("nav.php");
 ?>
 
+<div class="width1000" style="color: white; padding-top: 5px; margin-left: 9%;"> <h5>Minhas assinaturas</h5> </div>
+
+<div class="width1000" style="padding-top: 15px;margin-left: 9%; margin-right: 9%">
+
+  <div class="grey" style="height: 300px; margin-bottom: 30px;">
+    <div class="container-fluid">
 
 
-<div class="container-fluid width100" style="margin-top: 5px;margin-right: 9%;margin-left: 9%;">
+      <div class="row">
 
-  <table class="centered highlight responsive-table">
-    <thead>
-      <tr>
-        <th>Código</th>
-        <th>Descrição</th>
-        <th>Categoria</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>001</td>
-        <td>Notebook i7 8GB Branco</td>
-        <td>Informática</td>
-      </tr>
-      <tr>
-        <td>002</td>
-        <td>Caneta Esferográfica Azul</td>
-        <td>Papelaria</td>
-      </tr>
-    </tbody>
-  </table> 
+        <table class="col s12 centered striped">
+
+          <!-- Cabeçalho -->
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Quantidade</th>
+              <th>Tipo</th>
+              <th>Preço (unid)</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>Notebook i7 8GB Branco</td>
+              <td>Informática</td>
+              <td>RS 123123</td>
+              <td><i class="material-icons red-text">close</i></td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Caneta Esferográfica Azul</td>
+              <td>Papelaria</td>
+              <td>RS12323</td>
+              <td><i class="material-icons red-text">close</i></td>
+            </tr>
+          </tbody>
+
+        </table>
+        
+      </div>
 
 
+    </div>
 
-
-
-
-
-
-
-
-
-
+  </div>
+  
 </div> <!-- Fim container conteudo todo -->
 
 
