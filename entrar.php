@@ -65,7 +65,7 @@
 				border-radius: 0 !important;
 				">
 					<i class="material-icons right">arrow_forward</i>
-					Não tem conta? Cadastre-se gratis
+					Não tem conta? Cadastre-se grátis
 				</a>
 			</div>
 

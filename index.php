@@ -139,7 +139,7 @@ opacity: 0.2">
           ">
 
             <p class="animar_home animated fast delay-1s" style="padding: 0; margin: 0;font-family: 'Indie Flower', cursive;">
-              1. Fazemos uma <a class="purple-text" style="font-weight: bold">parceria</a> com pequenos produtores e conseguimos o melhor que eles tem a oferecer.
+              1. Fazemos uma <a class="purple-text" style="font-weight: bold">parceria</a> com pequenos produtores e conseguimos o melhor que eles têm a oferecer.
             </p>  
 
           </div>
@@ -176,11 +176,11 @@ opacity: 0.2">
             font-family: 'Indie Flower', cursive;
             text-indent: 1cm">
 
-              Oferecemos diversidades grandes de assinaturas, contendo tamanhos diferentes e um especial
+              Oferecemos grandes diversidades de assinaturas, contendo tamanhos diferentes e um especial
               <a style="font-size: 34px; font-weight: bold; color: black !important">
                 :
               </a>
-              <a class="purple-text">todo mês você recebe conteudos diferentes</a>.
+              <a class="purple-text">todo mês você recebe conteúdos diferentes</a>.
             </p>
 
           </div>
@@ -259,8 +259,8 @@ opacity: 0.2">
             font-family: 'Indie Flower', cursive;
             text-indent: 1cm">
 
-              Entre em contato conosco para tirar suas duvidas, é rapido e 
-              <a class="purple-text">super facil</a>.
+              Entre em contato conosco para tirar suas dúvidas, é rapido e 
+              <a class="purple-text">super fácil</a>.
             </p>
 
           </div>
