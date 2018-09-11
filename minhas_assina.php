@@ -146,7 +146,7 @@ $sqlConsultaUsuario = mysqli_query($conexao, "SELECT * FROM minha_ass WHERE id_u
                 background-color: transparent;
                 border: 1px solid black;
                 color: black !important;
-                ">Ir as compras</a>
+                ">Ir às compras</a>
 
               </div>
 

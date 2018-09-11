@@ -124,7 +124,7 @@ opacity: 0.5" class="animated infinite pulse slower">
                     O pacote do tipo pequeno possui 10 variações
                     <?php
 
-                  }elseif($ass['tipo'] == 'Médio'){
+                  }else if($ass['tipo'] == 'Médio'){
 
                     ?>
                     O pacote do tipo médio possui 20 variações
@@ -154,7 +154,7 @@ opacity: 0.5" class="animated infinite pulse slower">
 
               <div class="col s12" style="margin-top: 15px; font-size: 11px; margin-bottom: 4px">
                 
-                Descrisão
+                Descrição
 
               </div>
 

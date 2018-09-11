@@ -80,7 +80,7 @@
 	    </div>
 
 	    <div class="col s12" style="margin-top:100px">
-	    	<h4>Compra efeituada com sucesso! Redirecionando...</h4>
+	    	<h4>Compra efetuada com sucesso! Redirecionando...</h4>
 	    </div>
 
 	    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

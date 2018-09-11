@@ -194,10 +194,10 @@ opacity: 0.4" class="animated infinite pulse slower">
      <hr>
 
      <input type="number" min="1" max="3" required name="kits" placeholder=" Quantidade de pacotes">
-     <select required class="browser-default grey lighten-3" name="entregas_tipo">
-       <option disabled selected>&emsp; Vezes ao mês</option>
+     <select required class="browser-default grey lighten-3" name="entregas_tipo"  required="required">
+       <option disabled selected value="">&emsp; Vezes ao mês</option>
        <option value="Mensal">Mensal</option>
-       <option   value="Quinzenal">Quinzenal</option>
+       <option value="Quinzenal">Quinzenal</option>
      </select>
 
      <div class="col s12 center-align" style="padding: 0; margin: 0">
