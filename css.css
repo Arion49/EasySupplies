@@ -42,6 +42,14 @@
 	margin-bottom: 20px;
 }
 
+.animatedhover:hover {
+	animation-play-state: running;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
 .butn_saiba:hover {
 
 	background-color: #4a148c !important;
@@ -60,6 +68,10 @@
 }
 
 @media only screen and (max-width: 992px){
+
+	.deta-responsivo{
+		height: 500px !important;	
+	}
 
 	#scss-cad-a{
 		border-right: 0px solid !important;
@@ -95,6 +107,10 @@
 }
 
 @media only screen and (max-width: 601px){
+
+	.deta-responsivo{
+		height: 300px !important;	
+	}
 	
 	#scss-cad{
 		margin-right: 0 !important;
@@ -128,7 +144,11 @@
 
 }
 
-@media only screen and (max-width: 355px){
+@media only screen and (max-width: 375px){
+
+	.deta-responsivo{
+		height: 200px !important;	
+	}
 
 	.alo{
 		height: 530px !important;

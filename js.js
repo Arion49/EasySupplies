@@ -2,6 +2,8 @@
 
           $(document).ready(function(){
 
+            $('.tooltipped').tooltip();
+
             $('input#icon_assunto, textarea#textarea2').characterCounter();
 
             M.updateTextFields();

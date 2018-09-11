@@ -1,8 +1,8 @@
 <?php
 require_once('openBD.php');
 
-  
   $consulta_produtos = mysqli_query($conexao, "SELECT * FROM assinaturas ");
+
 
 ?>
 <!DOCTYPE html>
@@ -44,7 +44,7 @@ position: fixed;
 max-height: 1170px;
 height: 1170px;
 width: 100%;
-opacity: 0.4" class="animated infinite pulse slower">
+opacity: 0.5" class="animated infinite pulse slower">
 </span>  
 
 
@@ -54,7 +54,7 @@ opacity: 0.4" class="animated infinite pulse slower">
   include_once('nav.php');
   ?>
 
-  <div class="container-fluid" 
+  <div class="container-fluid width1000" 
   style="
   padding-top: 8px; 
   padding-bottom: 18px;
@@ -63,49 +63,114 @@ opacity: 0.4" class="animated infinite pulse slower">
 
     <div style="color: white; margin-left: 10px; padding-bottom: 5px;"><h5>Assinaturas</h5></div>
 
-    <div class="row grey lighten-3" style="padding-top: 15px; padding-bottom: 18px;">
+    <div class="row grey lighten-3 animated fadeIn faster z-depth-4" style="padding-top: 15px; padding-bottom: 18px;">
     <?php
       while($ass = $consulta_produtos->fetch_assoc())
       {
     ?>
       <div class="col s12 m6 l4">
 
-        <div class="card">
+        <div class="card animated fadeIn">
 
-          <div class="card-image z-depth-3 responsive" style="margin-bottom: 10px">
-            <img src="<?php echo $ass['url']; ?>">
+          <div class="card-image z-depth-3 responsive" style="margin-bottom: 15px;">
+            <img style=" height: 250px" src="<?php echo $ass['url']; ?>">
 
             <div class="card-title col s12" style="color: white; font-family: 'Poppins', sans-serif;">
-              <b class="center-align" style="text-shadow: 0em 0em 0.2em black"><?php echo $ass['nome_produto']; ?></b>
+              <b class="center-align" style="text-shadow: 0.1em 0.1em 0.1em black">
+              
+                <?php echo $ass['nome_produto']; ?>
+                  
+              </b>
             </div>
 
           </div>
 
-          <blockquote style=" height: 100%">            
+          <div style=" height: 100%;">            
 
-              <div class="col s6">
-                <b style="font-size: 18px; color: purple;">RS <?php echo $ass['preco'] ?></b>
+              <div class="col s6" style="padding: 0;">
+
+                <div class="col s12" style="font-size: 11px; margin-bottom: 4px">
+                  Preço ao mês
+                </div>
+
+                <div class="col s12">
+                  <b style="font-size: 18px; color: purple;">
+                    RS <?php echo $ass['preco'] ?> 
+                  </b>
+                </div>
+
               </div>
 
               <div class="col s6 right-align">
-                <p style="color: black !important;font-size: 15px !important;">
 
-                  <i style="font-size: 20px !important;" class="material-icons blue-text">search</i> Simples
+                <div class="col s12" style="font-size: 11px; margin-bottom: 4px;">
+
+                  Tipo do pacote
                   
-                </p>
+                </div>
+
+                <div class="col s12">
+
+                  <!-- <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Hover me!</a> -->
+
+                  <a style="color: purple !important;font-size: 20px !important; margin: 0; padding: 0"
+                  class="tooltipped" 
+                  data-position="bottom" 
+                  data-tooltip="
+
+                  <?php if($ass['tipo'] =='Pequeno'){
+
+                    ?>
+                    O pacote do tipo pequeno possui 10 variações
+                    <?php
+
+                  }elseif($ass['tipo'] == 'Médio'){
+
+                    ?>
+                    O pacote do tipo médio possui 20 variações
+                    <?php
+
+                  }else{
+                    ?>
+                    O pacote do tipo grande possui 35 variações
+                    <?php
+
+                  } ?>
+
+                  ">
+
+                      <i style="font-size: 25px !important;" class="material-icons purple-text">
+                        arrow_drop_down
+                      </i>
+
+                      <i style="font-style: normal;">
+                        <?php echo $ass['tipo']; ?>
+                      </i>
+                  </a>
+
+                </div>
+                
               </div>
 
-              <div class="col s12" style="padding-bottom: 10px">
-                 <p style="color: grey !important; height: 90px"><?php echo $ass['descricao_produto']; ?></p>
+              <div class="col s12" style="margin-top: 15px; font-size: 11px; margin-bottom: 4px">
+                
+                Descrisão
+
+              </div>
+
+              <div class="col s12 indigo lighten-4" style="padding-bottom: 10px;">
+                 <p style=" height: 70px; text-indent: 0.5cm"><?php echo $ass['descricao_produto']; ?></p>
               </div>
             
-          </blockquote>
+          </div>
 
-          <a href="prod.php?produto_pesquisa=<?php echo $ass['id']; ?>">
+          <a class="center-align" href="prod.php?produto_pesquisa=<?php echo $ass['id']; ?>">
 
-            <div style="color: purple; font-size: 18px; width: 100%" class="card-action hvr-bounce-to-top">
+            <div style="color: purple; font-size: 18px; width: 100%;" class="card-action hvr-bounce-to-top">
 
-              Mais Informações ->
+              Mais detalhes
+
+              <i class="material-icons left animated rotateIn" style="font-size:25px">add</i>
 
             </div>
 

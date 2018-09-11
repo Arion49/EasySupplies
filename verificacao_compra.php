@@ -14,7 +14,7 @@ if (isset($_SESSION["login"]) || isset($_SESSION["senha"])) {
         $id_assinatura = $_GET['id_produto'];
         $id_usuario = $_SESSION['id'];
         $quantidade = $_POST['kits'];
-        $tipo = "medio"; //post quando adiciona no formulário Ex: $_POST['tipo'];
+        $tipo = $_POST['tipo']; //post quando adiciona no formulário Ex: $_POST['tipo'];
         $modo_entregas = $_POST['entregas_tipo'];
         $forma_pagamento = $_POST['group1'];
         $titulo_produto = $_GET['titulo_produto'];
@@ -23,12 +23,19 @@ if (isset($_SESSION["login"]) || isset($_SESSION["senha"])) {
        // inserir os dados ao banco de dados
         $sql = mysqli_query($conexao, "INSERT INTO minha_ass(id,id_assinaturas,id_usuario,quantidade,tipo, modo_entrega,forma_pagamento,titulo_produto,preco_produto) VALUES(NULL,'$id_assinatura','$id_usuario','$quantidade','$tipo', '$modo_entregas','$forma_pagamento', '$titulo_produto', '$preco_produto')") or die (mysqli_error($conexao));
  
-          header("Location: minhas_assina.php");
+          include_once 'minhas_message.php';
 	}
 
 }else
 {
-	header("Location: cad.php");
+	include_once 'entrar.php';
+
+  echo "
+  <script type='text/javascript'>
+
+      M.toast({html: 'Você precisa estar logado para comprar', classes: 'rounded'});
+
+  </script>";
 }
 
 				

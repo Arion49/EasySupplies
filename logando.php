@@ -40,7 +40,7 @@
 
 		}else{
 			
-			 	include 'entrar.php';
+			 	include_once 'entrar.php';
 
 			 	echo "
 			 	<script type='text/javascript'>

@@ -31,7 +31,7 @@
 	<meta name="description" value="Suprimentos fáceis, trazendo o melhor dos produtos orgânicos da forma mais fácil para você!">
 </head>
 
-<body class="blue lighten-3">
+<body class="light-green lighten-2">
 
 	<div class="container center-align">
 		
@@ -80,7 +80,7 @@
 	    </div>
 
 	    <div class="col s12" style="margin-top:100px">
-	    	<h4>Logado com sucesso! Entrando na sessão...</h4>
+	    	<h4>Compra efeituada com sucesso! Redirecionando...</h4>
 	    </div>
 
 	    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -91,7 +91,7 @@
 				function() 
 				{
 
-					window.location.assign('index.php');
+					window.location.assign('minhas_assina.php');
 
 				}, 3500);
 
