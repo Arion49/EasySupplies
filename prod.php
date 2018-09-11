@@ -102,7 +102,7 @@ opacity: 0.4" class="animated infinite pulse slower">
        <input type="number" min="1" max="3" required name="kits" placeholder="Quantidade de Kit's">
        <select required class="browser-default" name="entregas_tipo">
          <option disabled    selected>Modo de Entrega</option>
-         <option value="mensais">Mensais</option>
+         <option value="mensais">Mensal</option>
          <option   value="quinzenal">Quinzenal</option>
        </select>
        <br>
