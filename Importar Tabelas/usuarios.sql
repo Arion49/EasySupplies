@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
+-- version 4.8.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 11-Set-2018 às 01:43
--- Versão do servidor: 10.1.32-MariaDB
--- PHP Version: 5.6.36
+-- Generation Time: 11-Set-2018 às 02:55
+-- Versão do servidor: 10.1.34-MariaDB
+-- PHP Version: 7.2.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -45,8 +45,11 @@ INSERT INTO `assinaturas` (`id`, `nome_produto`, `descricao_produto`, `url`, `pr
 (2, 'Caixa 02', 'Caixa desenvolvida', 'img/farm1.jpg', '12,30'),
 (3, 'Caixa 03', 'Caixa desenvolvida', 'img/farm1.jpg', '12,30'),
 (4, 'Caixa 04', 'Caixa desenvolvida', 'img/farm1.jpg', '12,30'),
-(5, 'Caixa do Arion', 'peidorrero', 'https://static.tuasaude.com/media/article/hc/rx/frutas-laxantes_7123_l.jpg', '120,00'),
-(6, 'Exemplo edu', 'sadasdsadsadsa', './img/back12.jpg', '5.000');
+(5, 'Caixa do Arion', 'peidorrero', './img/back12.jpg', '120,00'),
+(6, 'Exemplo edu', 'sadasdsadsadsa', './img/back12.jpg', '5.000'),
+(7, 'kk bigarel', 'lembra de editar em', './img/back12.jpg', '23'),
+(8, 'Produto 8', 'Detalhes', './img/back12.jpg', '25'),
+(9, 'Produto 9', 'Detalhes', './img/back12.jpg', '25');
 
 -- --------------------------------------------------------
 
@@ -66,12 +69,14 @@ CREATE TABLE `ass_detalhes` (
 
 INSERT INTO `ass_detalhes` (`id`, `id_ass`, `url`) VALUES
 (1, 1, 'https://sfagro.uol.com.br/wp-content/uploads/2017/01/2301-frutas-uva-melao-melancia-abacaxi-banana-pera-maca-pessego.jpg'),
-(2, 1, 'https://sfagro.uol.com.br/wp-content/uploads/2017/01/2301-frutas-uva-melao-melancia-abacaxi-banana-pera-maca-pessego.jpg'),
-(3, 1, 'https://sfagro.uol.com.br/wp-content/uploads/2017/01/2301-frutas-uva-melao-melancia-abacaxi-banana-pera-maca-pessego.jpg'),
-(4, 1, 'https://sfagro.uol.com.br/wp-content/uploads/2017/01/2301-frutas-uva-melao-melancia-abacaxi-banana-pera-maca-pessego.jpg'),
-(5, 1, 'https://sfagro.uol.com.br/wp-content/uploads/2017/01/2301-frutas-uva-melao-melancia-abacaxi-banana-pera-maca-pessego.jpg'),
-(6, 2, 'https://static.tuasaude.com/media/article/hc/rx/frutas-laxantes_7123_l.jpg'),
-(7, 3, 'https://static.tuasaude.com/media/article/hc/rx/frutas-laxantes_7123_l.jpg');
+(2, 2, 'https://sfagro.uol.com.br/wp-content/uploads/2017/01/2301-frutas-uva-melao-melancia-abacaxi-banana-pera-maca-pessego.jpg'),
+(3, 3, 'https://sfagro.uol.com.br/wp-content/uploads/2017/01/2301-frutas-uva-melao-melancia-abacaxi-banana-pera-maca-pessego.jpg'),
+(4, 4, 'https://sfagro.uol.com.br/wp-content/uploads/2017/01/2301-frutas-uva-melao-melancia-abacaxi-banana-pera-maca-pessego.jpg'),
+(5, 5, './img/back12.jpg'),
+(6, 6, './img/back12.jpg'),
+(7, 7, './img/back12.jpg'),
+(8, 8, './img/back12.jpg'),
+(9, 9, './img/back12.jpg');
 
 -- --------------------------------------------------------
 
@@ -167,13 +172,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT for table `assinaturas`
 --
 ALTER TABLE `assinaturas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `ass_detalhes`
 --
 ALTER TABLE `ass_detalhes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `minha_ass`

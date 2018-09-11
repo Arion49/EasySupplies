@@ -96,10 +96,6 @@ opacity: 0.4" class="animated infinite pulse slower">
              <input name="group1"  value="Boleto" type="radio" checked />
              <span>Boleto</span>
            </label>&nbsp;
-           <label>
-             <input name="group1" value="Cartao" type="radio" />
-             <span>Cartao</span>
-           </label>
          </span>
        </legend>
 
