@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 11-Set-2018 às 20:37
+-- Generation Time: 12-Set-2018 às 21:08
 -- Versão do servidor: 10.1.32-MariaDB
 -- PHP Version: 5.6.36
 
@@ -69,10 +69,10 @@ CREATE TABLE `ass_detalhes` (
 --
 
 INSERT INTO `ass_detalhes` (`id`, `id_ass`, `url`) VALUES
-(1, 1, 'https://sfagro.uol.com.br/wp-content/uploads/2017/01/2301-frutas-uva-melao-melancia-abacaxi-banana-pera-maca-pessego.jpg'),
-(2, 2, 'https://sfagro.uol.com.br/wp-content/uploads/2017/01/2301-frutas-uva-melao-melancia-abacaxi-banana-pera-maca-pessego.jpg'),
-(3, 3, 'https://sfagro.uol.com.br/wp-content/uploads/2017/01/2301-frutas-uva-melao-melancia-abacaxi-banana-pera-maca-pessego.jpg'),
-(4, 4, 'https://sfagro.uol.com.br/wp-content/uploads/2017/01/2301-frutas-uva-melao-melancia-abacaxi-banana-pera-maca-pessego.jpg'),
+(1, 1, './img/back12.jpg'),
+(2, 2, './img/back12.jpg'),
+(3, 3, './img/back12.jpg'),
+(4, 4, './img/back12.jpg'),
 (5, 5, './img/back12.jpg'),
 (6, 6, './img/back12.jpg'),
 (7, 7, './img/back12.jpg'),
@@ -176,7 +176,7 @@ ALTER TABLE `ass_detalhes`
 -- AUTO_INCREMENT for table `minha_ass`
 --
 ALTER TABLE `minha_ass`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
 
 --
 -- AUTO_INCREMENT for table `usuarios`
