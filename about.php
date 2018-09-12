@@ -86,7 +86,7 @@ margin-right: 9%
 
     <div class="col l6 m12 s12 valign-wrapper" style=""><!-- COL DA FOTO -->
 
-      <img class="responsive-img z-depth-4" src="img/back9.jpg" 
+      <img class="responsive-img z-depth-4" src="img/senai.jpg" 
       style=" 
       width:100%; 
       height: 377px; 
