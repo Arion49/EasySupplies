@@ -129,7 +129,7 @@
 							
 							<div class="col s12" style="padding: 5px; padding-bottom: 8px; padding-top: 8px;">
 								
-								<div class="col s12 center-align animated" 
+								<div class="col s12 center-align animated fadeIn fast" 
 								style="
 								font-size: 20px;
 								
