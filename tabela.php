@@ -3,7 +3,7 @@
 
  <meta charset="utf-8">
 
- <title>Easy Supplies</title>
+ <title>Easy Supplie - Tabela</title>
 
  <link rel="stylesheet" type="text/css" href="css.css">
 
@@ -602,7 +602,7 @@ Outubro
   <div class="col s12">
 
     <li style="font-size:20px;">
-      alho-poró, almeirão, brócolis, catalonha, cebolinha, chicória, coentro, couve-flor, erva-doce, espinafre, folha de uva, hortelã, mostarda e orégano
+      Alho-poró, Almeirão, Brócolis, Catalonha, Cebolinha, Chicória, Coentro, Couve-flor, Erva-doce, Espinafre, Folha de uva, Hortelã, Mostarda e Orégano
     </li>
 
   </div>
@@ -614,7 +614,7 @@ Outubro
   <div class="col s12">
 
     <li style="font-size:20px;">
-      abóbora, abobrinha, alcachofra, aspargos, batata-doce, berinjela, beterraba, cenoura, cogumelo, ervilha, fava, inhame, pepino, pimentão, rabanete, tomate e tomate-caqui
+      Abóbora, Abobrinha, Alcachofra, Aspargos, Batata-doce, Berinjela, Beterraba, Cenoura, Cogumelo, Ervilha, Fava, Inhame, Pepino, Pimentão, Rabanete, Tomate e Tomate-caqui
     </li>
 
   </div>
@@ -645,7 +645,7 @@ Novembro
 
   <div class="col s12">
 
-    <li style="font-size:20px;">abacaxi, acerola, banana-nanica, banana-prata, caju, coco verde, framboesa, jaca, laranja-pera, maçã, mamão, manga, maracujá, melancia, melão, nectarina, pêssego e tangerina</li>
+    <li style="font-size:20px;">Abacaxi, Acerola, Banana-nanica, Banana-prata, Caju, Coco verde, Framboesa, Jaca, Laranja-pera, Maçã, Mamão, Manga, Maracujá, Melancia, Melão, Nectarina, Pêssego e Tangerina</li>
 
   </div>
 
@@ -656,7 +656,7 @@ Novembro
   <div class="col s12">
 
     <li style="font-size:20px;">
-      alho-poró, almeirão, brócolis, cebolinha, endívia, erva-doce, espinafre e folha de uva
+      Alho-poró, Almeirão, Brócolis, Cebolinha, Endívia, Erva-doce, Espinafre e Folha de uva
     </li>
 
   </div>
@@ -668,7 +668,7 @@ Novembro
   <div class="col s12">
 
     <li style="font-size:20px;">
-      abobrinha, aspargos, berinjela, beterraba, cenoura, inhame, maxixe, nabo, pepino, pimentão e tomate
+      Abobrinha, Aspargos, Berinjela, Beterraba, Cenoura, Inhame, Maxixe, Nabo, Pepino, Pimentão e Tomate
     </li>
 
   </div>
@@ -700,7 +700,7 @@ Dezembro
 
   <div class="col s12">
 
-    <li style="font-size:20px;">abacaxi, ameixa, banana-prata, cereja, coco verde, damasco, figo, framboesa, graviola, kiwi, laranja-pera, limão, lichia, maçã, manga, maracujá, melancia, melão, nectarina, pêssego, romã e uva;</li>
+    <li style="font-size:20px;">Abacaxi, Ameixa, Banana-prata, Cereja, Coco verde, Damasco, Figo, Framboesa, Graviola, Kiwi, Laranja-pera, Limão, Lichia, Maçã, Manga, Maracujá, Melancia, Melão, Nectarina, Pêssego, Romã e Uva;</li>
 
   </div>
 
@@ -711,7 +711,7 @@ Dezembro
   <div class="col s12">
 
     <li style="font-size:20px;">
-      almeirão, cebolinha, endívias, erva-doce, folha de uva, hortelã, orégano, rúcula, salsa e salsão
+      Almeirão, Cebolinha, Endívias, Erva-doce, Folha de uva, Hortelã, Orégano, Rúcula, Salsa e Salsão
     </li>
 
   </div>
@@ -723,7 +723,7 @@ Dezembro
   <div class="col s12">
 
     <li style="font-size:20px;">
-      abobrinha, beterraba, cenoura, cogumelo, pimentão, tomate e vagem macarrão
+      Abobrinha, Beterraba, Cenoura, Cogumelo, Pimentão, Tomate e Vagem macarrão
     </li>
 
   </div>
