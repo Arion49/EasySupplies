@@ -122,7 +122,6 @@ $sqlConsultaUsuario = mysqli_query($conexao, "SELECT * FROM minha_ass WHERE id_u
                 </td>
               </tr>
 
-
             <?php }
 
             $vazio = mysqli_num_rows($sqlConsultaUsuario);

@@ -215,8 +215,17 @@ opacity: 0.4" class="animated infinite pulse slower">
      </div>
 
      <hr style="margin-top: 65px">
-     <button class="waves-effect purple darken-4 btn"  name="enviar_btn" style="border-color: black 1px;" id="comprar"> Comprar
+     <div class="col s12">
+      <div class="col s3">
+        <button class="waves-effect purple darken-4 btn"  name="enviar_btn" style="border-color: black 1px;" id="comprar"> Comprar
      </button>
+      </div>
+      <div class="col s9 right-align" style="margin-top: 5px">
+               <a href="tabela.php"> Com duvidas do que poderá receber?</a>
+
+      </div>
+     </div>
+     
    </form>    
 
  </div>
