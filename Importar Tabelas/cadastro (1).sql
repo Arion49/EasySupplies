@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
+-- version 4.8.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 12-Set-2018 às 21:08
--- Versão do servidor: 10.1.32-MariaDB
--- PHP Version: 5.6.36
+-- Generation Time: 12-Set-2018 às 21:22
+-- Versão do servidor: 10.1.34-MariaDB
+-- PHP Version: 7.2.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -42,13 +42,13 @@ CREATE TABLE `assinaturas` (
 --
 
 INSERT INTO `assinaturas` (`id`, `nome_produto`, `descricao_produto`, `url`, `preco`, `tipo`) VALUES
-(1, 'Pacote com verduras (P)', 'Pacote contendo só verduras para aqueles que não desejam frutas (pacote de tamanho pequeno)', 'img/farm1.jpg', '40,00', 'Pequeno'),
+(1, 'Pacote com verduras (P)', 'Pacote contendo só verduras para aqueles que não desejam frutas (pacote de tamanho pequeno)', 'img/salad.jpg', '40,00', 'Pequeno'),
 (2, 'Pacote com verduras (M)', 'Pacote contendo só verduras para aqueles que não desejam frutas (pacote de tamanho médio)', 'img/back2.jpg', '65,00', 'Médio'),
 (3, 'Pacote com verduras (G)', 'Pacote contendo só verduras para aqueles que não desejam frutas (pacote de tamanho grande)', 'img/verG.jpg', '90,00', 'Grande'),
 (4, 'Pacote misto (P)\r\n\r\n', 'Pacote misto surpresa pequeno contendo tanto verduras quanto frutas', 'img/farm1.jpg', '45,00', 'Pequeno'),
-(5, 'Pacote misto (M)\r\n', 'Pacote misto surpresa médio contendo tanto verduras quanto frutas', './img/back12.jpg', '75,00', 'Médio'),
+(5, 'Pacote misto (M)\r\n', 'Pacote misto surpresa médio contendo tanto verduras quanto frutas', './img/grapes.jpg', '75,00', 'Médio'),
 (6, 'Pacote misto (G)\r\n', 'Pacote misto surpresa grande contendo tanto verduras quanto frutas', './img/back12.jpg', '100,00', 'Grande'),
-(7, 'Pacote com frutas (P)', 'Pacote contendo só frutas para aqueles que não desejam verduras (pacote de tamanho pequeno)', './img/back12.jpg', '42,00', 'Pequeno'),
+(7, 'Pacote com frutas (P)', 'Pacote contendo só frutas para aqueles que não desejam verduras (pacote de tamanho pequeno)', './img/berries.jpg', '42,00', 'Pequeno'),
 (8, 'Pacote com frutas (M)', 'Pacote contendo só frutas para aqueles que não desejam verduras (pacote de tamanho médio)', './img/fruM.jpg', '67,00', 'Médio'),
 (9, 'Pacote com frutas (G)', 'Pacote contendo só verduras para aqueles que não desejam verduras (pacote de tamanho grande)', './img/fruG.png', '95,00', 'Grande');
 
@@ -69,15 +69,15 @@ CREATE TABLE `ass_detalhes` (
 --
 
 INSERT INTO `ass_detalhes` (`id`, `id_ass`, `url`) VALUES
-(1, 1, './img/back12.jpg'),
-(2, 2, './img/back12.jpg'),
-(3, 3, './img/back12.jpg'),
-(4, 4, './img/back12.jpg'),
-(5, 5, './img/back12.jpg'),
+(1, 1, 'img/salad.jpg'),
+(2, 2, 'img/back2.jpg'),
+(3, 3, 'img/verG.jpg'),
+(4, 4, 'img/farm1.jpg'),
+(5, 5, './img/grapes.jpg'),
 (6, 6, './img/back12.jpg'),
-(7, 7, './img/back12.jpg'),
-(8, 8, './img/back12.jpg'),
-(9, 9, './img/back12.jpg');
+(7, 7, './img/berries.jpg'),
+(8, 8, './img/fruM.jpg'),
+(9, 9, './img/fruG.png');
 
 -- --------------------------------------------------------
 
@@ -96,6 +96,13 @@ CREATE TABLE `minha_ass` (
   `titulo_produto` varchar(200) DEFAULT NULL,
   `preco_produto` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `minha_ass`
+--
+
+INSERT INTO `minha_ass` (`id`, `id_assinaturas`, `id_usuario`, `quantidade`, `tipo`, `modo_entrega`, `forma_pagamento`, `titulo_produto`, `preco_produto`) VALUES
+(3, 2, 4, 2, 'Médio', 'Quinzenal', 'Boleto', 'Pacote com verduras (M)', '65,00');
 
 -- --------------------------------------------------------
 
@@ -124,7 +131,8 @@ CREATE TABLE `usuarios` (
 INSERT INTO `usuarios` (`id`, `nomes`, `email`, `login`, `senha`, `estado`, `cidade`, `bairro`, `rua`, `ncasa`, `tipo`) VALUES
 (1, 'Arion Pereira', 'arion.cerceau@gmail.com', 'Arion49', '12345', 'MG', 'Betim', 'Santa Lucia', 'Rua Joaquim Luiz de Carvalho', 473, NULL),
 (2, 'Bruce', 'bruce@leon', 'Bruce', 'abcde', 'MG', 'Joao', 'SSSSS', 'KKKKK', 566, NULL),
-(3, 'EduardoMelo', 'eduardomsena@hotmail.com', 'HomenAco', '123456', 'MG', 'Betim', 'Bom retiro', 'Rua JÃºlio CÃ©sar de Freitas', 326, NULL);
+(3, 'EduardoMelo', 'eduardomsena@hotmail.com', 'HomenAco', '123456', 'MG', 'Betim', 'Bom retiro', 'Rua JÃºlio CÃ©sar de Freitas', 326, NULL),
+(4, 'Teste Teste', 'teste@gmail.com', 'Teste Teste', '123456', 'MG', 'Betim', 'Ingá', 'xxx', 544, NULL);
 
 --
 -- Indexes for dumped tables
@@ -176,13 +184,13 @@ ALTER TABLE `ass_detalhes`
 -- AUTO_INCREMENT for table `minha_ass`
 --
 ALTER TABLE `minha_ass`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables

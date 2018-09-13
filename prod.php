@@ -221,7 +221,7 @@ opacity: 0.4" class="animated infinite pulse slower">
      </button>
       </div>
       <div class="col s9 right-align" style="margin-top: 5px">
-               <a href="tabela.php"> Com duvidas do que poderá receber?</a>
+               <a href="tabela.php"> Com dúvidas do que poderá receber?</a>
 
       </div>
      </div>
